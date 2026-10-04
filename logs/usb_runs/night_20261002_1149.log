@@ -1,0 +1,36 @@
+[11:49:40] night runner start; stop at 10-03 09:00; queue: 7 entries
+[11:49:40] logs: usb_runs/night_20261002_1149.log  journal: usb_runs/night_journal_20261002_1149.log  camera: usb_runs/cam_20261002_1149
+[11:49:40] state: start -> gadget2if
+[21:13:44] state: gadget2if -> gadget3if
+[21:13:49] ADB: window open -> reboot to bootloader for the next probe
+[21:14:03] state: gadget3if -> fastboot
+[21:14:03] PROBE: flashing artifacts/fullerene-ane-usb-l1b.img
+Writing 'kernel'                                   OKAY [  0.023s]
+Finished. Total time: 0.095s
+Rebooting                                          OKAY [  0.021s]
+[21:14:03] PROBE: artifacts/fullerene-ane-usb-l1b.img fired; hang expected, fastboot fallback in ~4.5 min
+[21:14:03] state: fastboot -> dark
+[21:20:45] state: dark -> gadget1if
+[21:22:15] state: gadget1if -> dark
+[21:22:19] state: dark -> fastboot
+[21:22:19] RESTORE: flashing the stock kernel
+Writing 'kernel'                                   OKAY [  0.288s]
+Finished. Total time: 1.049s
+Rebooting                                          OKAY [  0.020s]
+[21:22:20] RESTORE: stock rebooted
+[21:22:46] RESTORE: android window seen
+[21:22:47] state: fastboot -> gadget3if
+[21:22:54] USBJOB: attempt 1 (short window; best effort)
+== before
+hisuite,mtp,mass_storage,adb
+== ensure the exploit is present
+  [attempt 1: no root shell]
+  [attempt 2: no root shell]
+root shell never came - reboot the device and re-run
+[21:23:05] USBJOB: not set (window too short or no root this boot)
+[21:23:09] state: gadget3if -> gadget1if
+[21:33:01] state: gadget1if -> gadget3if
+[21:33:02] USBJOB: attempts exhausted
+[21:34:09] USBJOB: attempts exhausted
+[21:35:14] USBJOB: attempts exhausted
+[21:36:20] USBJOB: attempts exhausted

@@ -1,0 +1,5 @@
+[08:50:19] == 1. mmu-fix flash (device must already be in fastboot)
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.512s
+[08:50:20]    booted; arming window_flash -> reader + 1080p burst
+[08:50:20] streaming the kernel log for the fastboot signature (idVendor=18d1)

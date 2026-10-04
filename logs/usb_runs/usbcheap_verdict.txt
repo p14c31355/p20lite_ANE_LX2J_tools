@@ -1,0 +1,1 @@
+SETPROP-DENIED (adb shell cannot set persist.sys.usb.config; current mode hisuite,mtp,mass_storage,adb already includes adb)

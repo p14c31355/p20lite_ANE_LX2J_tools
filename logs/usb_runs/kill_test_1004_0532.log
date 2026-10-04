@@ -1,0 +1,20 @@
+[05:32:15] == 0. wait for Android (the combo + the armed catcher restore it)
+[05:32:25]    android is up
+[05:32:25]    settle 240 s (LK volatile-counter cooling insurance)
+[05:36:25] == 1. flash stepmarks3 (early-vector kill build)
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.526s
+[05:36:41]    booted; arming the catcher
+[05:45:12]    kill test: fastboot window caught -> stock restored:
+    Finished. Total time: 1.067s
+    Rebooting                                          OKAY [  0.023s]
+    [05:44:42] waiting for Android
+    [05:45:07] android is back
+[05:45:12] == 2. settle 180 s, then flash paint-probe-stock + camera burst
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.556s
+[05:50:03]    burst done: 40 frames
+    frame luminance (sampled): 9.6
+    saturated pixels sampled: 0
+    no saturated colour: screen dark or grey
+[05:50:05]    arming the catcher for the paint probe's fallback

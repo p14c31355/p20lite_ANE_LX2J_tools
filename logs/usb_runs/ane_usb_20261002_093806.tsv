@@ -1,0 +1,14 @@
+time	state	vid_pid	product	interfaces	log_event
+09:38:06.151	dark	-			-
+09:40:40.516	dark	-	-	-	attach: 2026-10-02T09:40:40.374996+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 95 using xhci_hcd
+09:40:40.516	dark	-	-	-	idd: 2026-10-02T09:40:40.512932+09:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+09:40:40.516	dark	-	-	-	product: 2026-10-02T09:40:40.512963+09:00 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+09:40:41.048	huawei-gadget(1if)	12d1:107e	HUAWEI	1	-
+09:42:42.191	dark	-	-	-	disconnect: 2026-10-02T09:42:41.755962+09:00 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 95
+09:42:42.191	dark	-			-
+09:42:46.265	dark	-	-	-	attach: 2026-10-02T09:42:46.186904+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 96 using xhci_hcd
+09:42:47.086	fastboot(18d1:d00d)	-	-	-	idd: 2026-10-02T09:42:46.312908+09:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+09:42:47.086	fastboot(18d1:d00d)	-	-	-	product: 2026-10-02T09:42:46.312922+09:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+09:42:47.086	fastboot(18d1:d00d)	18d1:d00d	Fastboot2.0	1	-
+09:42:48.675	dark	-	-	-	disconnect: 2026-10-02T09:42:48.481908+09:00 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 96
+09:42:48.675	dark	-			-

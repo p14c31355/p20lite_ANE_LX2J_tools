@@ -1,0 +1,11 @@
+[11:08:14] === cycle 1/1
+[11:08:15] -- experiment flash: artifacts/fullerene-ane-stepmarks12-stock.img
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.539s
+[11:08:17] -- waiting for its park's fastboot window (~5 min)
+[11:11:08] -- stock (streak reset)
+Writing 'kernel'                                   OKAY [  0.278s]
+Finished. Total time: 1.055s
+[11:13:12]    no SD label visible
+[11:13:12] -- combo-free re-entry + log probe
+[11:14:43] FAIL: no fastboot for probe

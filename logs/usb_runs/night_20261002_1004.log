@@ -1,0 +1,3 @@
+[10:04:05] night runner start; end hour 22; queue: 3 entries
+[10:04:05] logs: usb_runs/night_20261002_1004.log  journal: usb_runs/night_journal_20261002_1004.log  camera: usb_runs/cam_20261002_1004
+[10:04:05] state: start -> gadget2if

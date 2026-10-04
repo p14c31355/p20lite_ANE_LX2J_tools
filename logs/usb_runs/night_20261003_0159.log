@@ -1,0 +1,94 @@
+[01:59:02] night runner start; stop at 10-03 06:00; queue: 7 entries
+[01:59:02] logs: usb_runs/night_20261003_0159.log  journal: usb_runs/night_journal_20261003_0159.log  camera: usb_runs/cam_20261003_0159
+[01:59:02] state: start -> gadget1if
+[02:09:14] state: gadget1if -> dark
+[02:11:51] state: dark -> gadget1if
+[02:12:44] state: gadget1if -> dark
+[02:12:48] state: dark -> fastboot
+[02:12:48] PROBE: flashing artifacts/fullerene-ane-usb-l1d.img
+fastboot: error: Command failed
+Writing 'kernel'                                   OKAY [  0.023s]
+Finished. Total time: 0.095s
+Rebooting                                          OKAY [  0.020s]
+[02:12:50] PROBE: artifacts/fullerene-ane-usb-l1d.img fired; hang expected, fastboot fallback in ~4.5 min
+[02:12:50] state: fastboot -> dark
+[02:15:28] state: dark -> gadget1if
+[02:22:21] state: gadget1if -> dark
+[02:25:04] state: dark -> gadget1if
+[02:34:55] state: gadget1if -> dark
+[02:34:59] state: dark -> fastboot
+[02:34:59] PROBE: flashing artifacts/fullerene-ane-stepmarks2-stock.img
+< waiting for any device >
+< waiting for any device >
+[02:40:59] PROBE: flash did not report OKAY
+[02:40:59] state: fastboot -> dark
+[02:41:23] state: dark -> gadget1if
+[02:42:00] state: gadget1if -> dark
+[02:42:04] state: dark -> fastboot
+[02:42:04] PROBE: flashing artifacts/fullerene-ane-scan-finder.img
+< waiting for any device >
+< waiting for any device >
+[02:48:04] PROBE: flash did not report OKAY
+[02:48:04] state: fastboot -> dark
+[02:48:45] state: dark -> gadget1if
+[02:49:01] state: gadget1if -> dark
+[02:51:40] state: dark -> gadget1if
+[02:51:56] state: gadget1if -> dark
+[02:54:35] state: dark -> gadget1if
+[02:55:03] state: gadget1if -> dark
+[02:55:07] state: dark -> fastboot
+[02:55:07] RESTORE: flashing the stock kernel
+Writing 'kernel'                                   OKAY [  0.279s]
+Finished. Total time: 1.061s
+Writing 'misc'                                     FAILED (remote: 'Command not allowed')
+fastboot: error: Command failed
+Rebooting                                          OKAY [  0.020s]
+[02:55:09] RESTORE: stock rebooted (BCB=bootloader: EMUI skipped)
+[02:55:19] RESTORE: stock back, phone parked in fastboot
+[02:55:19] state: fastboot -> dark
+[02:55:31] state: dark -> gadget3if
+[02:55:33] USBJOB: attempts exhausted
+[02:56:37] state: gadget3if -> gadget2if
+[02:56:53] state: gadget2if -> gadget3if
+[02:56:56] USBJOB: attempts exhausted
+[02:58:01] USBJOB: attempts exhausted
+[02:59:05] state: gadget3if -> dark
+[03:05:06] state: dark -> gadget1if
+[03:05:43] state: gadget1if -> dark
+[03:08:22] state: dark -> gadget1if
+[03:08:38] state: gadget1if -> dark
+[03:08:42] state: dark -> fastboot
+[03:08:42] PROBE: flashing artifacts/fullerene-ane-stepmarks2-stock.img
+< waiting for any device >
+< waiting for any device >
+[03:14:42] PROBE: flash did not report OKAY
+[03:14:42] state: fastboot -> dark
+[03:17:08] state: dark -> gadget1if
+[03:17:21] state: gadget1if -> dark
+[03:17:25] state: dark -> fastboot
+[03:17:25] PROBE: flashing artifacts/fullerene-ane-scan-finder.img
+< waiting for any device >
+< waiting for any device >
+[03:23:25] PROBE: flash did not report OKAY
+[03:23:25] state: fastboot -> dark
+[03:23:45] state: dark -> gadget1if
+[03:23:57] state: gadget1if -> dark
+[03:24:01] state: dark -> fastboot
+[03:24:01] PROBE: flashing artifacts/fullerene-ane-trace-reader.img
+fastboot: error: Command failed
+Writing 'kernel'                                   OKAY [  0.023s]
+Finished. Total time: 0.095s
+Rebooting                                          OKAY [  0.020s]
+[03:24:03] PROBE: artifacts/fullerene-ane-trace-reader.img fired; hang expected, fastboot fallback in ~4.5 min
+[03:24:03] state: fastboot -> dark
+[03:26:41] state: dark -> gadget1if
+[03:26:53] state: gadget1if -> dark
+[03:26:57] state: dark -> fastboot
+[03:26:57] PROBE: flashing artifacts/fullerene-ane-paint-probe.img
+< waiting for any device >
+< waiting for any device >
+[03:32:57] PROBE: flash did not report OKAY
+[03:32:57] state: fastboot -> gadget1if
+[06:00:00] END: stop time reached
+[06:00:00] wind-down: settling the phone into Android
+[06:30:06] night runner exiting (device: gadget1if, queue left: 3)

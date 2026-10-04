@@ -1,0 +1,132 @@
+[
+  {
+    "file": "021308_1.jpg",
+    "kind": "dark",
+    "luminance": 0.05,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021329_2.jpg",
+    "kind": "dark",
+    "luminance": 0.05,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021350_3.jpg",
+    "kind": "dark",
+    "luminance": 0.05,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021410_4.jpg",
+    "kind": "dark",
+    "luminance": 0.058,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021431_5.jpg",
+    "kind": "dark",
+    "luminance": 0.058,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021451_6.jpg",
+    "kind": "dark",
+    "luminance": 0.058,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021512_7.jpg",
+    "kind": "dark",
+    "luminance": 0.059,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021532_8.jpg",
+    "kind": "dark",
+    "luminance": 0.03,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "021553_9.jpg",
+    "kind": "dark",
+    "luminance": 0.03,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032421_1.jpg",
+    "kind": "dark",
+    "luminance": 0.053,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032441_2.jpg",
+    "kind": "dark",
+    "luminance": 0.046,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032502_3.jpg",
+    "kind": "dark",
+    "luminance": 0.051,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032523_4.jpg",
+    "kind": "dark",
+    "luminance": 0.057,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032543_5.jpg",
+    "kind": "dark",
+    "luminance": 0.057,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032604_6.jpg",
+    "kind": "dark",
+    "luminance": 0.023,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032625_7.jpg",
+    "kind": "dark",
+    "luminance": 0.057,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032646_8.jpg",
+    "kind": "other",
+    "luminance": 0.065,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "032706_9.jpg",
+    "kind": "other",
+    "luminance": 0.066,
+    "band_count": 0,
+    "bands": []
+  },
+  {
+    "file": "frame_classify.json",
+    "kind": "error:[Errno 2] No such file or directory: 'usb_runs/frame_classify.json'"
+  }
+]

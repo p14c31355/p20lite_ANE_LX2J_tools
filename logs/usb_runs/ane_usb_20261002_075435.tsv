@@ -1,0 +1,8 @@
+time	state	vid_pid	product	interfaces	log_event
+07:54:35.165	fastboot(12d1:107e)	12d1:107e	ANE-LX2J	2	-
+07:54:47.568	dark	-	-	-	disconnect: 2026-10-02T07:54:47.506961+09:00 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 64
+07:54:47.568	dark	-			-
+07:54:48.077	dark	-	-	-	attach: 2026-10-02T07:54:48.003934+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 65 using xhci_hcd
+07:54:48.609	fastboot(12d1:107e)	-	-	-	idd: 2026-10-02T07:54:48.130913+09:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+07:54:48.609	fastboot(12d1:107e)	-	-	-	product: 2026-10-02T07:54:48.130930+09:00 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+07:54:48.609	fastboot(12d1:107e)	12d1:107e	ANE-LX2J	3	-

@@ -1,0 +1,20 @@
+14:08:54 ===== attempt 1 =====
+14:08:54 no adb: waiting up to 3 h for the phone (a physical press revives a hung boot)
+14:17:54   ...still no adb (0 min in)
+14:20:54 adb is back
+14:20:54 waiting for a settled boot (up to 30 min)
+14:20:54 settled at 511s uptime; settling 300s
+14:25:54 trying the no-root pstore read first
+14:25:54   (noroot read unavailable: file not readable)
+14:25:54 starting the root shell (poll 25 min)
+14:51:07 attempt 1: no root
+14:51:12 ===== attempt 2 =====
+14:51:12 rebooting for a clean heap
+14:51:56 waiting for a settled boot (up to 30 min)
+15:21:59 no settled boot - the boot hung; waiting up to 3 h for a physical press
+15:30:59   ...still no adb (0 min in)
+15:40:59   ...still no adb (0 min in)
+15:50:59   ...still no adb (0 min in)
+15:58:59 phone is awake; will skip the reboot and re-check the boot directly
+15:58:59 ===== attempt 3 =====
+15:58:59 waiting for a settled boot (up to 30 min)

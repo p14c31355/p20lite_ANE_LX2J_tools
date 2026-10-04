@@ -1,0 +1,7 @@
+10:01:05 watching usb_runs/root_dump3_att1.out for root (no timeout; the exploit keeps its own pace)
+10:06:08 ROOT printed; driving the fifo
+10:06:08 == id:
+10:06:09 == dumping reserved RAM 0x34000000..0x34900000 (9 MiB)
+10:06:10 == pulling
+10:06:10 no dump landed
+10:06:10 == persistent USB mode

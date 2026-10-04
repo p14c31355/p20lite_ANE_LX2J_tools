@@ -1,0 +1,5 @@
+10-03 01:59:02 armed: waiting for fastboot to set BCB=bootloader
+10-03 02:43:03 attempt failed: < waiting for any device >
+10-03 02:50:03 attempt failed: < waiting for any device >
+10-03 06:53:08 BCB set to bootloader (fastboot flash misc OKAY)
+10-03 06:53:08 Writing 'misc'                                     FAILED (remote: 'Command not allowed')

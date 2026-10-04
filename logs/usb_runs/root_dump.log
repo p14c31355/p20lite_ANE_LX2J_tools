@@ -1,0 +1,8 @@
+09:12:22 waiting for an adb device (the RESTORE fire should bring Android)
+09:22:54 adb device present; settling 75 s (clean heap for the exploit, as measured before)
+09:24:09 pushing the exploit
+09:24:09 on-device exploit md5:  (want f42b6fad4f1aa3a612494ce592b359b2)
+09:24:09 running the exploit with a dump script on stdin
+09:24:09 root shell exited
+09:24:09 no dump landed
+09:24:09 done

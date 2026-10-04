@@ -1,0 +1,7 @@
+[05:36:41] streaming the kernel log for the fastboot signature (idVendor=18d1)
+[05:44:40] fastboot is up -> restoring the stock kernel
+Writing 'kernel'                                   OKAY [  0.282s]
+Finished. Total time: 1.067s
+Rebooting                                          OKAY [  0.023s]
+[05:44:42] waiting for Android
+[05:45:07] android is back

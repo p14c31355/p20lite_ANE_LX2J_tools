@@ -1,0 +1,8 @@
+09:44:04 ===== attempt 1 =====
+09:44:04 rebooting for a clean heap (the winning recipe)
+09:44:48 waiting for a reachable, settled boot (up to 15 min; a post-failure boot is slow)
+09:48:48 boot reachable and settled: 265s uptime
+09:48:48 settle 75s
+09:50:03 ensuring the frozen exploit (md5 f42b6fad4f1aa3a612494ce592b359b2)
+09:50:03 md5 ok
+09:50:03 starting the root shell (fifo kept open)

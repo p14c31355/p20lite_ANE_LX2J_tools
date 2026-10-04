@@ -1,0 +1,6 @@
+[10:50:38] === cycle 1/1
+[10:50:38] -- experiment flash: artifacts/fullerene-ane-stepmarks11-stock.img
+Writing 'kernel'                                   OKAY [  0.144s]
+Finished. Total time: 0.542s
+[10:52:02] -- waiting for its park's fastboot window (~5 min)
+[10:57:38] no window; state:

@@ -1,0 +1,8 @@
+time	state	vid_pid	product	interfaces	log_event
+08:55:00.950	dark	-			-
+08:55:33.037	huawei-gadget(1if)	-	-	-	attach: 2026-10-02T08:55:32.626943+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 76 using xhci_hcd
+08:55:33.037	huawei-gadget(1if)	-	-	-	idd: 2026-10-02T08:55:32.752908+09:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+08:55:33.037	huawei-gadget(1if)	-	-	-	product: 2026-10-02T08:55:32.752926+09:00 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+08:55:33.037	huawei-gadget(1if)	12d1:107e	HUAWEI	1	-
+08:57:59.775	dark	-	-	-	disconnect: 2026-10-02T08:57:59.346927+09:00 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 76
+08:57:59.776	dark	-			-

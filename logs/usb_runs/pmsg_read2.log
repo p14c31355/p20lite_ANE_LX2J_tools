@@ -1,0 +1,14 @@
+10:56:22 ===== attempt 1 =====
+10:56:22 rebooting for a clean heap
+10:57:05 waiting for a settled boot
+10:57:36 settled at 55s uptime; settling 300s (the winning run started at ~340s)
+11:02:36 ensuring the frozen exploit
+11:02:36 starting the root shell (patience: 60 min, no early kill)
+12:03:08 attempt 1: no root; tail:
+12:03:13 ===== attempt 2 =====
+12:03:13 rebooting for a clean heap
+12:03:57 waiting for a settled boot
+12:18:58 no settled boot this attempt
+12:18:58 ===== attempt 3 =====
+12:18:58 waiting up to 15 min for adb
+12:33:59 no adb

@@ -1,0 +1,39 @@
+[22:38:16] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[22:38:16] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[23:03:18] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[23:03:18] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[23:28:21] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[23:28:21] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[23:53:23] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[23:53:23] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[00:18:26] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[00:18:26] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[00:43:29] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[00:43:29] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[01:08:31] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[01:08:31] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[01:33:34] STALL: no state change or log growth for 25 min (fp=12d1:107e:2)
+[01:33:34] round 1: resetting /dev/bus/usb/001/115 (ANE-LX2J)
+  reset issued; settling 2s
+[03:57:41] STALL: no state change or log growth for 25 min (fp=12d1:107e:1)
+[03:57:41] round 1: resetting /dev/bus/usb/001/035 (HUAWEI)
+  reset issued; settling 2s
+[04:22:44] STALL: no state change or log growth for 25 min (fp=12d1:107e:1)
+[04:22:44] round 1: resetting /dev/bus/usb/001/035 (HUAWEI)
+  reset issued; settling 2s
+[04:47:46] STALL: no state change or log growth for 25 min (fp=12d1:107e:1)
+[04:47:46] round 1: resetting /dev/bus/usb/001/035 (HUAWEI)
+  reset issued; settling 2s
+[05:12:49] STALL: no state change or log growth for 25 min (fp=12d1:107e:1)
+[05:12:49] round 1: resetting /dev/bus/usb/001/035 (HUAWEI)
+  reset issued; settling 2s
+[05:37:51] STALL: no state change or log growth for 25 min (fp=12d1:107e:1)
+[05:37:51] round 1: resetting /dev/bus/usb/001/035 (HUAWEI)
+  reset issued; settling 2s

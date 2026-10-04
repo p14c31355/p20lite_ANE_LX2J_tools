@@ -1,0 +1,240 @@
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:13:42 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 100
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:13:43 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:13:53 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 101
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 102 using xhci_hcd
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:14:00 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:14:03 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 102
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:20:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Product: HUAWEI
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: unknown
+10月 02 21:20:42 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:12 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 103
+10月 02 21:22:12 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 103
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 104 using xhci_hcd
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 104 using xhci_hcd
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: Fastbo
+10月 02 21:22:16 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:20 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 104
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:46 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:47 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:40 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:46 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:47 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:54 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 105
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 106 using xhci_hcd
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:46 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:47 placeless-MS-7A72 kernel: usb 1-1: reset high-speed USB device number 105 using xhci_hcd
+10月 02 21:22:54 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 105
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 106 using xhci_hcd
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:54 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 105
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 106 using xhci_hcd
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:54 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 105
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 106 using xhci_hcd
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 106 using xhci_hcd
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:22:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 106
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 107 using xhci_hcd
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:32:57 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:33:43 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 108
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 109 using xhci_hcd
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:33:44 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473
+10月 02 21:33:49 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 109
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 110 using xhci_hcd
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=12d1, idProduct=107e, bcdDevice= 2.99
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: Product: ANE-LX2J
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: Manufacturer: HUAWEI
+10月 02 21:33:50 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473

@@ -1,0 +1,21 @@
+[10:23:04] === cycle 1/1
+[10:23:04] -- experiment flash: artifacts/fullerene-ane-stepmarks9-stock.img
+Writing 'kernel'                                   OKAY [  0.147s]
+Finished. Total time: 0.535s
+[10:23:05] -- waiting for its park's fastboot window (~5 min)
+[10:25:56] -- stock (streak reset)
+Writing 'kernel'                                   OKAY [  0.282s]
+Finished. Total time: 0.997s
+/storage/D4DD-4FB0/ane/: 21 files pulled, 0 skipped. 12.7 MB/s (5328695 bytes in 0.399s)
+[10:26:59]    SD pulled (D4DD-4FB0)
+[10:26:59] -- combo-free re-entry + log probe
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.512s
+[10:27:20]    probe rendering; burst armed (frames: /tmp/readout_burst)
+[10:27:20] -- waiting for the probe's window (~10 min; its screen hold is long)
+[10:34:26] -- stock restore + final pull
+Writing 'kernel'                                   OKAY [  1.174s]
+Finished. Total time: 1.948s
+[10:36:30]    no SD label visible
+[10:36:30] === cycle 1 done (frames: 30)
+[10:36:30] loop complete

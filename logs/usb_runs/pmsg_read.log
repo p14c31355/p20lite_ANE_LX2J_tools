@@ -1,0 +1,7 @@
+10:23:49 waiting for adb (the RESTORE fire should bring Android)
+10:24:09 adb present; waiting for boot_completed
+10:24:29 boot_completed=1; settling 75s
+10:25:45 ensuring the frozen exploit (md5 f42b6fad4f1aa3a612494ce592b359b2)
+10:25:45 md5 ok
+10:25:45 starting the root shell (patience: up to 30 min, no early kill)
+10:56:00 no root within 30 min; tail:

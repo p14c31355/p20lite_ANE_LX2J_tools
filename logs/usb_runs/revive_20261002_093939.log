@@ -1,0 +1,17 @@
+[09:39:39] watcher started (log: usb_runs/revive_20261002_093939.log)
+[09:39:39] state: dark
+[09:40:54] state: rescue
+[09:40:54] rescue present but no passwordless sudo for the helper (passive only)
+[09:41:34] rescue present but no passwordless sudo for the helper (passive only)
+[09:42:14] rescue present but no passwordless sudo for the helper (passive only)
+[09:42:54] state: dark
+[09:45:24] state: rescue
+[09:45:24] rescue present but no passwordless sudo for the helper (passive only)
+[09:46:04] rescue present but no passwordless sudo for the helper (passive only)
+[09:46:45] rescue present but no passwordless sudo for the helper (passive only)
+[09:47:25] rescue present but no passwordless sudo for the helper (passive only)
+[09:48:05] rescue present but no passwordless sudo for the helper (passive only)
+[09:48:45] state: adb
+[09:48:45] device reachable (adb) - the run tail owns it from here; watcher stays passive
+[09:48:55] device reachable (adb) - the run tail owns it from here; watcher stays passive
+[09:49:05] state: android-usb

@@ -1,0 +1,25 @@
+[21:36:51] night runner start; stop at 10-03 06:00; queue: 0 entries
+[21:36:51] logs: usb_runs/night_20261002_2136.log  journal: usb_runs/night_journal_20261002_2136.log  camera: usb_runs/cam_20261002_2136
+[21:36:51] state: start -> gadget3if
+[21:36:53] USBJOB: attempts exhausted
+[21:37:58] USBJOB: attempts exhausted
+[21:39:02] state: gadget3if -> gadget2if
+[21:40:40] state: gadget2if -> gadget3if
+[21:40:41] USBJOB: attempts exhausted
+[21:41:47] USBJOB: attempts exhausted
+[21:42:52] USBJOB: attempts exhausted
+[21:43:58] USBJOB: attempts exhausted
+[21:45:04] USBJOB: attempts exhausted
+[21:46:09] USBJOB: attempts exhausted
+[21:47:15] USBJOB: attempts exhausted
+[21:48:19] state: gadget3if -> gadget2if
+[01:42:19] state: gadget2if -> gadget3if
+[01:42:20] ADB: window open -> reboot to bootloader for the next probe
+[01:42:34] state: gadget3if -> fastboot
+[01:42:34] PROBE: flashing artifacts/fullerene-ane-usb-l1c.img
+Writing 'kernel'                                   OKAY [  0.023s]
+Finished. Total time: 0.095s
+Rebooting                                          OKAY [  0.021s]
+[01:42:34] PROBE: artifacts/fullerene-ane-usb-l1c.img fired; hang expected, fastboot fallback in ~4.5 min
+[01:42:34] state: fastboot -> dark
+[01:49:16] state: dark -> gadget1if

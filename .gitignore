@@ -1,0 +1,15 @@
+# The firmware archives are ~13 GB - far past any git remote's limits.
+# They live on archive.org instead; see README.md ("Firmware").
+firmware/azrom/*.zip
+firmware/azrom/*.rar
+
+# Boot images are large binaries and reproducible from source with
+# tools/builders/mkane_stock_embed.py; keep them local.
+# One exception: the current screen-reader probe is what users need first,
+# so it is allowed through (see the negation below).
+artifacts/*.img
+artifacts/*.bin
+!artifacts/fullerene-ane-log-probe-stock.img
+
+# Screen captures are evidence, not source.
+logs/screens/*.jpg

@@ -1,0 +1,63 @@
+10-03 02:14:47 armed: following the kernel log; firing into any fastboot window
+10-03 02:22:26 fastboot window seen; head is: artifacts/fullerene-ane-usb-l1d-loop.img
+10-03 02:22:29 fired artifacts/fullerene-ane-usb-l1d-loop.img (OKAY [  0.023s])
+10-03 02:34:58 fastboot window seen; head is: artifacts/fullerene-ane-stepmarks2-stock.img
+10-03 02:35:00 fired artifacts/fullerene-ane-stepmarks2-stock.img (OKAY [  0.139s])
+10-03 02:38:42 fastboot window seen; head is: artifacts/fullerene-ane-rch-probe-hang.img
+10-03 02:38:45 fired artifacts/fullerene-ane-rch-probe-hang.img (OKAY [  0.137s])
+10-03 02:42:03 fastboot window seen; head is: artifacts/fullerene-ane-scan-finder.img
+10-03 02:42:05 fired artifacts/fullerene-ane-scan-finder.img (OKAY [  0.023s])
+10-03 02:46:05 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 02:46:07 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 02:49:02 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 02:49:04 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 02:51:58 fastboot window seen; head is: artifacts/fullerene-ane-usb-l2.img
+10-03 02:52:00 fired artifacts/fullerene-ane-usb-l2.img (OKAY [  0.023s])
+10-03 02:55:05 fastboot window seen; head is: RESTORE
+10-03 02:55:05 head is not a probe (RESTORE); leaving it to the runner
+10-03 02:58:26 fastboot window seen; head is: artifacts/fullerene-ane-usb-l1d.img
+10-03 02:58:28 fired artifacts/fullerene-ane-usb-l1d.img (OKAY [  0.023s])
+10-03 03:05:44 fastboot window seen; head is: artifacts/fullerene-ane-usb-l1d-loop.img
+10-03 03:05:46 fired artifacts/fullerene-ane-usb-l1d-loop.img (OKAY [  0.023s])
+10-03 03:08:41 fastboot window seen; head is: artifacts/fullerene-ane-stepmarks2-stock.img
+10-03 03:08:43 fired artifacts/fullerene-ane-stepmarks2-stock.img (OKAY [  0.139s])
+10-03 03:14:28 fastboot window seen; head is: artifacts/fullerene-ane-rch-probe-hang.img
+10-03 03:14:31 fired artifacts/fullerene-ane-rch-probe-hang.img (OKAY [  0.136s])
+10-03 03:17:25 fastboot window seen; head is: artifacts/fullerene-ane-scan-finder.img
+10-03 03:17:27 fired artifacts/fullerene-ane-scan-finder.img (OKAY [  0.023s])
+10-03 03:21:07 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 03:21:10 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 03:24:00 fastboot window seen; head is: artifacts/fullerene-ane-trace-reader.img
+10-03 03:25:00 window lost before the flash finished: < waiting for any device >
+10-03 03:26:56 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 03:26:59 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 03:29:55 fastboot window seen; head is: artifacts/fullerene-ane-usb-l2.img
+10-03 03:29:57 fired artifacts/fullerene-ane-usb-l2.img (OKAY [  0.023s])
+10-03 06:53:06 fastboot seen but the night is over (hour 06) - not firing
+10-03 06:54:03 armed: following the kernel log; firing into any fastboot window
+10-03 06:56:40 fastboot window seen; head is: artifacts/fullerene-ane-key-probe.img
+10-03 06:56:42 fired artifacts/fullerene-ane-key-probe.img (OKAY [  0.023s])
+10-03 06:59:35 fastboot window seen; head is: artifacts/fullerene-ane-stepmarks2-stock.img
+10-03 06:59:38 fired artifacts/fullerene-ane-stepmarks2-stock.img (OKAY [  0.139s])
+10-03 06:59:42 fastboot window seen; head is: artifacts/fullerene-ane-trace-reader.img
+10-03 06:59:45 fired artifacts/fullerene-ane-trace-reader.img (OKAY [  0.023s])
+10-03 07:02:38 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 07:02:40 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 07:05:39 fastboot window seen; head is: artifacts/fullerene-ane-key-probe.img
+10-03 07:05:41 fired artifacts/fullerene-ane-key-probe.img (OKAY [  0.023s])
+10-03 07:05:45 fastboot window seen; head is: artifacts/fullerene-ane-stepmarks2-stock.img
+10-03 07:05:48 fired artifacts/fullerene-ane-stepmarks2-stock.img (OKAY [  0.139s])
+10-03 07:08:40 fastboot window seen; head is: artifacts/fullerene-ane-trace-reader.img
+10-03 07:08:42 fired artifacts/fullerene-ane-trace-reader.img (OKAY [  0.023s])
+10-03 09:05:04 fastboot window seen; head is: artifacts/fullerene-ane-paint-probe.img
+10-03 09:05:06 fired artifacts/fullerene-ane-paint-probe.img (OKAY [  0.023s])
+10-03 09:11:33 armed: following the kernel log; firing into any fastboot window
+10-03 09:12:14 armed: following the kernel log; firing into any fastboot window
+10-03 09:22:28 fastboot window seen; head is: RESTORE
+10-03 09:22:32 restored stock kernel (OKAY [  0.284s]) - phone heads for Android
+10-03 10:13:18 fastboot window seen; head is: artifacts/fullerene-ane-key-probe.img
+10-03 10:13:20 fired artifacts/fullerene-ane-key-probe.img (OKAY [  0.023s])
+10-03 10:20:30 fastboot window seen; head is: artifacts/fullerene-ane-pmsg-dump.img
+10-03 10:20:32 fired artifacts/fullerene-ane-pmsg-dump.img (OKAY [  0.023s])
+10-03 10:23:41 fastboot window seen; head is: RESTORE
+10-03 10:23:44 restored stock kernel (OKAY [  0.291s]) - phone heads for Android

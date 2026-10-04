@@ -1,0 +1,60 @@
+== before
+hisuite,mtp,mass_storage,adb
+== ensure the frozen exploit is on the device
+  md5 ok (f42b6fad4f1aa3a612494ce592b359b2)
+== reboot for a clean heap and let the system settle (the winning recipe)
+  system is 628s old - rebooting for a clean heap
+  letting the system settle (75s)
+== start the root shell (fifo kept open)
+>>> exploit did not reach root this boot. tail:
+[+] capabilities are overwritten !
+[+] SECCOMP is already disabled !
+[+] Kaslr offset is: d6ac30000
+[+] @avc_cache=ffffff8d74ec4c40
+[+] SID=754
+libsepol.policydb_index_others: security:  1 users, 4 roles, 2209 types, 0 bools
+libsepol.policydb_index_others: security: 1 sens, 1024 cats
+libsepol.policydb_index_others: security:  91 classes, 25985 rules, 0 cond rules
+== before
+hisuite,mtp,mass_storage,adb
+== ensure the frozen exploit is on the device
+  md5 ok (f42b6fad4f1aa3a612494ce592b359b2)
+== reboot for a clean heap and let the system settle (the winning recipe)
+  system is 284s old - rebooting for a clean heap
+  letting the system settle (75s)
+== start the root shell (fifo kept open)
+>>> exploit did not reach root this boot. tail:
+[+] capabilities are overwritten !
+[+] SECCOMP is already disabled !
+[+] Kaslr offset is: 8f8e30000
+[+] @avc_cache=ffffff89030c4c40
+[+] SID=876
+libsepol.policydb_index_others: security:  1 users, 4 roles, 2209 types, 0 bools
+libsepol.policydb_index_others: security: 1 sens, 1024 cats
+libsepol.policydb_index_others: security:  91 classes, 25985 rules, 0 cond rules
+== before
+hisuite,mtp,mass_storage,adb
+== ensure the frozen exploit is on the device
+  md5 ok (f42b6fad4f1aa3a612494ce592b359b2)
+== reboot for a clean heap and let the system settle (the winning recipe)
+  system is 530s old - rebooting for a clean heap
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+    uptime ?s: still the old boot or a slow boot, waiting
+== before
+hisuite,mtp,mass_storage,adb
+== ensure the frozen exploit is on the device
+  md5 ok (f42b6fad4f1aa3a612494ce592b359b2)
+== reboot for a clean heap and let the system settle (the winning recipe)
+  system is 14089s old - rebooting for a clean heap
+  waiting for a reachable, settled boot (up to 12 min)
+  no reachable boot after 12 min - aborting this attempt (no poll waste)

@@ -1,0 +1,6 @@
+10-03 02:07:29 armed: waiting for an adb window (up to 6h)
+10-03 02:07:57 armed: waiting for an adb window (up to 6h)
+10-03 02:08:45 armed: waiting for an adb window (fast poll - the runner claims windows too; a 1s setprop rides along with its reboot)
+10-03 02:55:30 before: hisuite,mtp,mass_storage,adb|hisuite,mtp,mass_storage,adb|cmd: Can't find service: settings|
+10-03 02:55:30 setprop result: setprop: failed to set property 'persist.sys.usb.config' to 'mtp,adb'|
+10-03 02:55:30 VERDICT: shell cannot set the property (value did not come back) - the exploit route stays the only one

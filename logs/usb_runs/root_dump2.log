@@ -1,0 +1,6 @@
+09:27:17 boot state: 1 uptime=273s
+09:27:17 ensuring the frozen exploit is on the device (md5 f42b6fad4f1aa3a612494ce592b359b2)
+09:27:17 md5 ok
+09:27:17 settle 60s (this boot is already ~5 min old and lightly used)
+09:28:17 starting the root shell (fifo kept open)
+09:43:25 >>> exploit did not reach root this boot. tail:

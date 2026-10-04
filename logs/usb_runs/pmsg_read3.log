@@ -1,0 +1,13 @@
+12:35:18 ===== attempt 1 =====
+12:35:18 no adb: waiting up to 3 h for the phone (a physical press revives a hung boot)
+12:44:18   ...still no adb (0 min in)
+12:54:18   ...still no adb (0 min in)
+13:02:18 adb is back
+13:02:18 waiting for a settled boot (up to 30 min; post-failure boots can hang)
+13:02:18 settled at 891s uptime; settling 300s
+13:07:19 starting the root shell (poll 25 min)
+13:32:32 attempt 1: no root
+13:32:37 ===== attempt 2 =====
+13:32:37 rebooting for a clean heap
+13:33:21 waiting for a settled boot (up to 30 min; post-failure boots can hang)
+14:03:23 no settled boot - the boot hung; waiting up to 3 h for a physical press
