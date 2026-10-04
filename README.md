@@ -38,6 +38,14 @@ firmware/   stock firmware and reference data
   ane_dtb/              the device's own DTB (fdt.dtb) + flattened properties
   azrom/                full stock firmware archives (see Firmware below)
 logs/       automation logs (usb_runs/) and screen captures from real runs
+unlock/     the complete bootloader-unlock record (software-only unlock):
+  backup/         the ANE-LX2J_20261002 snapshot: nvme before/after/installed/
+                  current, frp_original, misc, oeminfo, the winning exploit
+                  binary (cve-2019-2215_working_0x134c838), MD5SUMS + README
+  cve-source/     the CVE-2019-2215 exploit source tree (Android.mk + libs)
+  device-dumps/   nvme/USRKEY images, oeminfo gamma, fastboot_LK.bin,
+                  dts_stock.bin, misc images, before_downgrade.txt
+  lk/             the LK disassembly (lk.asm, local-only)
 ```
 
 ## How a cycle runs (the working flow)

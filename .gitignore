@@ -13,3 +13,16 @@ artifacts/*.bin
 
 # Screen captures are evidence, not source.
 logs/screens/*.jpg
+
+# The bootloader-unlock archive keeps the *small* irreplaceable files
+# (nvme images, oeminfo gamma, frp, the exploit binary, the CVE source) but
+# the multi-megabyte derived dumps stay local - recover them from the device
+# or from the original backups directory.
+unlock/device-dumps/oeminfo.bin
+unlock/lk/lk.asm
+
+# False-positive: the stock kernel ELF contains random bytes that GitHub's
+# secret scanner flags as a Figma token. Keep it local (it is a derived
+# artifact, reconstructible with vmlinux-to-elf from firmware/).
+unlock/backup/kernel_8.0.0.110.elf
+unlock/backup/oeminfo.bin

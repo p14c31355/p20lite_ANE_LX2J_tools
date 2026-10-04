@@ -1,0 +1,14 @@
+64975ffc213ce034866906b944253533  README.txt
+f42b6fad4f1aa3a612494ce592b359b2  cve-2019-2215_working_0x134c838
+f53ca5747e29a72e5da8c8d0c68676c7  exploit_README.txt
+47c8ed6c502e6a9c66aea9655d26b40d  frp_original.bin
+bb70848c26bc1640ac6607e7bedcc209  kernel_8.0.0.110.elf
+7c713c4a15d290f5bf9f687786dcc7b1  liboeminfo_from_device.so
+95bdc64472ebcecd82d5065d68f724c7  misc.bin
+ddf84baa5da43f6c0e157866ff72f0dc  nvme_BEFORE_FBLOCK_write.bin
+d5bdd48bf8a465b523309a2285971e0f  nvme_CURRENT_unlocked.bin
+2665222dca01789b0c089a4b4f918cc5  nvme_after_FBLOCK0.bin
+d5bdd48bf8a465b523309a2285971e0f  nvme_unlocked_after_setup.bin
+ebf23f43f22dc19f001942d55055225e  nvme_usrkey_installed.bin
+83dba2758bb4bfdf96f36c5a34d5c5bf  oeminfo.bin
+0d995f0c8689859bbae46df9c5ea3974  unlock_verification.txt

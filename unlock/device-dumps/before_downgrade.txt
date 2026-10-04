@@ -1,0 +1,2 @@
+ANE-LX2J 9.1.0.132(C635E4R1P1)
+Linux version 4.9.148 (android@localhost) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Fri May 10 17:14:15 CST 2019

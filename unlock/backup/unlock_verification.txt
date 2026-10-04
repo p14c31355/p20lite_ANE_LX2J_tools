@@ -1,0 +1,6 @@
+2026年 10月  2日 金曜日 02:48:26 JST
+ro.boot.flash.locked      = 0
+ro.boot.verifiedbootstate = ORANGE
+ro.boot.veritymode        = enforcing
+device                    = ANE-LX2J 8.0.0.151(C635)
+kernel                    = Linux version 4.4.23+ (android@localhost) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Mar 1 00:11:18 CST 2019
