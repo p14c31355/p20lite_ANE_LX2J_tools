@@ -13,4 +13,6 @@ echo "############ platform by-name (if it exists)"
 timeout 30 adb shell 'ls -la /dev/block/platform/ 2>&1; echo ---; ls -la /dev/block/platform/*/by-name/ 2>&1 | head -40' 2>&1 | head -60
 echo
 echo "############ what hisi-nve expects (from its source)"
-grep -rnE "by-name|/dev/block|nvme" /home/placeless/dev/hisi-nve/src/nve/hisi_nve.c 2>/dev/null | head -20
+grep -rnE "by-name|/dev/block|nvme" "$(dirname "$0")/../cve-source" 2>/dev/null | head -20
+# hisi-nve ソースは upstream (github.com/R0rt1z2/hisi-nve) 参照:
+#   nvme = /dev/block/bootdevice/by-name/nvme を直接 open する

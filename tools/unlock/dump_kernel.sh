@@ -9,7 +9,7 @@
 # only those two constants in the pristine binary - which keeps the code layout
 # (and therefore the race timing) exactly as it is now, when the race wins.
 set -u
-cd /home/placeless/dev/p20lite-cve
+cd $(dirname "$0")/../unlock/cve-source
 NDK=$(ls -d ~/Android/Sdk/ndk/*/ 2>/dev/null | head -1)
 IN=/tmp/root.in
 OUT=/tmp/root.out
@@ -18,7 +18,7 @@ echo "############ 1. rebuild the pristine exploit at DELAY=25 (the proven winne
 git checkout -- exploit/cve_2019_2215.c exploit/include/kernel_specific.h
 python3 - <<'PY'
 import re
-p='/home/placeless/dev/p20lite-cve/exploit/include/cve_2019_2215.h'
+p='$(dirname "$0")/../unlock/cve-source/exploit/include/cve_2019_2215.h'
 s=open(p).read()
 open(p,'w').write(re.sub(r'#define DELAY \d+u', '#define DELAY 25u', s))
 PY

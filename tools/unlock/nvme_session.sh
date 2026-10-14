@@ -11,7 +11,7 @@ IN=/tmp/root.in
 OUT=/tmp/root.out
 
 echo "############ 1. push the nvme tool (no root needed)"
-timeout 60 adb push /home/placeless/dev/hisi-nve/libs/arm64-v8a/hisi-nve "$NVME_TOOL" 2>&1 | tail -1
+timeout 60 adb push $(dirname "$0")/../unlock/tools/hisi-nve "$NVME_TOOL" 2>&1 | tail -1
 timeout 30 adb shell "chmod 755 $NVME_TOOL" 2>&1
 
 echo

@@ -13,7 +13,7 @@ Does nothing if already applied.
 import re
 import sys
 
-SRC = "/home/placeless/dev/p20lite-cve/exploit/cve_2019_2215.c"
+SRC = "$(dirname "$0")/../../unlock/cve-source/exploit/cve_2019_2215.c"
 
 src = open(SRC).read()
 

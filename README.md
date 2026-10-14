@@ -1,149 +1,161 @@
 # p20lite_ANE_LX2J_tools
 
-Tools, findings, firmware and screen-console readback for the **Huawei P20 Lite
-(ANE-LX2J, Kirin 659 / hi6250, Japan, cust C635)** bring-up of a from-scratch
-aarch64 kernel (the fullerene / FullereneOS project).
+**Huawei P20 Lite (ANE-LX2J, Kirin 659 / hi6250, Japan cust C635)** の
+ブートローダー解除 (BLU) と from-scratch aarch64 カーネル (FullereneOS) 起動のための
+ツールキット。記載の内容はすべて実機での実験により得た測定に基づく。
+端末は**ソフトウェアのみ** (分解なし・テストポイントなし・有償ツールなし) で解除した。
 
-Everything here was produced by running real experiments on a real device; the
-device was unlocked entirely in software (no test-point, no disassembly).
+## このリポジトリでできること
 
-## Start here
+1. **ブートローダー解除 (BLU)** — 前提条件が揃った端末に対し、同手順を再実行できる。
+   → [`docs/UNLOCK_RUNBOOK.ja.md`](docs/UNLOCK_RUNBOOK.ja.md) から始めること。
+2. **解除済み端末への実験カーネルの投入と結果の読み取り** —
+   fastboot 窓の捕捉、flash、画面プローブによる 1 写真読み取りまでの自動サイクル。
+3. **ストック復帰** — `firmware/kernel_stock.bin` を flash すれば常に Android に戻る。
 
-- **`docs/ANE_BOOT_CONTRACT.md`** - the boot contract: every measured fact
-  about this device, stage by stage. Read this first.
-- **`docs/V21_STATE.md`** - the running state log (newest entries at the end).
-- **`docs/VERIFICATION_LOOP.md`** - the measurement rules used throughout
-  (measure on the real device, verify with primary sources).
+## Start here (用途別)
+
+| 目的 | 読むもの |
+|---|---|
+| **BLU を実行する** | [`docs/UNLOCK_RUNBOOK.ja.md`](docs/UNLOCK_RUNBOOK.ja.md) (手順・検証・失敗時対処の全部) |
+| BLU の背景と実録 | [`docs/ANE_LX2J_BOOTLOADER_UNLOCK_20261002.ja.md`](docs/ANE_LX2J_BOOTLOADER_UNLOCK_20261002.ja.md) |
+| 実験カーネルを焼く | [`docs/ANE_BOOT_CONTRACT.md`](docs/ANE_BOOT_CONTRACT.md) (ブート契約) + 下記「サイクル」 |
+| Fullerene 移植の現状 | [`docs/ANE_LX2J_PORT.ja.md`](docs/ANE_LX2J_PORT.ja.md) |
+| 過去の実験記録を引く | [`docs/journal/INDEX.md`](docs/journal/INDEX.md) (台帳の索引) |
+
+## 解除 (BLU) の骨子
+
+5 つの関門を順に通過する。詳細は RUNBOOK を参照:
+
+1. **ダウングレード** EMUI 9.1 → 8.0 (Windows + HiSuite。dload では越えられない — 実測)
+2. **root** CVE-2019-2215 ( SELinux 迂回には定数差分 `avc_cache - fair_sched_class = 0x134c838` が要る。実績ビルドを `unlock/backup/` に同梱)
+3. **FBLOCK クリア** (`hisi-nve w FBLOCK 0`、`unlock/tools/hisi-nve` 同梱)
+4. **OEM unlock トグル** (Wi-Fi 接続で待つと押せるようになる)
+5. **USRKEY 書き込み** (`hisi-nve w USRKEY` は無効 → nvme イメージ直接編集。`tools/unlock/write_usrkey_direct.sh`)
+6. `fastboot oem unlock <16桁コード>`
+
+主要な依存物はすべてリポジトリ内に揃えてある
+(exploit バイナリ・hisi-nve バイナリ・cve ソース・nvme 記録イメージ)。
 
 ## Directory layout
 
 ```
-docs/       contracts, state log, plans (ANE_BOOT_CONTRACT.md is the key read)
-  tmp-notes/    raw working notes, kept for searchability
-tools/      everything that drives or processes the phone
-  flows/      end-to-end cycles you actually run: ane_arm_and_loop.sh,
-              ane_logloop.sh, ane_probe_once.sh, ane_window_flash.sh ...
-  probes/     the on-device .S probes that render text to the screen,
-              with their .sh assemblers (ane_log_probe.S/.sh is the current one)
-  builders/   boot-image construction: mkane_stock_embed.py, mkane_bootimg.py
-  diag/       device-state readers (status, identify, pmsg readback, USB monitors)
-  analyze/    host-side processing (DT analyzers, package checks, extractors)
-  unlock/     the bootloader-unlock era scripts (kept for reference/repro)
-  verify/     host verifiers + QEMU proofs (run these before flashing)
-artifacts/  bootable images ready to `fastboot flash kernel`
-  fullerene-ane-log-probe-stock.img   the current screen reader
-  fullerene-ane-*-stock.img           every experimental kernel ever flashed
-firmware/   stock firmware and reference data
-  kernel_stock.bin      25 MB extracted stock kernel (restores Android)
-  ane_dtb/              the device's own DTB (fdt.dtb) + flattened properties
-  azrom/                full stock firmware archives (see Firmware below)
-logs/       automation logs, forensics readback and run screenshots
-  usb_runs/     usb_runs logs (klog captures)
-  forensics/    snap_*.txt readback of device state
-  misc/         catch_lk / dump / pstore logs
-  night/        overnight loop journals (rings_night)
-unlock/     the complete bootloader-unlock record (software-only unlock):
-  backup/         the ANE-LX2J_20261002 snapshot: nvme before/after/installed/
-                  current, frp_original, misc, oeminfo, the winning exploit
-                  binary (cve-2019-2215_working_0x134c838), MD5SUMS + README
-  cve-source/     the CVE-2019-2215 exploit source tree (Android.mk + libs)
-  working-notes/  the winning-configuration notes from the unlock night
-  device-dumps/   nvme/USRKEY images, oeminfo gamma, fastboot_LK.bin,
-                  dts_stock.bin, misc images, before_downgrade.txt
-  lk/             the LK disassembly (lk.asm, local-only)
-  lk_asm/         the fuller LK disassembly set (local-only)
-  pz_poc.c        the original Project-Zero-derived PoC (kept for provenance)
-refs/       reference sources read from the device era (hisifb display stack,
-            HwProjectMenu.apk)
-tools/usbtool/  PCUI/AT USB probing scripts (usbtool-*.py)
-tools/apktool/  apktool.jar (local convenience copy)
+docs/       契約書・手順書 (BLU は UNLOCK_RUNBOOK.ja.md、起動は ANE_BOOT_CONTRACT.md)
+  journal/      実験台帳 (夜間記録・時系列ログ)。INDEX.md が索引
+tools/      端末を駆動・解析するスクリプト (役割別のサブディレクトリ)
+  flows/      実行するサイクル: ane_logloop.sh, ane_autopilot.sh, ane_window_flash.sh,
+              V21_LOOP.sh, ane_catcher.sh, flash_cycle.sh ...
+  probes/     画面描画 .S プローブとアセンブラ (ane_log_probe が現行の読み取り器)
+  builders/   boot イメージ構築: mkane_stock_embed.py, mkane_bootimg.py
+  diag/       端末状態の読み取り (USB 監視, fastboot 生操作, oem log 収集)
+  analyze/    ホスト側解析 (DT, パッケージ, ダンプデコード)
+  unlock/     BLU 時代のスクリプト (段階別に整理済み)
+  verify/     ホスト検証器 + QEMU 証明 (焼く前に実行する)
+  usbtool/    PCUI/AT USB プローブ (usbtool-*.py)
+  apktool/    apktool.jar (利便性のローカルコピー)
+  archive_experiments/   歴代の版数付き実験スクリプト (記録保持用、実行はしない)
+artifacts/  fastboot flash kernel で焼けるイメージ (gitignore 適用でローカルのみ)
+  fullerene-ane-log-probe-stock.img   現行の画面読み取り器 (git 追跡)
+firmware/   ストックファームウェアと基準データ
+  kernel_stock.bin      25 MB 抽出済みストックカーネル (復帰用)
+  ane_dtb/              端末固有の DTB + フラット化プロパティ
+  azrom/                ストックファームウェアアーカイブ (13 GB, gitignore)
+  ane_pstore_readback/  pstore 読み出しの記録
+logs/       自動化ログと実測の証跡
+  usb_runs/     USB 再列挙ログ
+  forensics/    snap_* 端末状態スナップショット
+  misc/         catch_lk / ダンプ / 夜間ログ
+  night/        夜間ループのリングログ
+unlock/     ブートローダー解除の完全記録 (ソフトのみ解除):
+  backup/         ANE-LX2J_20261002 スナップショット: nvme before/after/installed,
+                  frp_original, misc, oeminfo, 実績 exploit バイナリ, MD5SUMS
+  tools/          hisi-nve バイナリ (aarch64/armv7)
+  cve-source/     CVE-2019-2215 ソース (0x134c838 定数済み)
+  working-notes/  勝利設定のメモ
+  device-dumps/   nvme/USRKEY, oeminfo gamma, fastboot_LK.bin, dts_stock.bin
+  lk/ lk_asm/     LK 逆アセンブル (lk_asm はローカルのみ)
+  pz_poc.c        由来保持のための PoC 原本
+refs/       参照ソース (hisifb ディスプレイスタック, HwProjectMenu.apk)
 ```
 
-## How a cycle runs (the working flow)
+## 実験サイクルの動かし方
 
-1. Get to a fastboot window:
-   - cold-off boot that fails lands in a fastboot window after ~2.5-7 minutes
-     (exact waits and the LK failure-streak behaviour are in
-     `docs/ANE_BOOT_CONTRACT.md`);
-   - or `adb reboot bootloader` from Android (no combo needed).
-2. Flash the experiment: `fastboot -s <serial> flash kernel artifacts/<img>`.
-3. The kernel writes its step-mark record, then parks (early-park vectors stop
-   the device falling into eRecovery).
-4. After the park a fastboot window opens again; flash the **log probe**
-   (`artifacts/fullerene-ane-log-probe-stock.img`) and reboot. The probe
-   renders the record + the kernel's durable log as cyan dot-matrix text on
-   the screen - readable in one phone photograph.
-5. Restore stock: `fastboot flash kernel firmware/kernel_stock.bin` so the
-   next boot's failure streak resets and Android comes back.
+1. fastboot 窓を確保する: Android から `adb reboot bootloader` (コンボ不要)、
+   またはコールドオフ失敗ブート後 ~2.5-7 分の窓
+   (LK 失敗カウンタの挙動は `docs/ANE_BOOT_CONTRACT.md` §12)。
+2. 実験を焼く: `fastboot -s <serial> flash kernel artifacts/<img>`。
+3. カーネルはステップマークを書いてパークする (早期パークベクタが
+   eRecovery 落ちを防ぐ)。
+4. パーク後の窓で**ログプローブ** (`artifacts/fullerene-ane-log-probe-stock.img`)
+   を焼いて再起動。プローブはマーク記録 + カーネルログを画面に描画し、
+   スマホ写真 1 枚で読める。
+5. ストック復帰: `fastboot flash kernel firmware/kernel_stock.bin`。
+   次回ブートの失敗カウンタをリセットし Android に戻る。
 
-`tools/flows/ane_logloop.sh` chains all of this automatically
-(`bash tools/flows/ane_logloop.sh artifacts/<img>`); `tools/flows/ane_probe_once.sh`
-re-enters via adb when Android is already up.
+`tools/flows/ane_logloop.sh` がこの全体を自動で繋ぐ。
+注意: 多くのフローは実機シリアル `SCV7N18927000473` を `-s` で固定している前提。
+自分の端末のシリアルに読み替えること。また一部のスクリプトは
+`~/dev/p20-root` 作業ツリー前提 (`cd` する) のまま残している — p20-root は
+巨大バイナリの現役ワークスペースであり、本リポジトリの gitignore が意図的に
+外しているファイル (ファームウェアアーカイブ等) の唯一のローカルコピーがある。
 
-Note: most flows assume the device serial `SCV7N18927000473` is pinned with
-`fastboot -s`; adjust for your own unit.
+## 画面コンソール (なぜ写真で読めるのか)
 
-## The screen console (why a photograph works)
+- ログプローブは 8x8 グリフ (3x スケール) を 14 行 x 45 列に描画する:
+  カーネルログ末尾 540 文字 + 90 文字のマーク記録。
+- カーネルは UART の全バイトを RAM tee にミラーし、MMU 起立後に
+  ramoops pmsg ゾーンへフラッシュ、プローブはそこから読む。
+- 表示予算は LK の解除告知領域の前 ~500 スキャンライン (12-14 行)。
+- フォント注記: 同梱フォント (public-domain VGA 8x8) は行を LSB-first で
+  格納する。レンダラが MSB-first に走査するため、生成時にビット反転が要る
+  (逆にすると全グリフが鏡像になる — 実測で踏んだ落とし穴)。
 
-The readout channel is the phone display itself:
+## 主な発見 (詳細は docs/ANE_BOOT_CONTRACT.md)
 
-- The log probe renders 14 rows x 45 columns of 8x8 glyphs (3x scale): the
-  last 540 chars of the kernel log plus the 90-char mark record.
-- The kernel mirrors every UART byte into a RAM tee; after the MMU is up the
-  tee is flushed into the ramoops pmsg zone, and the probe reads it from there.
-- The visible budget is ~500 scanlines (approximately 12-14 text rows) before
-  the LK's unlock notice area; the renderer is sized to fit.
-- Font note: the embedded font (public-domain VGA 8x8, Marcel Sondaar / IBM)
-  stores rows LSB-first; the renderer scans MSB-first, so the table is
-  bit-reversed at generation time or all glyphs come out mirrored.
-
-## Key findings so far (see docs/ANE_BOOT_CONTRACT.md for the full record)
-
-- The boot proceeds through step marks; the current frontier is the
-  **FDT reserved-memory walk** (`find_reserved_memory_regions`) in the
-  physical frame allocator (marks l/m/n in the current kernel).
-- Reaching the MMU is *flaky* on this device: identical builds sometimes stop
-  at mark 9 and sometimes run to mark k. Re-run before concluding.
-- The LK keeps a failure-streak counter: the first cold-boot failure opens a
-  fastboot window, an immediate second one falls through to eRecovery. A
-  successful stock boot resets the streak.
-- Reading the screen: any bright phone camera works; a 1920x1080 webcam cannot
-  resolve the glyph pitch, and a front-camera photo is fine (the earlier
-  "mirrored" readings were the font bug above, not the camera).
+- 起動はステップマークで追跡できる。mark `a` (MMU 起立 + 初回コンソール書込み) は
+  MMIO 属性テーブルの per-platform 化で突破済み。
+- MMU 到達は**確率的**に失敗することがある: 同一ビルドが mark 9 で止まったり
+  mark k まで走ったりする。結論の前に 2-3 回再実行すること。
+- LK は失敗連続カウンタを持つ: 最初のコールド失敗で fastboot 窓、直後の 2 度目で
+  eRecovery 直行。ストック起動の成功でカウンタはリセットされる。
+- `fastboot boot` は解除後も拒否される (実測)。RAM ブート不可 = 全カーネルテストは
+  flash → 起動 → (停止) → ボタン復帰のサイクルになる。
+- 読み取りはスマホの接写写真 1 枚。webcam はグリフ間隔を解像できない
+  (解像度を上げても不可 — 実測)。
 
 ## Firmware
 
-`firmware/azrom/` holds stock firmware archives for the ANE family
-(Android 8.0 / EMUI 8.0): the KDDI (Japan) build for this exact model, the
-C719 open-market builds, and one ANE-TL00 CN build. `firmware/kernel_stock.bin`
-is the extracted (and verified by sha256) stock kernel for flashing back.
+`firmware/azrom/` に ANE ファミリーのストックファームウェア
+(Android 8.0 / EMUI 8.0: 本機の KDDI ビルド、C719 オープン市場ビルド、ANE-TL00 CN)。
+`firmware/kernel_stock.bin` は抽出・sha256 検証済みのストックカーネル。
 
-The same archives are mirrored on archive.org (too large for a git remote):
+同一アーカイブは archive.org にもミラーしてある (git リモートには大きすぎる):
 
 - Item: https://archive.org/details/p20lite-ane-lx2j-stock-firmware
-- Download all of it with:
+- 全取得:
   ```
   ia download p20lite-ane-lx2j-stock-firmware
   ```
-  (or use the "Download Options" on the item page; the `ia` CLI comes from
-  `pip install internetarchive` or `uv tool install internetarchive`)
+  (`ia` CLI は `pip install internetarchive` または `uv tool install internetarchive`)
 
 ## Safety
 
-- Flashing is limited to the `kernel` partition; the stock kernel is always
-  available in `firmware/kernel_stock.bin` and restores the device.
-- The tools never touch recovery partitions, configfs, or user data.
+- flash 対象は `kernel` パーティションに限る。ストックカーネルは常に
+  `firmware/kernel_stock.bin` にあり、復帰できる。
+- ツールは recovery パーティション・configfs・ユーザーデータに触れない。
+- BLU の nvme 操作はスクリプトが書き込み前に必ずバックアップを取る。
+  バックアップは「元に戻す」唯一の手段であり、削除しないこと。
 
 ## Verification expectations
 
-Before flashing anything new, run the host-side checks:
+新しいものを焼く前にホスト側チェックを実行する:
 
 ```
-python3 tools/verify/verify_ane_early_vectors.py     # early-park vectors
-python3 tools/verify/verify_base_loads.py            # base-load audit
+python3 tools/verify/verify_ane_early_vectors.py     # 早期パークベクタ
+python3 tools/verify/verify_base_loads.py            # ベースロード監査
 bash    tools/flows/ane_logloop.sh --help 2>/dev/null || true
 ```
 
-QEMU proofs for the probe assemblers live beside them
-(`tools/probes/ane_log_probe.sh` runs a full QEMU render check before it will
-package an image).
+プローブアセンブラの QEMU 証明はその横にある
+(`tools/probes/ane_log_probe.sh` は QEMU 描画チェックが通らないと
+イメージをパッケージしない)。

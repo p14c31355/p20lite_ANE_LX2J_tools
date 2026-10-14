@@ -19,7 +19,7 @@ ARM64 encoding:
 import struct
 import sys
 
-SRC = "/home/placeless/dev/p20lite-cve/libs/arm64-v8a/cve-2019-2215"
+SRC = "$(dirname "$0")/../unlock/backup/cve-2019-2215_working_0x134c838"
 DST = "/tmp/cve_fixed2"
 
 MOVZ = 0xD2800000

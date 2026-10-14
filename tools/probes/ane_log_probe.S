@@ -146,33 +146,70 @@ _start:
     str  w10, [x26, #20]
     mov  w10, #12
     str  w10, [x26, #8]              /* size = 12 */
+    /* seed the private text block: magic + size + the same lead text */
+    movz x26, #((FTLX_BASE) >> 16), lsl #16
+    movk x26, #((FTLX_BASE) & 0xffff)
+    movz w10, #0x5446                /* "FT" */
+    movk w10, #0x584C, lsl #16       /* "LX" */
+    str  w10, [x26, #0]
+    movz w10, #0x4256                /* "VB" */
+    movk w10, #0x4443, lsl #16       /* "CD" */
+    str  w10, [x26, #12]
+    movz w10, #0x4645                /* "EF" */
+    movk w10, #0x4847, lsl #16       /* "GH" */
+    str  w10, [x26, #16]
+    movz w10, #0x4A49                /* "IJ" */
+    movk w10, #0x4C4B, lsl #16       /* "KL" */
+    str  w10, [x26, #20]
+    mov  w10, #12
+    str  w10, [x26, #4]              /* size = 12 */
 .endif
 
     /* ---- build the text string at TEXT_BUF ---- */
     movz x28, #((TEXT_BUF) >> 16), lsl #16
     movk x28, #((TEXT_BUF) & 0xffff)
 
-    /* ---- log tail: the durable text log lives in the pmsg zone's data
-     * area - 12 header bytes at PMSG_BASE (sig/start/size), then `size`
-     * bytes of text. Render the last 330 chars as ten 33-char rows. The
-     * glyph map blanks anything outside digits/A-F/V/R, so punctuation
-     * falls out and letters arrive pre-folded to upper case by the tee. */
+    /* ---- log tail: prefer the private FTLX block at FTLX_BASE
+     * ([magic][size][cap] then text at +12; the kernel resets it every boot
+     * and the Huawei-side boots never touch it - unlike the pmsg zone, whose
+     * header they zero, measured as ZH `sig ok / start 0 / size 0`). Fall
+     * back to the pmsg zone's start window when the magic is absent. The
+     * glyph map carries ASCII 0x20-0x5F, so punctuation renders and letters
+     * arrive pre-folded to upper case by the tee. */
+    movz x27, #((FTLX_BASE) >> 16), lsl #16
+    movk x27, #((FTLX_BASE) & 0xffff)
+    ldr  w26, [x27, #0]                /* magic */
+    movz w25, #0x5446
+    movk w25, #0x584C, lsl #16         /* "FTLX" */
+    cmp  w26, w25
+    b.ne 50f
+    ldr  w26, [x27, #4]                /* text length */
+    mov  w25, #450
+    cmp  w26, w25
+    b.lo 45f
+    sub  w26, w26, w25
+    b    46f
+45: mov  w26, #0
+46: add  x27, x27, w26, uxtw
+    add  x27, x27, #12                 /* first byte of the rendered tail */
+    b    47f
+50: /* pmsg fallback: [sig][start][size] + text at +12; size 0 -> the start */
     movz x27, #((PMSG_BASE) >> 16), lsl #16
     movk x27, #((PMSG_BASE) & 0xffff)
-    ldr  w26, [x27, #8]                /* stored text length */
-    mov  w25, #540
+    ldr  w26, [x27, #8]
+    mov  w25, #450
     cmp  w26, w25
-    b.lo 40f
+    b.lo 48f
     sub  w26, w26, w25
-    b    41f
-40: mov  w26, #0
-41: add  x27, x27, w26, uxtw
-    add  x27, x27, #12                 /* first byte of the rendered tail */
-    mov  w24, #540
-42: ldrb w21, [x27], #1
+    b    49f
+48: mov  w26, #0
+49: add  x27, x27, w26, uxtw
+    add  x27, x27, #12
+47: mov  w24, #450
+51: ldrb w21, [x27], #1
     strb w21, [x28], #1
     subs w24, w24, #1
-    b.ne 42b
+    b.ne 51b
 
 
 
@@ -214,6 +251,47 @@ _start:
     subs w23, w23, #1
     b.ne 21b
 
+    /* ZH row: "ZH " + [FTLX magic][FTLX size][PMSG size] in hex. One photo
+     * then shows both durable channels: the private block (magic FTLX and
+     * this boot's log length) and the pmsg zone's size field. */
+    mov  w21, #0x5A                    /* 'Z' */
+    strb w21, [x28], #1
+    mov  w21, #0x48                    /* 'H' */
+    strb w21, [x28], #1
+    mov  w21, #0x20
+    strb w21, [x28], #1
+    movz x27, #((FTLX_BASE) >> 16), lsl #16
+    movk x27, #((FTLX_BASE) & 0xffff)
+    mov  w24, #0
+60: ldrb w25, [x27, w24, uxtw]
+    lsr  w21, w25, #4
+    nib2asc
+    strb w21, [x28], #1
+    mov  w21, w25
+    nib2asc
+    strb w21, [x28], #1
+    add  w24, w24, #1
+    cmp  w24, #8
+    b.ne 60b
+    movz x27, #((PMSG_BASE) >> 16), lsl #16
+    movk x27, #((PMSG_BASE) & 0xffff)
+    mov  w24, #8
+62: ldrb w25, [x27, w24, uxtw]
+    lsr  w21, w25, #4
+    nib2asc
+    strb w21, [x28], #1
+    mov  w21, w25
+    nib2asc
+    strb w21, [x28], #1
+    add  w24, w24, #1
+    cmp  w24, #12
+    b.ne 62b
+    mov  w23, #18
+61: mov  w21, #0x20
+    strb w21, [x28], #1
+    subs w23, w23, #1
+    b.ne 61b
+
     /* ---- clear the bitmap to black (0x10E000 bytes) ---- */
     movz x9, #((BITMAP) >> 16), lsl #16
     movk x9, #((BITMAP) & 0xffff)
@@ -242,10 +320,11 @@ _start:
     cmp  w7, #0x3F
     b.ls 25f
     mov  w7, #0
-25: /* glyph cell top-left pixel (x = 16 + col*32, y = 16 + line*40) */
+25: /* glyph cell top-left pixel (x = 8 + col*24, y = TEXT_Y + line*30) */
     movz w8, #30                       /* line*30 */
     mul  w8, w4, w8
-    add  w8, w8, #8
+    movz w10, #((TEXT_Y) & 0xffff)
+    add  w8, w8, w10
     movz w9, #((BITMAP) >> 16), lsl #16
     movk w9, #((BITMAP) & 0xffff)
     mul  w8, w8, w13                   /* y*4320 */
@@ -293,7 +372,7 @@ _start:
     cmp  w5, #45
     b.ne 24b
     add  w4, w4, #1
-    cmp  w4, #14
+    cmp  w4, #13
     b.ne 23b
 
     /* ---- blit the bitmap to the candidates ----

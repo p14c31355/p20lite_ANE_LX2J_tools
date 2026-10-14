@@ -12,7 +12,7 @@ set -u
 FWH="${1:?usage: apply_constants_and_build.sh <firmware> [workdir]}"
 W="${2:-/tmp/apply_const}"
 HERE="/home/placeless/dev/p20-root"
-EXPL="/home/placeless/dev/p20lite-cve"
+EXPL="$(dirname "$0")/../../unlock/cve-source"
 NDK=$(ls -d ~/Android/Sdk/ndk/*/ 2>/dev/null | head -1)
 mkdir -p "$W"
 
@@ -32,7 +32,7 @@ git checkout -- exploit/ 2>/dev/null
 python3 - "$NEW_F" "$NEW_A" <<'PY'
 import re, sys
 f, a = sys.argv[1], sys.argv[2]
-h = "/home/placeless/dev/p20lite-cve/exploit/include/kernel_specific.h"
+h = "$(dirname "$0")/../../unlock/cve-source/exploit/include/kernel_specific.h"
 s = open(h).read()
 s2 = re.sub(r"#define FAIR_SCHED_CLASS\s+0x[0-9a-fA-F]+[uU][lL]",
             f"#define FAIR_SCHED_CLASS 0x{f}UL", s)
@@ -40,7 +40,7 @@ s2 = re.sub(r"#define AVC_CACHE\s+0x[0-9a-fA-F]+[uU][lL]",
             f"#define AVC_CACHE 0x{a}ul", s2)
 assert s2 != s, "no constant replaced"
 open(h, "w").write(s2)
-d = "/home/placeless/dev/p20lite-cve/exploit/include/cve_2019_2215.h"
+d = "$(dirname "$0")/../../unlock/cve-source/exploit/include/cve_2019_2215.h"
 t = open(d).read()
 t2 = re.sub(r"#define DELAY \d+u", "#define DELAY 25u", t)
 open(d, "w").write(t2)

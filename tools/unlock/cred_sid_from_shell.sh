@@ -9,7 +9,7 @@
 # Doing it out here matters: adding the same write inside the exploit costs the
 # race (measured - rebuilt variants lose, the pristine binary wins).
 set -u
-cd /home/placeless/dev/p20lite-cve
+cd $(dirname "$0")/../unlock/cve-source
 NDK=$(ls -d ~/Android/Sdk/ndk/*/ 2>/dev/null | head -1)
 CLANG="$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android28-clang"
 IN=/tmp/kset.in

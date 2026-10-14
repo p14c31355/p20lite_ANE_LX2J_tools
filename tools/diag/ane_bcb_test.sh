@@ -30,7 +30,7 @@ fi
 
 echo "== ensure the exploit is present"
 if ! timeout 10 adb shell 'ls /data/local/tmp/cve-2019-2215' 2>/dev/null | grep -q cve; then
-  timeout 60 adb push "$HOME/dev/p20lite-cve/exploit/cve-2019-2215" /data/local/tmp/ 2>&1 | tail -1
+  timeout 60 adb push "$HOME/dev/p20lite_ANE_LX2J_tools/unlock/cve-source/exploit/cve-2019-2215" /data/local/tmp/ 2>&1 | tail -1
 fi
 timeout 10 adb shell 'chmod 755 /data/local/tmp/cve-2019-2215'
 

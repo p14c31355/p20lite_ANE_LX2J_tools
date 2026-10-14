@@ -16,8 +16,8 @@ STAMP=$(date +%Y%m%d_%H%M%S)
 BACKUP=/sdcard/nvme_backup_$STAMP.bin
 
 echo "############ 1. push the tools"
-timeout 60 adb push /home/placeless/dev/hisi-nve/libs/arm64-v8a/hisi-nve /data/local/tmp/hisi-nve 2>&1 | tail -1
-timeout 60 adb push /home/placeless/dev/p20lite-cve/libs/arm64-v8a/cve-2019-2215 /data/local/tmp/cve-2019-2215 2>&1 | tail -1
+timeout 60 adb push $(dirname "$0")/../unlock/tools/hisi-nve /data/local/tmp/hisi-nve 2>&1 | tail -1
+timeout 60 adb push $(dirname "$0")/../unlock/backup/cve-2019-2215_working_0x134c838 /data/local/tmp/cve-2019-2215 2>&1 | tail -1
 timeout 30 adb shell 'chmod 755 /data/local/tmp/hisi-nve /data/local/tmp/cve-2019-2215'
 
 echo

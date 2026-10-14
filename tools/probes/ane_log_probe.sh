@@ -20,6 +20,8 @@ aarch64-linux-gnu-as \
   --defsym RCH_WCH0_BASE=0xE865A000 --defsym RCH_WCH1_BASE=0xE865C000 \
   --defsym MARKS_BASE=0x348DF000 \
   --defsym PMSG_BASE=0x348E0000 \
+  --defsym FTLX_BASE=0x348D0000 \
+  --defsym TEXT_Y=110 \
   --defsym USB_CORE=0xFF100000 --defsym USB_AHB=0xFF200000 \
   --defsym FALLBACK_BASE=0x31000000 \
   --defsym TEXT_BUF=0x1AE2000 --defsym BITMAP=0x1AE3000 \
@@ -42,6 +44,8 @@ aarch64-linux-gnu-as \
   --defsym RCH_WCH0_BASE=0x44088000 --defsym RCH_WCH1_BASE=0x44098000 \
   --defsym MARKS_BASE=0x45000000 \
   --defsym PMSG_BASE=0x45020000 \
+  --defsym FTLX_BASE=0x45030000 \
+  --defsym TEXT_Y=110 \
   --defsym USB_CORE=0x47000000 --defsym USB_AHB=0x47001000 \
   --defsym FALLBACK_BASE=0x43000000 \
   --defsym TEXT_BUF=0x46000000 --defsym BITMAP=0x46001000 \
@@ -111,25 +115,31 @@ def xp(addr, count):
     return bytes(int(t, 16) for t in re.findall(r"0x([0-9a-fA-F]{2})\b", (reply or {}).get("return", "")))
 qmp({"execute": "qmp_capabilities"})
 time.sleep(5)
-text = xp(0x46000000, 630)
-pix_on = xp(0x46001000 + 0x872C, 4)    # 'V' glyph at (row0,col0): cyan
-pix_off = xp(0x46001000 + 0x8738, 4)   # its top-left corner: black
-blit_on = xp(0x44100000 + 0x872C, 4)
-blit_off = xp(0x44100000 + 0x8738, 4)
-blit2_on = xp(0x44200000 + 0x872C, 4)
-blit3_on = xp(0x44300000 + 0x872C, 4)
-fallback_on = xp(0x43000000 + 0x872C, 4)
+text = xp(0x46000000, 585)
+# Pixel offsets include TEXT_Y=110: 0x7406C = 0x872C + 102 rows * 4320,
+# 0x74078 = 0x8738 + the same shift (the notch-clearing offset).
+pix_on = xp(0x46001000 + 0x7406C, 4)    # 'V' glyph at (row0,col0): cyan
+pix_off = xp(0x46001000 + 0x74078, 4)   # its top-left corner: black
+blit_on = xp(0x44100000 + 0x7406C, 4)
+blit_off = xp(0x44100000 + 0x74078, 4)
+blit2_on = xp(0x44200000 + 0x7406C, 4)
+blit3_on = xp(0x44300000 + 0x7406C, 4)
+fallback_on = xp(0x43000000 + 0x7406C, 4)
 seed = xp(0x45000000, 8)
 pmsg = xp(0x45020008, 16)
 qmp({"execute": "quit"})
 try: proc.wait(timeout=10)
 except subprocess.TimeoutExpired: proc.kill()
-# Expected text buffer: 792-log tail ("VBCDEFGHIJKL" + NUL fill, NUL -> blank
-# glyph at render time) followed by the two RC rows of the seeded record.
-tail = b"VBCDEFGHIJKL" + bytes(528)
+# Expected text buffer (v5, 13 rows): 450-char log tail from the seeded FTLX
+# block ("VBCDEFGHIJKL" + NUL fill), the two RC rows of the seeded record,
+# then ZH = [FTLX magic "FTLX"][FTLX size 12][PMSG size 12].
+tail = b"VBCDEFGHIJKL" + bytes(438)
 rec = bytes.fromhex("414e454d03000000") + b"123\x00" + bytes(13)
+zh = bytes.fromhex("46544c58") + bytes.fromhex("0c000000") + bytes.fromhex("0c000000")
 s = tail.decode("latin-1")
 s += "RC " + rec[0:12].hex().upper() + " " * 18 + rec[12:24].hex().upper() + " " * 21
+s += "ZH " + zh.hex().upper() + " " * 18
+assert len(s) == 585, len(s)
 expected = s.encode("latin-1")
 want = {"text string": (text, expected),
         "bitmap on-pixel": (pix_on, bytes.fromhex("00ffffff")),

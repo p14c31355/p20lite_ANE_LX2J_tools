@@ -1,7 +1,7 @@
 #!/bin/bash
 # Apply both source fixes idempotently, build, and report.
 set -u
-cd /home/placeless/dev/p20lite-cve
+cd $(dirname "$0")/../unlock/cve-source
 NDK=$(ls -d ~/Android/Sdk/ndk/*/ 2>/dev/null | head -1)
 
 echo "=== fix the sources (idempotent) ==="
