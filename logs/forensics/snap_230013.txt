@@ -1,0 +1,14 @@
+time: 2026-10-07 23:00:13
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             

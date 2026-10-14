@@ -1,0 +1,10 @@
+[1013 07:55:56] === night engine v24 start img=artifacts/fullerene-ane-v306-quietdetector.img cycles=4 ===
+[1013 07:55:56] LK window; flashing artifacts/fullerene-ane-v306-quietdetector.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 1263616).
+Sending 'kernel' (1234 KB)                         OKAY [  0.039s]
+Writing 'kernel'                                   OKAY [  0.028s]
+Finished. Total time: 0.132s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1013 07:55:56] flashed + rebooted
+[1013 07:56:08] === night engine v24 done ===

@@ -1,0 +1,38 @@
+[1007 12:51:01] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v186-stock.img cycles=99999 ===
+[1007 12:51:55] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v186-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.328s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.531s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 12:51:56] flashed + rebooted
+[1007 12:56:06] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v186-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.327s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.531s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 12:56:08] flashed + rebooted
+[1007 12:56:26] c144: usb event: 10月 07 12:56:24 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 110] Operation timed out
+[1007 13:00:56] c144: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+[1007 13:02:56] c144: ring xfer attempt 2 failed
+cnxn reply: False frames: 0 raw: 0
+[1007 13:03:18] c144: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 0
+[1007 13:03:49] c144: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 0
+[1007 13:04:20] c144: adb attempt 3 failed
+pull y=1046 rows=45 len=0x2f760
+readerr: [Errno 75] Overflow
+EIO - dancing once
+part failed at y= 1046 got 0
+[1007 13:05:53] c144: snap failed

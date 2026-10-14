@@ -1,0 +1,24 @@
+[1007 11:20:19] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v179-stock.img cycles=99999 ===
+[1007 11:20:30] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v179-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.323s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.531s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 11:20:33] flashed + rebooted
+[1007 11:20:51] c13: usb event: 10月 07 11:20:49 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+[1007 11:22:12] c13: ring xfer failed
+cnxn reply: False frames: 0 raw: 0
+[1007 11:22:34] c13: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 0
+[1007 11:23:05] c13: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 0
+[1007 11:23:36] c13: adb attempt 3 failed
+pull y=1046 rows=45 len=0x2f760
+OKAY len: 194400
+[1007 11:25:23] c13: snap failed
+[1007 11:29:02] c13: no LK yet; waiting next event

@@ -1,0 +1,27 @@
+[1007 04:42:40] === night engine v6 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v150-stock.img cycles=99999 ===
+[1007 04:43:12] c16: usb event: 10月 07 04:43:12 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 36 using xhci_hcd
+[1007 04:43:18] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v150-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.518s
+Rebooting                                          OKAY [  0.021s]
+Finished. Total time: 0.071s
+[1007 04:43:19] flashed + rebooted
+[1007 04:43:37] c24: usb event: 10月 07 04:43:35 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 37 using xhci_hcd
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 04:44:10] c24: adb log failed
+[1007 04:44:10] c24: crash via fastboot
+[1007 04:44:53] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v150-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.307s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.510s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 04:44:56] flashed + rebooted
+[1007 04:44:58] c25: usb event: 10月 07 04:44:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 38 using xhci_hcd
+[1007 04:45:23] c30: usb event: 10月 07 04:45:12 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 39 using xhci_hcd

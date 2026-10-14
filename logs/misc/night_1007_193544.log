@@ -1,0 +1,33 @@
+[1007 19:35:44] === night engine v24 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v218-stock.img cycles=99999 ===
+[1007 19:35:44] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v218-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.309s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.511s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.073s
+[1007 19:35:45] flashed + rebooted
+[1007 19:37:03] c36: usb event: 10月 07 19:37:02 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 31 using xhci_hcd
+== snapshot forensics/snap_193703
+time: 2026-10-07 19:37:03
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_193703.bin: No such file or directory
+[1007 19:37:04] c36: attach in flight; waiting for product
+[1007 19:39:42] c36: product arrived late: 10月 07 19:37:08 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0 raw: 2544
+[1007 19:39:53] c36: adb attempt 1 failed
+[1007 19:39:59] c36: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000

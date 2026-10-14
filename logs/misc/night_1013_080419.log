@@ -1,0 +1,106 @@
+[1013 08:04:19] === night engine v24 start img=artifacts/fullerene-ane-v306-quietdetector.img cycles=20 ===
+[1013 08:04:19] c1: usb event: 10月 13 08:04:18 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 23 using xhci_hcd
+== snapshot forensics/snap_080419
+time: 2026-10-13 08:04:19
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_080419.bin: No such file or directory
+[1013 08:04:19] c1: attach in flight; waiting for product
+[1013 08:04:23] c1: product arrived late: 10月 13 08:04:22 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+read errors: {'[Errno 16] Resource busy': 1}
+cnxn reply: False frames: 0 raw: 0
+[1013 08:05:01] c1: adb attempt 1 failed
+[1013 08:05:01] c1: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1013 08:06:01] c1: ring xfer failed
+0 records parsed; ledger updated (552 total)
+[1013 08:06:01] c1: skip snap (loader up)
+[1013 08:06:01] LK window; queued image already resident - rebooting only
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1013 08:06:03] c2: usb event: 10月 13 08:04:38 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 24 using xhci_hcd
+== snapshot forensics/snap_080603
+time: 2026-10-13 08:06:03
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_080603.bin: No such file or directory
+[1013 08:06:03] c2: loader attach; next
+[1013 08:06:29] c14: usb event: 10月 13 08:06:28 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 25 using xhci_hcd
+== snapshot forensics/snap_080629
+time: 2026-10-13 08:06:29
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_080629.bin: No such file or directory
+[1013 08:06:29] c14: attach in flight; waiting for product
+[1013 08:06:39] c14: product arrived late: 10月 13 08:06:36 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+read errors: {'[Errno 16] Resource busy': 1}
+cnxn reply: False frames: 0 raw: 0
+[1013 08:07:15] c14: adb attempt 1 failed
+[1013 08:07:15] c14: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1013 08:08:15] c14: ring xfer failed
+0 records parsed; ledger updated (552 total)
+[1013 08:08:15] c14: skip snap (loader up)
+[1013 08:08:15] LK window; queued image already resident - rebooting only
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1013 08:08:17] c15: usb event: 10月 13 08:06:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 28 using xhci_hcd
+== snapshot forensics/snap_080817
+time: 2026-10-13 08:08:17
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_080817.bin: No such file or directory
+[1013 08:08:17] c15: loader attach; next
+[1013 08:08:30] === night engine v24 done ===

@@ -1,0 +1,60 @@
+[1007 13:18:23] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v190-stock.img cycles=99999 ===
+[1007 13:19:14] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v190-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.314s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.515s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 13:19:16] flashed + rebooted
+[1007 13:19:44] c31: usb event: 10月 07 13:19:32 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+[1007 13:24:14] c31: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+[1007 13:26:14] c31: ring xfer attempt 2 failed
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: False frames: 0 raw: 496
+[1007 13:26:36] c31: adb attempt 1 failed
+[1007 13:26:41] c31: kernel gone after attempt 1
+[1007 13:26:46] c31: skip snap (loader up)
+[1007 13:26:46] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v190-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.315s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 13:26:47] flashed + rebooted
+[1007 13:36:54] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v190-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.331s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.539s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 13:36:57] flashed + rebooted
+[1007 13:37:15] c318: usb event: 10月 07 13:37:13 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+[1007 13:41:45] c318: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+[1007 13:43:45] c318: ring xfer attempt 2 failed
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 85}
+cnxn reply: False frames: 0 raw: 2544
+[1007 13:44:07] c318: adb attempt 1 failed
+[1007 13:44:12] c318: kernel gone after attempt 1
+[1007 13:44:17] c318: skip snap (loader up)
+[1007 13:44:17] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v190-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.314s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.514s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 13:44:18] flashed + rebooted
+[1007 13:44:35] c326: usb event: 10月 07 13:44:34 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot

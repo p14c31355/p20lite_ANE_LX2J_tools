@@ -1,0 +1,35 @@
+[1007 13:47:48] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v191-stock.img cycles=99999 ===
+[1007 13:49:28] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v191-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 13:49:29] flashed + rebooted
+[1007 13:49:48] c51: usb event: 10月 07 13:49:46 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 110] Operation timed out
+cfg1: [Errno 32] Pipe error
+[1007 13:54:18] c51: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+[1007 13:56:18] c51: ring xfer attempt 2 failed
+cnxn reply: False frames: 0 raw: 400
+[1007 13:56:22] c51: adb attempt 1 failed
+[1007 13:56:27] c51: kernel gone after attempt 1
+[1007 13:56:32] c51: skip snap (loader up)
+[1007 13:56:32] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v191-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.316s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.519s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 13:56:33] flashed + rebooted
+[1007 13:56:50] c59: usb event: 10月 07 13:56:50 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768

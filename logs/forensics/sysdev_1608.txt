@@ -1,0 +1,7 @@
+== bMaxPacketSize0: 64
+== bConfigurationValue: 2
+== bNumInterfaces:  0
+== bNumConfigurations: 1
+== manufacturer: ANE fastboot
+== product: Љ
+== serial: Fullerene

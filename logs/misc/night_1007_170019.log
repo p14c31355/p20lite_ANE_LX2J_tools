@@ -1,0 +1,129 @@
+[1007 17:00:19] === night engine v13 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v206-stock.img cycles=99999 ===
+[1007 17:02:40] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v206-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.318s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.520s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 17:02:41] flashed + rebooted
+[1007 17:04:05] c101: usb event: 10月 07 17:04:05 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+== snapshot forensics/snap_170405
+time: 2026-10-07 17:04:05
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_101.bin
+[1007 17:06:30] c101: ring 2049 bytes (attempt 1)
+[1007 17:06:30] c101: skip ring xfer (cnxn collection ok)
+121 records parsed; ledger updated (120 total)
+[1007 17:06:35] c101: skip snap (loader up)
+[1007 17:06:35] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v206-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.529s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 17:06:36] flashed + rebooted
+[1007 17:07:33] c126: usb event: 10月 07 17:07:27 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+== snapshot forensics/snap_170733
+time: 2026-10-07 17:07:33
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 2
+bNumInterfaces:       0
+manufacturer:        ANE fastboot
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0902 2000 01              .... ... ..
+[1007 17:07:33] c126: garbled product; skip sessions
+[1007 17:08:03] c140: usb event: 10月 07 17:08:02 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+== snapshot forensics/snap_170803
+time: 2026-10-07 17:08:03
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_140.bin
+[1007 17:10:26] c140: ring 2049 bytes (attempt 1)
+[1007 17:10:26] c140: skip ring xfer (cnxn collection ok)
+124 records parsed; ledger updated (120 total)
+[1007 17:10:32] c140: skip snap (loader up)
+[1007 17:10:32] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v206-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.318s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.518s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 17:10:33] flashed + rebooted
+[1007 17:12:27] c193: usb event: 10月 07 17:12:27 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+== snapshot forensics/snap_171227
+time: 2026-10-07 17:12:27
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 75] Overflow': 1, '[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: False frames: 0 raw: 1072
+[1007 17:14:52] c193: adb attempt 1 failed
+[1007 17:14:57] c193: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1007 17:15:57] c193: ring xfer failed
+133 records parsed; ledger updated (123 total)

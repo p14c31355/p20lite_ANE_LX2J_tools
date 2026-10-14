@@ -1,0 +1,13 @@
+[1014 08:36:03] === night engine v24 start img=artifacts/fullerene-ane-v331i-notch.img cycles=800 ===
+[1014 08:41:25] c150: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1014 08:41:55] c150: oem crash unavailable
+[1014 08:47:20] c300: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1014 08:47:50] c300: oem crash unavailable
+[1014 08:49:07] LK window; flashing artifacts/fullerene-ane-v331i-notch.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 1263616).
+Sending 'kernel' (1234 KB)                         OKAY [ 30.116s]
+Writing 'kernel'                                   FAILED (Status read failed (No such device))
+fastboot: error: Command failed

@@ -1,0 +1,109 @@
+[1014 00:22:37] === night engine v24 start img=artifacts/fullerene-ane-v331-recovery.img cycles=800 ===
+[1014 00:22:37] c1: usb event: 10月 13 22:42:49 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+== snapshot forensics/snap_002237
+time: 2026-10-14 00:22:37
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1014 00:22:37] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:23:28] kernel reboot-bootloader did not expose Fastboot2.0
+dance error: [Errno 32] Pipe error
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 100}
+cnxn reply: False frames: 0 raw: 0
+[1014 00:24:00] c1: adb attempt 1 failed
+dance error: [Errno 110] Operation timed out
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 100}
+cnxn reply: False frames: 0 raw: 0
+[1014 00:24:29] c1: adb attempt 2 failed
+dance error: [Errno 110] Operation timed out
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 100}
+cnxn reply: False frames: 0 raw: 0
+[1014 00:24:57] c1: adb attempt 3 failed
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+write: [Errno 5] Input/Output Error
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 32] Pipe error
+cfg1: [Errno 32] Pipe error
+write: [Errno 5] Input/Output Error
+readerr: [Errno 5] Input/Output Error
+[1014 00:26:03] c1: ring xfer failed
+0 records parsed; ledger updated (585 total)
+pull y=1046 rows=45 len=0x2f760
+write: [Errno 5] Input/Output Error
+part failed at y= 1046 got 0
+[1014 00:26:03] c1: snap failed
+[1014 00:27:34] c1: no LK yet; waiting next event
+[1014 00:30:13] c75: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:30:13] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:31:03] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:31:03] c75: forced reboot failed; continuing
+[1014 00:33:44] c150: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:33:44] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:34:34] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:34:34] c150: forced reboot failed; continuing
+[1014 00:37:14] c225: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:37:14] ANE fastboot present; reboot-bootloader (no combo)
+< waiting for SCV7N18927000473>
+[1014 00:38:05] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:38:05] c225: forced reboot failed; continuing
+[1014 00:40:45] c300: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:40:45] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:41:35] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:41:35] c300: forced reboot failed; continuing
+[1014 00:44:16] c375: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:44:16] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:45:06] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:45:06] c375: forced reboot failed; continuing
+[1014 00:47:47] c450: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:47:47] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:48:37] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:48:37] c450: forced reboot failed; continuing
+[1014 00:51:17] c525: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:51:17] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:52:08] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:52:08] c525: forced reboot failed; continuing
+[1014 00:54:49] c600: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:54:49] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:55:39] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:55:39] c600: forced reboot failed; continuing
+[1014 00:58:20] c675: stale ANE fastboot; forcing reboot-bootloader
+[1014 00:58:20] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 00:59:10] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 00:59:10] c675: forced reboot failed; continuing
+[1014 01:01:51] c750: stale ANE fastboot; forcing reboot-bootloader
+[1014 01:01:51] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 01:02:41] kernel reboot-bootloader did not expose Fastboot2.0
+[1014 01:02:41] c750: forced reboot failed; continuing
+[1014 01:04:30] === night engine v24 done ===

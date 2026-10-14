@@ -1,0 +1,1859 @@
+[1008 00:35:18] === night engine v24 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img cycles=99999 ===
+[1008 00:35:18] c1: usb event: 10月 08 00:34:36 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 120 using xhci_hcd
+== snapshot forensics/snap_003518
+time: 2026-10-08 00:35:18
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003518.bin: No such file or directory
+[1008 00:35:18] c1: loader attach; next
+[1008 00:35:27] c5: usb event: 10月 08 00:35:25 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 121 using xhci_hcd
+== snapshot forensics/snap_003527
+time: 2026-10-08 00:35:27
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003527.bin: No such file or directory
+[1008 00:35:27] c5: attach in flight; waiting for product
+[1008 00:35:36] c5: product arrived late: 10月 08 00:35:35 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+[1008 00:35:36] c5: unexpected product; skip
+[1008 00:35:36] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.324s]
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.530s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 00:35:38] flashed + rebooted
+[1008 00:36:07] c18: usb event: 10月 08 00:36:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 126 using xhci_hcd
+== snapshot forensics/snap_003607
+time: 2026-10-08 00:36:07
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003607.bin: No such file or directory
+[1008 00:36:07] c18: attach in flight; waiting for product
+[1008 00:36:17] c18: product arrived late: 10月 08 00:36:10 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_18.bin
+[1008 00:36:44] c18: ring 2049 bytes (attempt 1)
+[1008 00:36:44] c18: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 00:36:50] c18: skip snap (loader up)
+[1008 00:36:50] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.323s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 00:36:51] flashed + rebooted
+[1008 00:36:53] c19: usb event: 10月 08 00:36:28 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 5 using xhci_hcd
+== snapshot forensics/snap_003653
+time: 2026-10-08 00:36:53
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003653.bin: No such file or directory
+[1008 00:36:53] c19: loader attach; next
+[1008 00:37:21] c32: usb event: 10月 08 00:37:20 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 6 using xhci_hcd
+== snapshot forensics/snap_003721
+time: 2026-10-08 00:37:21
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003721.bin: No such file or directory
+[1008 00:37:21] c32: attach in flight; waiting for product
+[1008 00:37:30] c32: product arrived late: 10月 08 00:37:25 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_32.bin
+[1008 00:37:58] c32: ring 2049 bytes (attempt 1)
+[1008 00:37:58] c32: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 00:38:04] c32: skip snap (loader up)
+[1008 00:38:04] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.528s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 00:38:05] flashed + rebooted
+[1008 00:38:07] c33: usb event: 10月 08 00:37:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 9 using xhci_hcd
+== snapshot forensics/snap_003807
+time: 2026-10-08 00:38:07
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003807.bin: No such file or directory
+[1008 00:38:07] c33: loader attach; next
+[1008 00:38:35] c46: usb event: 10月 08 00:38:33 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 10 using xhci_hcd
+== snapshot forensics/snap_003835
+time: 2026-10-08 00:38:35
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003835.bin: No such file or directory
+[1008 00:38:35] c46: attach in flight; waiting for product
+[1008 00:38:44] c46: product arrived late: 10月 08 00:38:37 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_46.bin
+[1008 00:39:11] c46: ring 2049 bytes (attempt 1)
+[1008 00:39:11] c46: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 00:39:18] c46: skip snap (loader up)
+[1008 00:39:18] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.322s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.527s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 00:39:18] flashed + rebooted
+[1008 00:39:20] c47: usb event: 10月 08 00:38:56 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 13 using xhci_hcd
+== snapshot forensics/snap_003920
+time: 2026-10-08 00:39:20
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003920.bin: No such file or directory
+[1008 00:39:20] c47: loader attach; next
+[1008 00:39:46] c59: usb event: 10月 08 00:39:46 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 14 using xhci_hcd
+== snapshot forensics/snap_003946
+time: 2026-10-08 00:39:46
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_003946.bin: No such file or directory
+[1008 00:39:46] c59: attach in flight; waiting for product
+[1008 00:39:56] c59: product arrived late: 10月 08 00:39:50 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_59.bin
+[1008 00:40:23] c59: ring 2049 bytes (attempt 1)
+[1008 00:40:23] c59: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 00:40:29] c59: skip snap (loader up)
+[1008 00:40:29] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.319s]
+Writing 'kernel'                                   OKAY [  0.140s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 00:40:30] flashed + rebooted
+[1008 00:40:32] c60: usb event: 10月 08 00:40:07 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 17 using xhci_hcd
+== snapshot forensics/snap_004032
+time: 2026-10-08 00:40:32
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_004032.bin: No such file or directory
+[1008 00:40:32] c60: loader attach; next
+[1008 00:41:00] c73: usb event: 10月 08 00:40:58 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 18 using xhci_hcd
+== snapshot forensics/snap_004100
+time: 2026-10-08 00:41:00
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_004100.bin: No such file or directory
+[1008 00:41:00] c73: attach in flight; waiting for product
+[1008 00:41:09] c73: product arrived late: 10月 08 00:41:02 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 00:41:09] c73: garbled product; skip sessions
+[1008 00:41:09] c74: usb event: 10月 08 00:41:01 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 19 using xhci_hcd
+== snapshot forensics/snap_004109
+time: 2026-10-08 00:41:09
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        ANE fastboot
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1008 00:41:09] c74: garbled product; skip sessions
+[1008 00:46:27] c224: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 00:46:57] c224: oem crash unavailable
+[1008 00:52:17] c374: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 00:52:47] c374: oem crash unavailable
+[1008 00:59:33] c524: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:00:03] c524: oem crash unavailable
+[1008 01:03:22] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.344s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.546s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:03:25] flashed + rebooted
+[1008 01:03:54] c608: usb event: 10月 08 01:03:53 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 21 using xhci_hcd
+== snapshot forensics/snap_010354
+time: 2026-10-08 01:03:54
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010354.bin: No such file or directory
+[1008 01:03:54] c608: attach in flight; waiting for product
+[1008 01:04:03] c608: product arrived late: 10月 08 01:03:57 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_608.bin
+[1008 01:04:31] c608: ring 2049 bytes (attempt 1)
+[1008 01:04:31] c608: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:04:37] c608: skip snap (loader up)
+[1008 01:04:37] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.334s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.538s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 01:04:37] flashed + rebooted
+[1008 01:04:39] c609: usb event: 10月 08 01:04:15 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 23 using xhci_hcd
+== snapshot forensics/snap_010439
+time: 2026-10-08 01:04:39
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010439.bin: No such file or directory
+[1008 01:04:40] c609: loader attach; next
+[1008 01:05:07] c622: usb event: 10月 08 01:05:05 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 24 using xhci_hcd
+== snapshot forensics/snap_010507
+time: 2026-10-08 01:05:07
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010507.bin: No such file or directory
+[1008 01:05:07] c622: attach in flight; waiting for product
+[1008 01:05:17] c622: product arrived late: 10月 08 01:05:10 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 2, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: False frames: 0 raw: 1072
+[1008 01:05:44] c622: adb attempt 1 failed
+[1008 01:05:50] c622: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 01:06:50] c622: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 01:06:56] c622: skip snap (loader up)
+[1008 01:06:56] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.332s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.537s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:06:57] flashed + rebooted
+[1008 01:06:59] c623: usb event: 10月 08 01:05:29 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 27 using xhci_hcd
+== snapshot forensics/snap_010659
+time: 2026-10-08 01:06:59
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010659.bin: No such file or directory
+[1008 01:06:59] c623: loader attach; next
+[1008 01:07:27] c636: usb event: 10月 08 01:07:25 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 28 using xhci_hcd
+== snapshot forensics/snap_010727
+time: 2026-10-08 01:07:27
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010727.bin: No such file or directory
+[1008 01:07:27] c636: attach in flight; waiting for product
+[1008 01:07:36] c636: product arrived late: 10月 08 01:07:29 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_636.bin
+[1008 01:08:04] c636: ring 2049 bytes (attempt 1)
+[1008 01:08:04] c636: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:08:10] c636: skip snap (loader up)
+[1008 01:08:10] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.339s]
+Writing 'kernel'                                   OKAY [  0.144s]
+Finished. Total time: 0.548s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:08:10] flashed + rebooted
+[1008 01:08:13] c637: usb event: 10月 08 01:07:48 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 31 using xhci_hcd
+== snapshot forensics/snap_010813
+time: 2026-10-08 01:08:13
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010813.bin: No such file or directory
+[1008 01:08:13] c637: loader attach; next
+[1008 01:08:41] c650: usb event: 10月 08 01:08:38 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 32 using xhci_hcd
+== snapshot forensics/snap_010841
+time: 2026-10-08 01:08:41
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_010841.bin: No such file or directory
+[1008 01:08:41] c650: attach in flight; waiting for product
+[1008 01:08:50] c650: product arrived late: 10月 08 01:08:43 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 01:08:50] c650: garbled product; skip sessions
+[1008 01:08:55] c651: usb event: 10月 08 01:08:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 33 using xhci_hcd
+== snapshot forensics/snap_010855
+time: 2026-10-08 01:08:55
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        Љ
+product:             Љ
+serial:              ANE fastboot
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1008 01:08:55] c651: garbled product; skip sessions
+[1008 01:14:13] c801: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:14:43] c801: oem crash unavailable
+[1008 01:20:03] c951: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:20:33] c951: oem crash unavailable
+[1008 01:27:19] c1101: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:27:49] c1101: oem crash unavailable
+[1008 01:31:03] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.334s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.536s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:31:06] flashed + rebooted
+[1008 01:31:34] c1184: usb event: 10月 08 01:31:34 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 35 using xhci_hcd
+== snapshot forensics/snap_013134
+time: 2026-10-08 01:31:34
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013134.bin: No such file or directory
+[1008 01:31:34] c1184: attach in flight; waiting for product
+[1008 01:31:44] c1184: product arrived late: 10月 08 01:31:37 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1184.bin
+[1008 01:32:11] c1184: ring 2049 bytes (attempt 1)
+[1008 01:32:11] c1184: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:32:17] c1184: skip snap (loader up)
+[1008 01:32:17] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.341s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.544s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:32:18] flashed + rebooted
+[1008 01:32:20] c1185: usb event: 10月 08 01:31:56 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 37 using xhci_hcd
+== snapshot forensics/snap_013220
+time: 2026-10-08 01:32:20
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013220.bin: No such file or directory
+[1008 01:32:20] c1185: loader attach; next
+[1008 01:32:46] c1197: usb event: 10月 08 01:32:46 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 38 using xhci_hcd
+== snapshot forensics/snap_013246
+time: 2026-10-08 01:32:46
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013246.bin: No such file or directory
+[1008 01:32:46] c1197: attach in flight; waiting for product
+[1008 01:32:55] c1197: product arrived late: 10月 08 01:32:49 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1197.bin
+[1008 01:33:23] c1197: ring 2049 bytes (attempt 1)
+[1008 01:33:23] c1197: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:33:29] c1197: skip snap (loader up)
+[1008 01:33:29] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.346s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.551s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:33:29] flashed + rebooted
+[1008 01:33:32] c1198: usb event: 10月 08 01:33:07 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 40 using xhci_hcd
+== snapshot forensics/snap_013332
+time: 2026-10-08 01:33:32
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013332.bin: No such file or directory
+[1008 01:33:32] c1198: loader attach; next
+[1008 01:34:00] c1211: usb event: 10月 08 01:33:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 41 using xhci_hcd
+== snapshot forensics/snap_013400
+time: 2026-10-08 01:34:00
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013400.bin: No such file or directory
+[1008 01:34:00] c1211: attach in flight; waiting for product
+[1008 01:34:09] c1211: product arrived late: 10月 08 01:34:01 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1211.bin
+[1008 01:34:36] c1211: ring 2049 bytes (attempt 1)
+[1008 01:34:36] c1211: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:34:42] c1211: skip snap (loader up)
+[1008 01:34:42] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.337s]
+Writing 'kernel'                                   OKAY [  0.145s]
+Finished. Total time: 0.548s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:34:43] flashed + rebooted
+[1008 01:34:45] c1212: usb event: 10月 08 01:34:21 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 43 using xhci_hcd
+== snapshot forensics/snap_013445
+time: 2026-10-08 01:34:45
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013445.bin: No such file or directory
+[1008 01:34:45] c1212: loader attach; next
+[1008 01:35:13] c1225: usb event: 10月 08 01:35:11 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 44 using xhci_hcd
+== snapshot forensics/snap_013513
+time: 2026-10-08 01:35:13
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013513.bin: No such file or directory
+[1008 01:35:13] c1225: attach in flight; waiting for product
+[1008 01:35:22] c1225: product arrived late: 10月 08 01:35:14 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1225.bin
+[1008 01:35:50] c1225: ring 2049 bytes (attempt 1)
+[1008 01:35:50] c1225: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 01:35:56] c1225: skip snap (loader up)
+[1008 01:35:56] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:35:56] flashed + rebooted
+[1008 01:35:58] c1226: usb event: 10月 08 01:35:34 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 46 using xhci_hcd
+== snapshot forensics/snap_013558
+time: 2026-10-08 01:35:58
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013558.bin: No such file or directory
+[1008 01:35:58] c1226: loader attach; next
+[1008 01:36:26] c1239: usb event: 10月 08 01:36:24 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 47 using xhci_hcd
+== snapshot forensics/snap_013626
+time: 2026-10-08 01:36:26
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_013626.bin: No such file or directory
+[1008 01:36:26] c1239: attach in flight; waiting for product
+[1008 01:36:35] c1239: product arrived late: 10月 08 01:36:27 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 01:36:35] c1239: garbled product; skip sessions
+[1008 01:36:35] c1240: usb event: 10月 08 01:36:27 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 48 using xhci_hcd
+== snapshot forensics/snap_013635
+time: 2026-10-08 01:36:35
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        ANE fastboot
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1008 01:36:36] c1240: garbled product; skip sessions
+[1008 01:41:54] c1390: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:42:24] c1390: oem crash unavailable
+[1008 01:47:43] c1540: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:48:13] c1540: oem crash unavailable
+[1008 01:54:59] c1690: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 01:55:29] c1690: oem crash unavailable
+[1008 01:58:50] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.328s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.531s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 01:58:52] flashed + rebooted
+[1008 01:59:20] c1775: usb event: 10月 08 01:59:19 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 50 using xhci_hcd
+== snapshot forensics/snap_015920
+time: 2026-10-08 01:59:20
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_015920.bin: No such file or directory
+[1008 01:59:20] c1775: attach in flight; waiting for product
+[1008 01:59:29] c1775: product arrived late: 10月 08 01:59:23 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1775.bin
+[1008 01:59:57] c1775: ring 2049 bytes (attempt 1)
+[1008 01:59:57] c1775: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:00:03] c1775: skip snap (loader up)
+[1008 02:00:03] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.328s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.532s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:00:04] flashed + rebooted
+[1008 02:00:06] c1776: usb event: 10月 08 01:59:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 52 using xhci_hcd
+== snapshot forensics/snap_020006
+time: 2026-10-08 02:00:06
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020006.bin: No such file or directory
+[1008 02:00:06] c1776: loader attach; next
+[1008 02:00:34] c1789: usb event: 10月 08 02:00:32 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 53 using xhci_hcd
+== snapshot forensics/snap_020034
+time: 2026-10-08 02:00:34
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020034.bin: No such file or directory
+[1008 02:00:34] c1789: attach in flight; waiting for product
+[1008 02:00:43] c1789: no product but descriptors=65553B (clean form); proceeding
+[1008 02:00:43] c1789: product arrived late: usb 1-1: Product: ANE fastboot (descriptor fallback)
+cnxn reply: False frames: 0 raw: 2
+[1008 02:00:45] c1789: adb attempt 1 failed
+[1008 02:00:52] c1789: kernel gone after attempt 1
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+write: [Errno 5] Input/Output Error
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 110] Operation timed out
+cfg1: [Errno 110] Operation timed out
+write: [Errno 5] Input/Output Error
+readerr: [Errno 5] Input/Output Error
+[1008 02:01:52] c1789: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:01:58] c1789: skip snap (loader up)
+[1008 02:04:15] c1789: no LK yet; waiting next event
+[1008 02:04:17] c1790: usb event: 10月 08 02:03:17 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 57 using xhci_hcd
+== snapshot forensics/snap_020417
+time: 2026-10-08 02:04:17
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1790.bin
+[1008 02:04:44] c1790: ring 2049 bytes (attempt 1)
+[1008 02:04:44] c1790: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:04:51] c1790: skip snap (loader up)
+[1008 02:04:51] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.335s]
+Writing 'kernel'                                   OKAY [  0.145s]
+Finished. Total time: 0.546s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:04:51] flashed + rebooted
+[1008 02:04:53] c1791: usb event: 10月 08 02:04:29 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 58 using xhci_hcd
+== snapshot forensics/snap_020453
+time: 2026-10-08 02:04:53
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020453.bin: No such file or directory
+[1008 02:04:53] c1791: loader attach; next
+[1008 02:05:21] c1804: usb event: 10月 08 02:05:19 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 59 using xhci_hcd
+== snapshot forensics/snap_020521
+time: 2026-10-08 02:05:21
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020521.bin: No such file or directory
+[1008 02:05:21] c1804: attach in flight; waiting for product
+[1008 02:05:30] c1804: product arrived late: 10月 08 02:05:23 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 1, '[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: False frames: 0 raw: 1072
+[1008 02:05:58] c1804: adb attempt 1 failed
+[1008 02:06:04] c1804: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 02:07:04] c1804: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:07:10] c1804: skip snap (loader up)
+[1008 02:07:10] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.328s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.529s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 02:07:11] flashed + rebooted
+[1008 02:07:13] c1805: usb event: 10月 08 02:05:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 63 using xhci_hcd
+== snapshot forensics/snap_020713
+time: 2026-10-08 02:07:13
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020713.bin: No such file or directory
+[1008 02:07:13] c1805: loader attach; next
+[1008 02:07:41] c1818: usb event: 10月 08 02:07:39 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 64 using xhci_hcd
+== snapshot forensics/snap_020741
+time: 2026-10-08 02:07:41
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020741.bin: No such file or directory
+[1008 02:07:41] c1818: attach in flight; waiting for product
+[1008 02:07:50] c1818: product arrived late: 10月 08 02:07:43 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1818.bin
+[1008 02:08:18] c1818: ring 2049 bytes (attempt 1)
+[1008 02:08:18] c1818: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:08:24] c1818: skip snap (loader up)
+[1008 02:08:24] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.339s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.541s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:08:25] flashed + rebooted
+[1008 02:08:27] c1819: usb event: 10月 08 02:08:02 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 67 using xhci_hcd
+== snapshot forensics/snap_020827
+time: 2026-10-08 02:08:27
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020827.bin: No such file or directory
+[1008 02:08:27] c1819: loader attach; next
+[1008 02:08:54] c1832: usb event: 10月 08 02:08:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 68 using xhci_hcd
+== snapshot forensics/snap_020854
+time: 2026-10-08 02:08:54
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020854.bin: No such file or directory
+[1008 02:08:54] c1832: attach in flight; waiting for product
+[1008 02:09:04] c1832: product arrived late: 10月 08 02:08:56 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_1832.bin
+[1008 02:09:31] c1832: ring 2049 bytes (attempt 1)
+[1008 02:09:31] c1832: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:09:37] c1832: skip snap (loader up)
+[1008 02:09:37] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.537s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:09:38] flashed + rebooted
+[1008 02:09:40] c1833: usb event: 10月 08 02:09:15 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 71 using xhci_hcd
+== snapshot forensics/snap_020940
+time: 2026-10-08 02:09:40
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_020940.bin: No such file or directory
+[1008 02:09:40] c1833: loader attach; next
+[1008 02:10:08] c1846: usb event: 10月 08 02:10:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 72 using xhci_hcd
+== snapshot forensics/snap_021008
+time: 2026-10-08 02:10:08
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_021008.bin: No such file or directory
+[1008 02:10:08] c1846: attach in flight; waiting for product
+[1008 02:10:17] c1846: product arrived late: 10月 08 02:10:09 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: False frames: 0 raw: 1072
+[1008 02:10:45] c1846: adb attempt 1 failed
+[1008 02:10:51] c1846: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 02:11:51] c1846: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:11:57] c1846: skip snap (loader up)
+[1008 02:11:57] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.346s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.551s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:11:58] flashed + rebooted
+[1008 02:12:00] c1847: usb event: 10月 08 02:10:29 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 74 using xhci_hcd
+== snapshot forensics/snap_021200
+time: 2026-10-08 02:12:00
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_021200.bin: No such file or directory
+[1008 02:12:00] c1847: loader attach; next
+[1008 02:12:28] c1860: usb event: 10月 08 02:12:25 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 75 using xhci_hcd
+== snapshot forensics/snap_021228
+time: 2026-10-08 02:12:28
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_021228.bin: No such file or directory
+[1008 02:12:28] c1860: attach in flight; waiting for product
+[1008 02:12:37] c1860: product arrived late: 10月 08 02:12:30 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: False frames: 0 raw: 1072
+[1008 02:13:04] c1860: adb attempt 1 failed
+[1008 02:13:10] c1860: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 02:14:10] c1860: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:14:17] c1860: skip snap (loader up)
+[1008 02:14:17] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.342s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.551s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:14:17] flashed + rebooted
+[1008 02:14:19] c1861: usb event: 10月 08 02:12:49 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 79 using xhci_hcd
+== snapshot forensics/snap_021419
+time: 2026-10-08 02:14:19
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_021419.bin: No such file or directory
+[1008 02:14:20] c1861: loader attach; next
+[1008 02:14:47] c1874: usb event: 10月 08 02:14:45 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 80 using xhci_hcd
+== snapshot forensics/snap_021447
+time: 2026-10-08 02:14:47
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_021447.bin: No such file or directory
+[1008 02:14:47] c1874: attach in flight; waiting for product
+[1008 02:14:57] c1874: product arrived late: 10月 08 02:14:50 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 02:14:57] c1874: garbled product; skip sessions
+[1008 02:14:57] c1875: usb event: 10月 08 02:14:50 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 83 using xhci_hcd
+== snapshot forensics/snap_021457
+time: 2026-10-08 02:14:57
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        ANE fastboot
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1008 02:14:57] c1875: garbled product; skip sessions
+[1008 02:20:15] c2025: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 02:20:45] c2025: oem crash unavailable
+[1008 02:26:05] c2175: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 02:26:35] c2175: oem crash unavailable
+[1008 02:33:20] c2325: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 02:33:50] c2325: oem crash unavailable
+[1008 02:37:10] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.536s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:37:13] flashed + rebooted
+[1008 02:37:41] c2409: usb event: 10月 08 02:37:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 85 using xhci_hcd
+== snapshot forensics/snap_023741
+time: 2026-10-08 02:37:41
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_023741.bin: No such file or directory
+[1008 02:37:42] c2409: attach in flight; waiting for product
+[1008 02:37:51] c2409: product arrived late: 10月 08 02:37:44 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_2409.bin
+[1008 02:38:18] c2409: ring 2049 bytes (attempt 1)
+[1008 02:38:18] c2409: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:38:25] c2409: skip snap (loader up)
+[1008 02:38:25] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.345s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.549s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:38:25] flashed + rebooted
+[1008 02:38:27] c2410: usb event: 10月 08 02:38:03 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 88 using xhci_hcd
+== snapshot forensics/snap_023827
+time: 2026-10-08 02:38:27
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_023827.bin: No such file or directory
+[1008 02:38:27] c2410: loader attach; next
+[1008 02:38:55] c2423: usb event: 10月 08 02:38:53 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 89 using xhci_hcd
+== snapshot forensics/snap_023855
+time: 2026-10-08 02:38:55
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_023855.bin: No such file or directory
+[1008 02:38:55] c2423: attach in flight; waiting for product
+[1008 02:39:04] c2423: product arrived late: 10月 08 02:38:56 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_2423.bin
+[1008 02:39:32] c2423: ring 2049 bytes (attempt 1)
+[1008 02:39:32] c2423: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:39:38] c2423: skip snap (loader up)
+[1008 02:39:38] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.336s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.540s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 02:39:38] flashed + rebooted
+[1008 02:39:41] c2424: usb event: 10月 08 02:39:16 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 91 using xhci_hcd
+== snapshot forensics/snap_023941
+time: 2026-10-08 02:39:41
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_023941.bin: No such file or directory
+[1008 02:39:41] c2424: loader attach; next
+[1008 02:40:08] c2437: usb event: 10月 08 02:40:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 92 using xhci_hcd
+== snapshot forensics/snap_024008
+time: 2026-10-08 02:40:08
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024008.bin: No such file or directory
+[1008 02:40:08] c2437: attach in flight; waiting for product
+[1008 02:40:18] c2437: product arrived late: 10月 08 02:40:10 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_2437.bin
+[1008 02:40:45] c2437: ring 2049 bytes (attempt 1)
+[1008 02:40:45] c2437: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:40:51] c2437: skip snap (loader up)
+[1008 02:40:51] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.343s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.551s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:40:52] flashed + rebooted
+[1008 02:40:54] c2438: usb event: 10月 08 02:40:29 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 95 using xhci_hcd
+== snapshot forensics/snap_024054
+time: 2026-10-08 02:40:54
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024054.bin: No such file or directory
+[1008 02:40:54] c2438: loader attach; next
+[1008 02:41:22] c2451: usb event: 10月 08 02:41:20 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 96 using xhci_hcd
+== snapshot forensics/snap_024122
+time: 2026-10-08 02:41:22
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024122.bin: No such file or directory
+[1008 02:41:22] c2451: attach in flight; waiting for product
+[1008 02:41:31] c2451: product arrived late: 10月 08 02:41:24 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: False frames: 0 raw: 1072
+[1008 02:41:58] c2451: adb attempt 1 failed
+[1008 02:42:05] c2451: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 02:43:05] c2451: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:43:11] c2451: skip snap (loader up)
+[1008 02:43:11] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.322s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:43:12] flashed + rebooted
+[1008 02:43:14] c2452: usb event: 10月 08 02:41:43 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 100 using xhci_hcd
+== snapshot forensics/snap_024314
+time: 2026-10-08 02:43:14
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024314.bin: No such file or directory
+[1008 02:43:14] c2452: loader attach; next
+[1008 02:43:42] c2465: usb event: 10月 08 02:43:39 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+== snapshot forensics/snap_024342
+time: 2026-10-08 02:43:42
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024342.bin: No such file or directory
+[1008 02:43:42] c2465: attach in flight; waiting for product
+[1008 02:43:51] c2465: product arrived late: 10月 08 02:43:42 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 75] Overflow': 1, '[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 94}
+cnxn reply: False frames: 0 raw: 1072
+[1008 02:44:18] c2465: adb attempt 1 failed
+[1008 02:44:24] c2465: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1008 02:45:24] c2465: ring xfer failed
+0 records parsed; ledger updated (551 total)
+[1008 02:45:32] c2465: skip snap (loader up)
+[1008 02:45:32] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.529s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.073s
+[1008 02:45:33] flashed + rebooted
+[1008 02:45:35] c2466: usb event: 10月 08 02:44:03 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 103 using xhci_hcd
+== snapshot forensics/snap_024535
+time: 2026-10-08 02:45:35
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024535.bin: No such file or directory
+[1008 02:45:35] c2466: loader attach; next
+[1008 02:46:03] c2479: usb event: 10月 08 02:46:01 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 104 using xhci_hcd
+== snapshot forensics/snap_024603
+time: 2026-10-08 02:46:03
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024603.bin: No such file or directory
+[1008 02:46:03] c2479: attach in flight; waiting for product
+[1008 02:46:12] c2479: product arrived late: 10月 08 02:46:10 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+[1008 02:46:12] c2479: unexpected product; skip
+[1008 02:46:12] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.348s]
+Writing 'kernel'                                   OKAY [  0.140s]
+Finished. Total time: 0.553s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:46:14] flashed + rebooted
+[1008 02:46:42] c2492: usb event: 10月 08 02:46:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 108 using xhci_hcd
+== snapshot forensics/snap_024642
+time: 2026-10-08 02:46:42
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024642.bin: No such file or directory
+[1008 02:46:42] c2492: attach in flight; waiting for product
+[1008 02:46:52] c2492: product arrived late: 10月 08 02:46:46 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_2492.bin
+[1008 02:47:19] c2492: ring 2049 bytes (attempt 1)
+[1008 02:47:19] c2492: skip ring xfer (cnxn collection ok)
+0 records parsed; ledger updated (551 total)
+[1008 02:47:27] c2492: skip snap (loader up)
+[1008 02:47:27] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.353s]
+Writing 'kernel'                                   OKAY [  0.147s]
+Finished. Total time: 0.565s
+Rebooting                                          OKAY [  0.021s]
+Finished. Total time: 0.075s
+[1008 02:47:27] flashed + rebooted
+[1008 02:47:30] c2493: usb event: 10月 08 02:47:03 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 111 using xhci_hcd
+== snapshot forensics/snap_024730
+time: 2026-10-08 02:47:30
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024730.bin: No such file or directory
+[1008 02:47:30] c2493: loader attach; next
+[1008 02:47:55] c2505: usb event: 10月 08 02:47:55 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 112 using xhci_hcd
+== snapshot forensics/snap_024755
+time: 2026-10-08 02:47:55
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_024755.bin: No such file or directory
+[1008 02:47:55] c2505: attach in flight; waiting for product
+[1008 02:48:05] c2505: product arrived late: 10月 08 02:47:59 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 02:48:05] c2505: garbled product; skip sessions
+[1008 02:48:10] c2506: usb event: 10月 08 02:47:59 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 114 using xhci_hcd
+== snapshot forensics/snap_024810
+time: 2026-10-08 02:48:10
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        ANE fastboot
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1008 02:48:10] c2506: garbled product; skip sessions
+[1008 02:53:29] c2656: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 02:53:59] c2656: oem crash unavailable
+[1008 02:55:52] c2709: usb event: 10月 08 02:55:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 115 using xhci_hcd
+== snapshot forensics/snap_025552
+time: 2026-10-08 02:55:52
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fastbo
+product:             Fastboot2.0
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 52 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2200 0101 0080 8009 0400 0002  ...."...........
+00000020: ff42 0300 0805 8102 0002 0000 0805 0102  .B..............
+00000030: 0002 0100                                ....
+[1008 02:55:52] c2709: loader attach; next
+[1008 02:55:54] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.322s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.524s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 02:55:55] flashed + rebooted
+[1008 02:56:24] c2722: usb event: 10月 08 02:56:23 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 116 using xhci_hcd
+== snapshot forensics/snap_025624
+time: 2026-10-08 02:56:24
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_025624.bin: No such file or directory
+[1008 02:56:24] c2722: attach in flight; waiting for product
+[1008 02:56:33] c2722: product arrived late: 10月 08 02:56:25 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 02:56:33] c2722: garbled product; skip sessions
+[1008 02:56:33] c2723: usb event: 10月 08 02:56:26 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 117 using xhci_hcd
+== snapshot forensics/snap_025633
+time: 2026-10-08 02:56:33
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        
+product:             
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1008 02:56:33] c2723: attach in flight; waiting for product
+[1008 02:56:43] c2723: product arrived late: 10月 08 02:56:25 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1008 02:56:43] c2723: garbled product; skip sessions
+[1008 03:02:06] c2873: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 03:02:36] c2873: oem crash unavailable
+[1008 03:10:14] c3023: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1008 03:10:44] c3023: oem crash unavailable
+[1008 03:18:48] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1008 03:18:50] flashed + rebooted
+[1008 03:19:21] c3181: usb event: 10月 08 03:19:19 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 119 using xhci_hcd
+== snapshot forensics/snap_031921
+time: 2026-10-08 03:19:21
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_031921.bin: No such file or directory
+[1008 03:19:21] c3181: attach in flight; waiting for product
+[1008 03:19:30] c3181: product arrived late: 10月 08 03:19:29 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+[1008 03:19:30] c3181: unexpected product; skip
+[1008 03:19:30] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Sending 'kernel' (11324 KB)                        OKAY [ 14.146s]
+Writing 'kernel'                                   Rebooting                                          [1008 03:22:50] flashed + rebooted
+[1008 03:27:01] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.146s]
+Finished. Total time: 0.536s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 03:27:03] flashed + rebooted
+[1008 03:27:36] c3289: usb event: 10月 08 03:27:35 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 127 using xhci_hcd
+== snapshot forensics/snap_032736
+time: 2026-10-08 03:27:36
+idVendor:            12d1
+idProduct:           107e
+bcdDevice:           0299
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        unknown
+product:             HUAWEI
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d112 7e10 9902 0102  .......@..~.....
+00000010: 0301 0902 2000 0101 04c0 fa09 0400 0002  .... ...........
+00000020: 0806 5005 0705 8102 0002 0007 0501 0200  ..P.............
+00000030: 0201                                     ..
+[1008 03:27:36] c3289: unexpected product; skip
+[1008 03:27:51] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v242-stock.img
+< waiting for SCV7N18927000473>
+Sending 'kernel' (11324 KB)                        OKAY [ 14.136s]
+Writing 'kernel'                                   

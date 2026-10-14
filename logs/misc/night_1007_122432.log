@@ -1,0 +1,10 @@
+[1007 12:24:32] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v184-stock.img cycles=99999 ===
+[1007 12:25:38] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v184-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.318s]
+Writing 'kernel'                                   OKAY [  0.146s]
+Finished. Total time: 0.530s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 12:25:40] flashed + rebooted

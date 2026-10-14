@@ -1,0 +1,11 @@
+[1007 04:21:05] === night engine v5 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v146-stock.img cycles=99999 mode=grab ===
+[1007 04:21:30] c13: LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v146-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.335s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.538s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 04:21:33] c13: flashed + rebooted
+[1007 04:22:21] c19: usb event: 10月 07 04:21:55 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 20 using xhci_hcd

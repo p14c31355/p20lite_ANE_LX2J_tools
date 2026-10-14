@@ -1,0 +1,67 @@
+[1007 14:46:17] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img cycles=99999 ===
+[1007 14:51:37] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.541s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 14:51:39] flashed + rebooted
+[1007 14:51:44] c151: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1007 14:52:14] c151: oem crash unavailable
+[1007 14:53:20] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.335s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 14:53:22] flashed + rebooted
+[1007 14:55:04] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.324s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 14:55:06] flashed + rebooted
+[1007 14:55:24] c234: usb event: 10月 07 14:55:22 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1007 14:55:24] c234: garbled product; skip sessions
+[1007 14:56:47] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.523s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 14:56:50] flashed + rebooted
+[1007 14:58:31] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.311s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.520s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 14:58:34] flashed + rebooted
+[1007 15:00:15] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v195-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.339s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.538s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 15:00:17] flashed + rebooted
+[1007 15:00:35] c367: usb event: 10月 07 15:00:33 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0 raw: 24
+[1007 15:03:37] c367: adb attempt 1 failed
+[1007 15:03:42] c367: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1007 15:05:12] c367: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000

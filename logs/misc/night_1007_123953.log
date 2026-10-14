@@ -1,0 +1,202 @@
+[1007 12:39:53] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v186-stock.img cycles=99999 ===
+[1007 12:41:38] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v186-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.329s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.530s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 12:41:41] flashed + rebooted
+[1007 12:42:08] c57: usb event: 10月 07 12:41:57 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/fb_xfer.py", line 54, in <module>
+    r = bytes(dev.read(0x81, 65536, timeout=1500))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:42:20] c57: ring xfer attempt 1 failed
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/fb_xfer.py", line 54, in <module>
+    r = bytes(dev.read(0x81, 65536, timeout=1500))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:42:50] c57: ring xfer attempt 2 failed
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 205, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 150, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:42:54] c57: adb attempt 1 failed
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 205, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 150, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:43:07] c57: adb attempt 2 failed
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 205, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 150, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:43:20] c57: adb attempt 3 failed
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/oem_snap.py", line 162, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/oem_snap.py", line 127, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/oem_snap.py", line 66, in drain
+    r = bytes(dev.read(0x81, 65536, timeout=1200))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 12:43:36] c57: snap failed
+[1007 12:45:16] c57: no LK yet; waiting next event

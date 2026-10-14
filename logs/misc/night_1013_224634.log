@@ -1,0 +1,24 @@
+[1013 22:46:34] === night engine v24 start img=artifacts/fullerene-ane-v331-recovery.img cycles=800 ===
+[1013 22:46:49] c1: usb event: 10月 13 22:42:49 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 101 using xhci_hcd
+== snapshot forensics/snap_224649
+time: 2026-10-13 22:46:49
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1013 22:46:49] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          

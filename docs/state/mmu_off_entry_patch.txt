@@ -1,0 +1,64 @@
+// Draft: MMU-off preamble for fullerene-kernel/src/arch/aarch64/entry.rs
+//
+// Target: the global_asm!() block that defines _start (currently three
+// instructions: adr x9, __aarch64_boot_stack_top / mov sp, x9 / b
+// aarch64_bootstrap).
+//
+// Rationale: the ANE's loader may hand over with its MMU still enabled and
+// page tables that do not cover the regions the kernel touches at handoff,
+// which would fault the first store a probe makes (measured: every probe
+// channel silent). The stock kernel survives such a handoff because it builds
+// its own tables before touching reserved memory. Switching to physical
+// addressing first removes the dependency on the loader's tables entirely;
+// when the MMU is already off this is a no-op.
+//
+// Register discipline: x0..x3 carry the boot arguments and MUST be preserved,
+// so only x9/x10 are used here. x9 is overwritten afterwards by the existing
+// adr, which is why this block goes first.
+//
+// The labels are numeric and local to the asm! string; keep them distinct from
+// any others inside the same string.
+
+global_asm!(
+    ".section .text.boot,\"ax\"\n\
+     .balign 4\n\
+     .global _start\n\
+     .type _start, %function\n\
+     _start:\n\
+     \x20   mrs x9, CurrentEL\n\
+     \x20   cmp x9, #0x4\n\
+     \x20   b.eq 8f\n\
+     \x20   cmp x9, #0x8\n\
+     \x20   b.eq 9f\n\
+     \x20   b 7f\n\
+     8:  mrs x10, sctlr_el1\n\
+     \x20   tbnz x10, #0, 10f\n\
+     \x20   b 7f\n\
+     9:  mrs x10, sctlr_el2\n\
+     \x20   tbnz x10, #0, 11f\n\
+     \x20   b 7f\n\
+     10: bic x10, x10, #1\n\
+     \x20   msr sctlr_el1, x10\n\
+     \x20   isb\n\
+     \x20   b 7f\n\
+     11: bic x10, x10, #1\n\
+     \x20   msr sctlr_el2, x10\n\
+     \x20   isb\n\
+     7:  adr x9, __aarch64_boot_stack_top\n\
+     \x20   mov sp, x9\n\
+     \x20   b aarch64_bootstrap\n\
+     .size _start, . - _start\n\
+     ",
+);
+
+// Verification plan once the experiment confirms the hypothesis:
+//   1. cargo run -p flasks -- build --arch aarch64 --platform ane   (real build)
+//   2. ane_qemu_preflight.sh   (the image still runs in QEMU; the preamble
+//      must be a no-op there because QEMU boots with the MMU off)
+//   3. device run: flash kernel; expect the opaque "no output" failure to
+//      become a working blackbox record (pstore) on the next Android boot.
+//
+// Note: with the MMU off, data accesses are non-cacheable until the kernel
+// installs its own tables, so the relocation/BSS passes get slower for a few
+// milliseconds - harmless, and correct because the loader is required to have
+// flushed its caches before the jump.

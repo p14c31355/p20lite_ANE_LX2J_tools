@@ -1,0 +1,5 @@
+[1007 00:25:30] === night engine v3 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v143-stock.img cycles=400 ===
+[1007 00:25:42] c1: responder LIVE (first window) - crash+flash, skipping grab
+[1007 00:25:42] c1: crashing to loader
+[1007 00:29:33] c1: no LK window; leaving device to the natural cycle
+[1007 00:29:58] c2: responder FROZEN; waiting for natural reset

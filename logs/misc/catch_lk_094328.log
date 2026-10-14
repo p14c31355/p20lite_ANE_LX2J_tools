@@ -1,0 +1,40 @@
+=== armed, waiting for the loader 09:43:28
+=== LK hit 10:09:51 -> flashing PROBE
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11597824).
+Sending 'kernel' (11326 KB)                        OKAY [  0.341s]
+Writing 'kernel'                                   OKAY [  0.140s]
+Finished. Total time: 0.546s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+=== probe away, waiting for the loader again
+=== LK hit 10:10:38 -> flashing READER
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11446272).
+Sending 'kernel' (11178 KB)                        OKAY [  0.335s]
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.542s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+10:10:46 []
+10:10:51 []
+10:10:56 []
+10:11:01 []
+10:11:06 []
+10:11:11 []
+10:11:16 []
+10:11:21 []
+10:11:26 []
+10:11:31 []
+10:11:36 []
+10:11:41 []
+10:11:46 []
+10:11:51 [ANE fastboot]
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+read errors: {'[Errno 16] Resource busy': 2}
+cnxn reply: False frames: 0 raw: 0
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'rings_night/probe_trail.bin'
+=== done 10:12:13 product=[ANE fastboot]

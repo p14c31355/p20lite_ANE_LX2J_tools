@@ -1,0 +1,62 @@
+[1014 09:09:53] === night engine v24 start img=artifacts/fullerene-ane-v331l-homeresume.img cycles=800 ===
+[1014 09:09:53] c1: usb event: 10月 14 09:09:47 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 95 using xhci_hcd
+== snapshot forensics/snap_090953
+time: 2026-10-14 09:09:53
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_090953.bin: No such file or directory
+[1014 09:09:53] c1: attach in flight; waiting for product
+[1014 09:11:26] c1: product-less attach; skip (no sessions possible, descriptors=0B)
+[1014 09:11:26] c2: usb event: 10月 14 09:10:20 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 97 using xhci_hcd
+== snapshot forensics/snap_091126
+time: 2026-10-14 09:11:26
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_091126.bin: No such file or directory
+[1014 09:11:26] c2: attach in flight; waiting for product
+[1014 09:12:07] c2: product arrived late: 10月 14 09:12:04 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+[1014 09:12:07] ANE fastboot present; reboot-bootloader (no combo)
+Rebooting into bootloader                          [1014 09:12:57] kernel reboot-bootloader did not expose Fastboot2.0
+dance error: [Errno 110] Operation timed out
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 100}
+cnxn reply: False frames: 0 raw: 0
+[1014 09:13:32] c2: adb attempt 1 failed
+dance error: [Errno 110] Operation timed out
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 88, '[Errno 19] No such device (it may have been disconnected)': 12}
+cnxn reply: False frames: 0 raw: 0
+[1014 09:14:07] c2: adb attempt 2 failed
+no device
+[1014 09:14:28] c2: adb attempt 3 failed
+device not found
+[1014 09:14:34] c2: ring xfer failed
+0 records parsed; ledger updated (585 total)
+no device
+[1014 09:15:05] c2: snap failed

@@ -1,0 +1,136 @@
+[1007 09:09:06] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img cycles=99999 ===
+[1007 09:09:13] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:09:16] flashed + rebooted
+[1007 09:09:50] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.329s]
+Writing 'kernel'                                   OKAY [  0.144s]
+Finished. Total time: 0.539s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:09:53] flashed + rebooted
+[1007 09:10:22] c30: usb event: 10月 07 09:10:21 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 09:10:48] c30: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 09:10:55] c30: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 09:11:03] c30: adb attempt 3 failed
+[1007 09:11:08] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.520s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:11:08] flashed + rebooted
+[1007 09:11:26] c38: usb event: 10月 07 09:11:25 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 194, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 139, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 09:11:29] c38: adb attempt 1 failed
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 194, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 139, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 09:11:37] c38: adb attempt 2 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 09:12:04] c38: adb attempt 3 failed
+[1007 09:12:09] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:15:09] flashed + rebooted
+[1007 09:15:44] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.309s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.510s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 09:15:45] flashed + rebooted
+[1007 09:16:20] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.313s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.516s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 09:16:22] flashed + rebooted
+[1007 09:16:57] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v166-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.312s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.516s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.072s
+[1007 09:16:59] flashed + rebooted

@@ -1,0 +1,224 @@
+[1007 22:39:44] === night engine v24 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v232-stock.img cycles=99999 ===
+[1007 22:39:45] c1: usb event: 10月 07 22:35:01 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 69 using xhci_hcd
+== snapshot forensics/snap_223945
+time: 2026-10-07 22:39:45
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        
+product:             
+serial:              
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1007 22:39:45] c1: attach in flight; waiting for product
+[1007 22:39:54] c1: no product but descriptors=65553B (clean form); proceeding
+[1007 22:39:54] c1: product arrived late: usb 1-1: Product: ANE fastboot (descriptor fallback)
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 210, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 155, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 22:39:57] c1: adb attempt 1 failed
+[1007 22:40:03] c1: kernel gone after attempt 1
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/fb_xfer.py", line 54, in <module>
+    r = bytes(dev.read(0x81, 65536, timeout=1500))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 22:40:04] c1: ring xfer failed
+526 records parsed; ledger updated (526 total)
+[1007 22:40:11] c1: skip snap (loader up)
+[1007 22:41:55] c1: no LK yet; waiting next event
+[1007 22:46:40] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v232-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11593728).
+Sending 'kernel' (11322 KB)                        OKAY [  0.319s]
+Writing 'kernel'                                   OKAY [  0.140s]
+Finished. Total time: 0.524s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 22:46:43] flashed + rebooted
+[1007 22:47:12] c118: usb event: 10月 07 22:47:11 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 71 using xhci_hcd
+== snapshot forensics/snap_224712
+time: 2026-10-07 22:47:12
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_224712.bin: No such file or directory
+[1007 22:47:12] c118: attach in flight; waiting for product
+[1007 22:47:21] c118: product arrived late: 10月 07 22:47:16 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_118.bin
+[1007 22:47:49] c118: ring 2049 bytes (attempt 1)
+[1007 22:47:49] c118: skip ring xfer (cnxn collection ok)
+529 records parsed; ledger updated (529 total)
+[1007 22:47:56] c118: skip snap (loader up)
+[1007 22:47:56] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v232-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11593728).
+Sending 'kernel' (11322 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.143s]
+Finished. Total time: 0.528s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 22:47:57] flashed + rebooted
+[1007 22:47:59] c119: usb event: 10月 07 22:47:33 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 72 using xhci_hcd
+== snapshot forensics/snap_224759
+time: 2026-10-07 22:47:59
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_224759.bin: No such file or directory
+[1007 22:47:59] c119: loader attach; next
+[1007 22:48:48] c142: usb event: 10月 07 22:48:47 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 73 using xhci_hcd
+== snapshot forensics/snap_224848
+time: 2026-10-07 22:48:48
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_224848.bin: No such file or directory
+[1007 22:48:48] c142: attach in flight; waiting for product
+[1007 22:48:58] c142: product arrived late: 10月 07 22:48:53 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: True frames: 1 raw: 2050
+ring bytes: 2002 (piggyback) -> rings_night/adb_142.bin
+[1007 22:49:08] c142: ring 2002 bytes (attempt 1)
+[1007 22:49:08] c142: skip ring xfer (cnxn collection ok)
+530 records parsed; ledger updated (530 total)
+[1007 22:49:15] c142: skip snap (loader up)
+[1007 22:49:15] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v232-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11593728).
+Sending 'kernel' (11322 KB)                        OKAY [  0.310s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.512s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 22:49:16] flashed + rebooted
+[1007 22:49:18] c143: usb event: 10月 07 22:49:12 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 74 using xhci_hcd
+== snapshot forensics/snap_224918
+time: 2026-10-07 22:49:18
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_224918.bin: No such file or directory
+[1007 22:49:18] c143: loader attach; next
+[1007 22:50:07] c166: usb event: 10月 07 22:50:07 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 75 using xhci_hcd
+== snapshot forensics/snap_225007
+time: 2026-10-07 22:50:07
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_225007.bin: No such file or directory
+[1007 22:50:07] c166: attach in flight; waiting for product

@@ -1,0 +1,12 @@
+time	state	vid_pid	product	interfaces	log_event
+15:40:23.252	dark	-			-
+15:41:14.005	dark	-	-	-	attach: 2026-10-08T15:41:13.530408+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 55 using xhci_hcd
+15:41:14.537	dark	-	-	-	descr-err: 2026-10-08T15:41:14.488405+09:00 placeless-MS-7A72 kernel: usb 1-1: device descriptor read/64, error -71
+15:41:30.620	dark	-	-	-	descr-err: 2026-10-08T15:41:30.319368+09:00 placeless-MS-7A72 kernel: usb 1-1: device descriptor read/64, error -110
+15:41:30.620	dark	-	-	-	attach: 2026-10-08T15:41:30.541388+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 56 using xhci_hcd
+15:41:35.994	dark	-	-	-	descr-err: 2026-10-08T15:41:35.949461+09:00 placeless-MS-7A72 kernel: usb 1-1: device descriptor read/64, error -110
+15:41:52.232	dark	-	-	-	descr-err: 2026-10-08T15:41:51.824398+09:00 placeless-MS-7A72 kernel: usb 1-1: device descriptor read/64, error -110
+15:41:52.777	dark	-	-	-	attach: 2026-10-08T15:41:52.318395+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 57 using xhci_hcd
+15:42:03.600	dark	-	-	-	addr-err: 2026-10-08T15:42:03.178414+09:00 placeless-MS-7A72 kernel: usb 1-1: device not accepting address 57, error -62
+15:42:03.600	dark	-	-	-	attach: 2026-10-08T15:42:03.292372+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 58 using xhci_hcd
+15:42:14.977	dark	-	-	-	addr-err: 2026-10-08T15:42:14.443423+09:00 placeless-MS-7A72 kernel: usb 1-1: device not accepting address 58, error -62

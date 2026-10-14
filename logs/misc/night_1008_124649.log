@@ -1,0 +1,255 @@
+[1008 12:46:49] === night engine v24 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v260-autoreboot-usb-reenum-stock.img cycles=99999 ===
+[1008 12:46:49] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v260-autoreboot-usb-reenum-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11595776).
+Sending 'kernel' (11324 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.144s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1008 12:46:49] flashed + rebooted
+[1008 12:47:18] c13: usb event: 10月 08 12:47:16 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 44 using xhci_hcd
+== snapshot forensics/snap_124718
+time: 2026-10-08 12:47:18
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_124718.bin: No such file or directory
+[1008 12:47:18] c13: attach in flight; waiting for product
+[1008 12:48:58] c13: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:48:58] c14: usb event: 10月 08 12:48:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 47 using xhci_hcd
+== snapshot forensics/snap_124858
+time: 2026-10-08 12:48:58
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_124858.bin: No such file or directory
+[1008 12:48:58] c14: attach in flight; waiting for product
+[1008 12:50:38] c14: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:50:38] c15: usb event: 10月 08 12:50:34 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 51 using xhci_hcd
+== snapshot forensics/snap_125038
+time: 2026-10-08 12:50:38
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125038.bin: No such file or directory
+[1008 12:50:38] c15: attach in flight; waiting for product
+[1008 12:52:18] c15: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:52:18] c16: usb event: 10月 08 12:52:12 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 52 using xhci_hcd
+== snapshot forensics/snap_125218
+time: 2026-10-08 12:52:18
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125218.bin: No such file or directory
+[1008 12:52:18] c16: attach in flight; waiting for product
+[1008 12:53:58] c16: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:53:58] c17: usb event: 10月 08 12:53:02 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 55 using xhci_hcd
+== snapshot forensics/snap_125358
+time: 2026-10-08 12:53:58
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125358.bin: No such file or directory
+[1008 12:53:58] c17: attach in flight; waiting for product
+[1008 12:55:37] c17: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:55:37] c18: usb event: 10月 08 12:55:29 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 59 using xhci_hcd
+== snapshot forensics/snap_125537
+time: 2026-10-08 12:55:37
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125537.bin: No such file or directory
+[1008 12:55:38] c18: attach in flight; waiting for product
+[1008 12:57:17] c18: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:57:17] c19: usb event: 10月 08 12:57:07 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 60 using xhci_hcd
+== snapshot forensics/snap_125717
+time: 2026-10-08 12:57:17
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125717.bin: No such file or directory
+[1008 12:57:17] c19: attach in flight; waiting for product
+[1008 12:58:57] c19: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 12:58:57] c20: usb event: 10月 08 12:57:57 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 63 using xhci_hcd
+== snapshot forensics/snap_125857
+time: 2026-10-08 12:58:57
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_125857.bin: No such file or directory
+[1008 12:58:57] c20: attach in flight; waiting for product
+[1008 13:00:37] c20: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 13:00:37] c21: usb event: 10月 08 13:00:24 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 67 using xhci_hcd
+== snapshot forensics/snap_130037
+time: 2026-10-08 13:00:37
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_130037.bin: No such file or directory
+[1008 13:00:37] c21: attach in flight; waiting for product
+[1008 13:02:17] c21: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 13:02:17] c22: usb event: 10月 08 13:02:02 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 68 using xhci_hcd
+== snapshot forensics/snap_130217
+time: 2026-10-08 13:02:17
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_130217.bin: No such file or directory
+[1008 13:02:17] c22: attach in flight; waiting for product
+[1008 13:03:57] c22: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 13:03:57] c23: usb event: 10月 08 13:02:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 71 using xhci_hcd
+== snapshot forensics/snap_130357
+time: 2026-10-08 13:03:57
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_130357.bin: No such file or directory
+[1008 13:03:57] c23: attach in flight; waiting for product
+[1008 13:05:37] c23: product-less attach; skip (no sessions possible, descriptors=0B)
+[1008 13:05:37] c24: usb event: 10月 08 13:05:19 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 75 using xhci_hcd
+== snapshot forensics/snap_130537
+time: 2026-10-08 13:05:37
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_130537.bin: No such file or directory
+[1008 13:05:37] c24: attach in flight; waiting for product
+[1008 13:06:58] c24: product arrived late: 10月 08 13:06:58 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+no device
+[1008 13:07:20] c24: adb attempt 1 failed
+no device
+[1008 13:07:48] c24: adb attempt 2 failed
+no device
+[1008 13:08:17] c24: adb attempt 3 failed

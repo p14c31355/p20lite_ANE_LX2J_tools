@@ -1,0 +1,6 @@
+[04:38:59] stall rescue: oem crash
+ValueError: Invalid endpoint address 0x81
+[04:39:23] LK -> flash v280
+ring bytes: 2049 (piggyback) -> rings_night/night1011/n_1_0441.bin
+[04:41:33] collected rings_night/night1011/n_1_0441.bin (2049B)
+[04:42:03] LK -> flash v280

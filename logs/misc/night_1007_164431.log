@@ -1,0 +1,44 @@
+[1007 16:44:31] === night engine v12 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v204-stock.img cycles=99999 ===
+[1007 16:45:10] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v204-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.330s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.533s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 16:45:13] flashed + rebooted
+[1007 16:45:42] c31: usb event: 10月 07 16:45:42 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+== snapshot forensics/snap_164542
+time: 2026-10-07 16:45:42
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+dance error: [Errno 19] No such device (it may have been disconnected)
+write1: [Errno 19] No such device (it may have been disconnected)
+write2: [Errno 19] No such device (it may have been disconnected)
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 100}
+cnxn reply: False frames: 0 raw: 0
+[1007 16:48:05] c31: adb attempt 1 failed
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 96}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_31.bin
+[1007 16:48:37] c31: ring 2049 bytes (attempt 2)
+sent: oem xfer r 348d0000 8000
+[1007 16:50:07] c31: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000

@@ -1,0 +1,34 @@
+[1014 07:07:00] === night engine v24 start img=artifacts/fullerene-ane-v331d-skipwrite.img cycles=800 ===
+[1014 07:07:00] c1: usb event: 10月 14 07:02:08 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 51 using xhci_hcd
+== snapshot forensics/snap_070700
+time: 2026-10-14 07:07:00
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_070700.bin: No such file or directory
+[1014 07:07:01] ANE fastboot present; reboot-bootloader (no combo)
+< waiting for SCV7N18927000473>
+[1014 07:07:51] kernel reboot-bootloader did not expose Fastboot2.0
+no device
+[1014 07:08:12] c1: adb attempt 1 failed
+no device
+[1014 07:08:33] c1: adb attempt 2 failed
+no device
+[1014 07:08:53] c1: adb attempt 3 failed
+device not found
+[1014 07:08:59] c1: ring xfer failed
+0 records parsed; ledger updated (585 total)
+no device
+[1014 07:09:29] c1: snap failed
+[1014 07:11:00] c1: no LK yet; waiting next event

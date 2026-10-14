@@ -1,0 +1,108 @@
+[1007 17:52:43] === night engine v17 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v209-stock.img cycles=99999 ===
+[1007 17:53:39] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v209-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 17:53:42] flashed + rebooted
+[1007 17:54:35] c50: usb event: 10月 07 17:54:33 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 66 using xhci_hcd
+== snapshot forensics/snap_175435
+time: 2026-10-07 17:54:35
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_175435.bin: No such file or directory
+[1007 17:54:35] c50: attach in flight; waiting for product
+[1007 17:55:18] c50: product-less attach; skip (no sessions possible)
+[1007 17:55:18] c51: usb event: 10月 07 17:54:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 68 using xhci_hcd
+== snapshot forensics/snap_175518
+time: 2026-10-07 17:55:18
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_51.bin
+[1007 17:56:56] c51: ring 2049 bytes (attempt 1)
+[1007 17:56:56] c51: skip ring xfer (cnxn collection ok)
+157 records parsed; ledger updated (157 total)
+[1007 17:57:01] c51: skip snap (loader up)
+[1007 17:57:01] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v209-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.314s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.515s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 17:57:02] flashed + rebooted
+[1007 17:57:04] c52: usb event: 10月 07 17:56:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 69 using xhci_hcd
+== snapshot forensics/snap_175704
+time: 2026-10-07 17:57:04
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_175704.bin: No such file or directory
+[1007 17:57:04] c52: loader attach; next
+[1007 17:58:00] c76: usb event: 10月 07 17:57:53 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 71 using xhci_hcd
+== snapshot forensics/snap_175800
+time: 2026-10-07 17:58:00
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        
+product:             
+serial:              
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1007 17:58:00] c76: attach in flight; waiting for product
+[1007 17:58:43] c76: product-less attach; skip (no sessions possible)

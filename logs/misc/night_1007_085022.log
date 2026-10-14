@@ -1,0 +1,48 @@
+[1007 08:50:22] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v163-stock.img cycles=99999 ===
+[1007 08:50:35] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v163-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.525s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 08:50:38] flashed + rebooted
+[1007 08:51:35] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v163-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.311s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.512s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 08:51:37] flashed + rebooted
+[1007 08:52:00] c36: usb event: 10月 07 08:51:53 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0
+[1007 08:52:26] c36: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 08:52:33] c36: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 08:52:41] c36: adb attempt 3 failed
+[1007 08:52:46] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v163-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.309s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.512s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 08:52:46] flashed + rebooted
+[1007 08:53:43] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v163-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.306s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.513s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 08:53:46] flashed + rebooted
+[1007 08:54:04] c69: usb event: 10月 07 08:54:02 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0
+[1007 08:54:25] c69: adb attempt 1 failed
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error

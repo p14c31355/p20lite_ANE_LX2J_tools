@@ -1,0 +1,25 @@
+[1007 14:17:37] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v193-stock.img cycles=99999 ===
+[1007 14:17:37] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v193-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.319s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 14:17:38] flashed + rebooted
+[1007 14:21:08] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v193-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.524s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.072s
+[1007 14:21:09] flashed + rebooted
+[1007 14:21:28] c103: usb event: 10月 07 14:21:26 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 19] No such device (it may have been disconnected)': 97}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_103.bin
+[1007 14:24:49] c103: ring 2049 bytes (attempt 1)
+sent: oem xfer r 348d0000 8000
+[1007 14:26:19] c103: ring xfer attempt 1 failed

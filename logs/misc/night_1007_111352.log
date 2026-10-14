@@ -1,0 +1,214 @@
+[1007 11:13:52] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img cycles=99999 ===
+[1007 11:13:52] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.323s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.524s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 11:13:53] flashed + rebooted
+[1007 11:14:11] c8: usb event: 10月 07 11:14:09 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/fb_xfer.py", line 54, in <module>
+    r = bytes(dev.read(0x81, 65536, timeout=1500))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 11:14:22] c8: ring xfer failed
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 205, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 150, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 11:14:25] c8: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 24
+[1007 11:14:37] c8: adb attempt 2 failed
+[1007 11:14:42] c8: kernel gone after attempt 2
+[1007 11:14:47] c8: skip snap (loader up)
+[1007 11:14:47] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:14:48] flashed + rebooted
+[1007 11:15:06] c16: usb event: 10月 07 11:15:04 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+claim: [Errno 2] Entity not found
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/fb_xfer.py", line 54, in <module>
+    r = bytes(dev.read(0x81, 65536, timeout=1500))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 11:15:17] c16: ring xfer failed
+dance error: [Errno 110] Operation timed out
+Traceback (most recent call last):
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 241, in get_interface_and_endpoint
+    return self._ep_info[endpoint_address]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 129
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 205, in <module>
+    main()
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 150, in main
+    drain(dev)
+  File "/home/placeless/dev/p20-root/adb_cycle.py", line 58, in drain
+    r = dev.read(0x81, 65536, timeout=200)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 1035, in read
+    intf, ep = self._ctx.setup_request(self, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 233, in setup_request
+    intf, ep = self.get_interface_and_endpoint(device, endpoint_address)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 113, in wrapper
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/placeless/.cache/uv/archive-v0/3kkXhz2xPzXMrAeT/lib/python3.11/site-packages/usb/core.py", line 251, in get_interface_and_endpoint
+    raise ValueError('Invalid endpoint address ' + hex(endpoint_address))
+ValueError: Invalid endpoint address 0x81
+[1007 11:15:20] c16: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 24
+[1007 11:15:32] c16: adb attempt 2 failed
+[1007 11:15:37] c16: kernel gone after attempt 2
+[1007 11:15:42] c16: skip snap (loader up)
+[1007 11:15:42] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.528s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.101s
+[1007 11:15:43] flashed + rebooted
+[1007 11:16:06] c24: usb event: 10月 07 11:15:59 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 19] No such device (it may have been disconnected)
+EIO - dancing and retrying once
+cfg0: [Errno 19] No such device (it may have been disconnected)
+cfg1: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+readerr: [Errno 19] No such device (it may have been disconnected)
+[1007 11:17:27] c24: ring xfer failed
+cnxn reply: False frames: 0 raw: 24
+[1007 11:17:29] c24: adb attempt 1 failed
+[1007 11:17:34] c24: kernel gone after attempt 1
+[1007 11:17:39] c24: skip snap (loader up)
+[1007 11:17:39] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.540s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 11:17:40] flashed + rebooted
+[1007 11:18:20] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.526s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:18:23] flashed + rebooted
+[1007 11:19:05] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.311s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.513s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 11:19:06] flashed + rebooted
+[1007 11:19:48] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.310s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.513s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 11:19:49] flashed + rebooted

@@ -1,0 +1,22 @@
+[1007 00:30:43] === night engine v4 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v143-stock.img cycles=400 mode=crash ===
+[1007 00:30:43] c1: crash window
+[1007 00:34:34] c1: no LK after crash
+[1007 00:34:34] c2: grab window
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+write: [Errno 5] Input/Output Error
+sent: oem xfer r 348d0000 e000
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 110] Operation timed out
+cfg1: [Errno 32] Pipe error
+write: [Errno 5] Input/Output Error
+readerr: [Errno 5] Input/Output Error

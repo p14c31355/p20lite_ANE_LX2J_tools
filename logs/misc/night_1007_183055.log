@@ -1,0 +1,156 @@
+[1007 18:30:55] === night engine v21 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v211-stock.img cycles=99999 ===
+[1007 18:30:55] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v211-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 18:30:55] flashed + rebooted
+[1007 18:31:24] c13: usb event: 10月 07 18:31:23 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 87 using xhci_hcd
+== snapshot forensics/snap_183124
+time: 2026-10-07 18:31:24
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_183124.bin: No such file or directory
+[1007 18:31:24] c13: attach in flight; waiting for product
+[1007 18:31:33] c13: product arrived late: 10月 07 18:31:29 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1007 18:31:33] c13: garbled product; skip sessions
+[1007 18:35:53] c131: usb event: 
+== snapshot forensics/snap_183553
+time: 2026-10-07 18:35:53
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       0
+manufacturer:        Љ
+product:             Љ
+serial:              ANE fastboot
+speed:               480
+version:              2.00
+descriptors: 27 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 32              .... .....2
+[1007 18:35:53] c131: attach in flight; waiting for product
+[1007 18:36:04] c131: product arrived late: 10月 07 18:36:02 placeless-MS-7A72 kernel: usb 1-1: Product: Fastboot2.0
+[1007 18:36:04] c131: unexpected product; skip
+[1007 18:36:04] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v211-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.311s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.512s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 18:36:05] flashed + rebooted
+[1007 18:36:34] c144: usb event: 10月 07 18:36:33 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 89 using xhci_hcd
+== snapshot forensics/snap_183634
+time: 2026-10-07 18:36:34
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_183634.bin: No such file or directory
+[1007 18:36:34] c144: attach in flight; waiting for product
+[1007 18:36:43] c144: product arrived late: 10月 07 18:36:38 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_144.bin
+[1007 18:38:21] c144: ring 2049 bytes (attempt 1)
+[1007 18:38:21] c144: skip ring xfer (cnxn collection ok)
+178 records parsed; ledger updated (178 total)
+[1007 18:38:28] c144: skip snap (loader up)
+[1007 18:38:28] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v211-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.315s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 18:38:28] flashed + rebooted
+[1007 18:38:31] c145: usb event: 10月 07 18:38:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 90 using xhci_hcd
+== snapshot forensics/snap_183831
+time: 2026-10-07 18:38:31
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_183831.bin: No such file or directory
+[1007 18:38:31] c145: loader attach; next
+[1007 18:38:56] c157: usb event: 10月 07 18:38:56 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 91 using xhci_hcd
+== snapshot forensics/snap_183856
+time: 2026-10-07 18:38:56
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_183856.bin: No such file or directory
+[1007 18:38:56] c157: attach in flight; waiting for product
+[1007 18:39:05] c157: product arrived late: 10月 07 18:39:02 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1007 18:39:05] c157: garbled product; skip sessions
+[1007 18:39:32] c169: usb event: 10月 07 18:39:32 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 94 using xhci_hcd
+== snapshot forensics/snap_183932
+time: 2026-10-07 18:39:32
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        
+product:             ANE fastboot
+serial:              
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..

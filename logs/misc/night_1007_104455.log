@@ -1,0 +1,17 @@
+[1007 10:44:55] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v175-stock.img cycles=99999 ===
+[1007 10:44:55] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v175-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 10:44:56] flashed + rebooted
+[1007 10:45:14] c8: usb event: 10月 07 10:45:12 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0 raw: 0
+[1007 10:45:48] c8: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 24
+[1007 10:45:55] c8: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 24
+[1007 10:46:02] c8: adb attempt 3 failed
+pull y=1046 rows=45 len=0x2f760

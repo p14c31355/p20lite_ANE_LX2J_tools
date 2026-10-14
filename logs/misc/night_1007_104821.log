@@ -1,0 +1,33 @@
+[1007 10:48:21] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v175-stock.img cycles=99999 ===
+[1007 10:48:21] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v175-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 10:48:22] flashed + rebooted
+[1007 10:49:26] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v175-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 10:49:28] flashed + rebooted
+[1007 10:49:47] c36: usb event: 10月 07 10:49:45 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+dance error: [Errno 110] Operation timed out
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+read errors: {'[Errno 5] Input/Output Error': 100}
+cnxn reply: False frames: 0 raw: 0
+[1007 10:50:27] c36: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+read errors: {'[Errno 16] Resource busy': 4}
+cnxn reply: False frames: 0 raw: 0
+[1007 10:50:54] c36: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 24
+[1007 10:51:02] c36: adb attempt 3 failed
+pull y=1046 rows=45 len=0x2f760

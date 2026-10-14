@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_45-internal (Oracle Corporation)
+
+Name: res/layout/battery_charge.xml
+SHA-256-Digest: vNb+U/sRFO87h3dvUnSZa/J0o58xYGs9xlaOQaE+C7Q=
+
+Name: res/layout/input.xml
+SHA-256-Digest: VB0zcPNpZqOKGfiZD9NU5PNgCK9csJCZXOyf3ToXWpw=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: TIpxPUHqSaN1qqslSXRETw/D5vXVOhaT7cS0JaOOaAk=
+
+Name: res/raw/speaker.mp3
+SHA-256-Digest: y1nixN/dRJwFGNHJz7MPBC5hu/5zcgF/Oj1RK7q3YWo=
+
+Name: resources.arsc
+SHA-256-Digest: r+uthUM9A216PCW3FxxyhilvnFXO31gjMy5Yrrp534g=
+
+Name: classes.dex
+SHA-256-Digest: zU5yT3gTk7HAhJyGD1qwJQ9elGiPu+Hp0Y2qdwoCSoY=
+
+Name: res/drawable/ic_launcher.png
+SHA-256-Digest: E4K/XUvjRW+0I7+4JA72M+3vlEuVKk+bsxfGrZiL8Qc=
+

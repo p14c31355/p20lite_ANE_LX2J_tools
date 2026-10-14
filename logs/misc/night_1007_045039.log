@@ -1,0 +1,35 @@
+[1007 04:50:39] === night engine v6 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v152-stock.img cycles=99999 ===
+[1007 04:50:58] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v152-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.315s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.515s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 04:50:59] flashed + rebooted
+[1007 04:51:17] c17: usb event: 10月 07 04:51:15 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 46 using xhci_hcd
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 04:51:51] c17: adb log failed
+[1007 04:51:51] c17: crash via fastboot
+[1007 04:52:34] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v152-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.527s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 04:52:36] flashed + rebooted
+[1007 04:52:38] c18: usb event: 10月 07 04:52:33 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 47 using xhci_hcd
+[1007 04:52:53] c23: usb event: 10月 07 04:52:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 48 using xhci_hcd
+cnxn reply: True frames: 1
+ring bytes: 0 -> rings_night/adb_c23.bin
+[1007 04:53:30] c23: adb ring 0 bytes
+[1007 04:53:30] c23: crash via fastboot
+[1007 04:54:45] c23: crash via adb
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0

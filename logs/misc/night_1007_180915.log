@@ -1,0 +1,24 @@
+[1007 18:09:15] === night engine v19 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v210-stock.img cycles=99999 ===
+[1007 18:09:15] c1: usb event: 10月 07 18:08:42 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 75 using xhci_hcd
+== snapshot forensics/snap_180915
+time: 2026-10-07 18:09:15
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1007 18:09:15] c1: attach in flight; waiting for product
+[1007 18:10:47] c1: product-less attach; skip (no sessions possible)

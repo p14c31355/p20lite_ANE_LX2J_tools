@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+print("v319 status: the desktop render STARTED for the first time (boot")
+print("thread passed reenumerate via the quiet-wait, reached the glyph")
+print("mapping in the desktop text render). The render then froze -")
+print("matching the v159-class stack-depth hazard: adb_dispatch runs from")
+print("the timer IRQ and the CNXN ring copy is deep.")
+print()
+print("NEXT TEST: fresh v319 boot, host stays SILENT until the render")
+print("completes (no CNXN collections). If the desktop finishes in")
+print("silence, the pump's conversation handling is the corruptor and")
+print("the fix is to move adb_dispatch off the IRQ context.")

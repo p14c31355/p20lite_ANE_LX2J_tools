@@ -1,0 +1,1 @@
+0x134c838	root=1	pairs=1	dd_ok=2	uid=0(root) gid=0(root) groups=0(root),1004(input)

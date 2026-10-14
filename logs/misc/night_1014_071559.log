@@ -1,0 +1,98 @@
+[1014 07:15:59] === night engine v24 start img=artifacts/fullerene-ane-v331d-skipwrite.img cycles=800 ===
+[1014 07:15:59] c1: usb event: 10月 14 07:02:08 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 51 using xhci_hcd
+== snapshot forensics/snap_071559
+time: 2026-10-14 07:15:59
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_071559.bin: No such file or directory
+[1014 07:16:00] ANE fastboot present; reboot-bootloader (no combo)
+< waiting for SCV7N18927000473>
+[1014 07:16:50] kernel reboot-bootloader did not expose Fastboot2.0
+no device
+[1014 07:17:11] c1: adb attempt 1 failed
+no device
+[1014 07:17:32] c1: adb attempt 2 failed
+no device
+[1014 07:17:52] c1: adb attempt 3 failed
+device not found
+[1014 07:17:58] c1: ring xfer failed
+0 records parsed; ledger updated (585 total)
+no device
+[1014 07:18:28] c1: snap failed
+[1014 07:19:59] c1: no LK yet; waiting next event
+[1014 07:25:19] c150: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1014 07:25:49] c150: oem crash unavailable
+[1014 07:26:32] LK window; flashing artifacts/fullerene-ane-v331d-skipwrite.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 1263616).
+Sending 'kernel' (1234 KB)                         OKAY [  0.042s]
+Writing 'kernel'                                   OKAY [  0.029s]
+Finished. Total time: 0.137s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1014 07:26:34] flashed + rebooted
+[1014 07:27:03] c182: usb event: 10月 14 07:27:01 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 53 using xhci_hcd
+== snapshot forensics/snap_072703
+time: 2026-10-14 07:27:03
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1014 07:27:03] ANE fastboot present; reboot-bootloader (no combo)
+< waiting for SCV7N18927000473>
+Rebooting into bootloader                          [1014 07:27:53] kernel reboot-bootloader did not expose Fastboot2.0
+cnxn reply: False frames: 0 raw: 0
+[1014 07:28:20] c182: adb attempt 1 failed
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 88}
+cnxn reply: False frames: 0 raw: 0
+[1014 07:28:47] c182: adb attempt 2 failed
+[1014 07:28:47] c182: kernel gone after attempt 2
+claim: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+drainerr: [Errno 16] Resource busy
+write: [Errno 16] Resource busy
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 16] Resource busy
+EIO - dancing and retrying once
+write: [Errno 16] Resource busy
+readerr: [Errno 16] Resource busy
+[1014 07:29:47] c182: ring xfer failed
+0 records parsed; ledger updated (585 total)
+[1014 07:29:48] c182: skip snap (loader up)
+[1014 07:29:48] LK window; flashing artifacts/fullerene-ane-v331d-skipwrite.img
+< waiting for SCV7N18927000473>

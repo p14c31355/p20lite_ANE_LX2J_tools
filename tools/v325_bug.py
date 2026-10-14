@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+print("v325 dispatch bug identified:")
+print("The IRQ-side staging copies FB_CMD[0..len] (the RAW buffer), but the")
+print("decoded packet was anchored - if a stale prefix preceded the frame,")
+print("anchored.len() != raw.len() and the copy starts at the wrong offset.")
+print("The non-IRQ dispatch re-decodes the raw copy, decode fails (magic at")
+print("the wrong offset), and the reply never goes out. 0-byte replies.")
+print()
+print("ALSO: the boot thread is likely IN THE WAIT LOOP already (the IRQ")
+print("samples keep landing in draw_fb_diag's glyph mapping - the longest")
+print("part of every wait-loop iteration). The desktop may have rendered.")

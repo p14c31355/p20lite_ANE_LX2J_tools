@@ -1,0 +1,7 @@
+time	state	vid_pid	product	interfaces	log_event
+06:17:50.634	dark	-			-
+06:18:27.662	dark	-	-	-	attach: 2026-10-12T06:18:27.304721+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 17 using xhci_hcd
+06:18:33.968	dark	-	-	-	attach: 2026-10-12T06:18:33.942747+09:00 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 18 using xhci_hcd
+06:18:34.525	fastboot(18d1:d00d)	-	-	-	idd: 2026-10-12T06:18:34.236759+09:00 placeless-MS-7A72 kernel: usb 1-1: New USB device found, idVendor=18d1, idProduct=d00d, bcdDevice= 1.00
+06:18:34.525	fastboot(18d1:d00d)	-	-	-	product: 2026-10-12T06:18:34.236799+09:00 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+06:18:34.525	fastboot(18d1:d00d)	18d1:d00d	Љ	0	-

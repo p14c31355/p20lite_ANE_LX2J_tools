@@ -1,0 +1,39 @@
+[1014 08:30:15] === night engine v24 start img=artifacts/fullerene-ane-v331h-noprobe.img cycles=800 ===
+[1014 08:30:15] c1: usb event: 10月 14 08:20:55 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 53 using xhci_hcd
+== snapshot forensics/snap_083015
+time: 2026-10-14 08:30:15
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_083015.bin: No such file or directory
+[1014 08:30:15] c1: loader attach; next
+[1014 08:34:46] c126: usb event: 
+== snapshot forensics/snap_083446
+time: 2026-10-14 08:34:46
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_083446.bin: No such file or directory
+[1014 08:34:46] c126: attach in flight; waiting for product

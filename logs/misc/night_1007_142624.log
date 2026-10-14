@@ -1,0 +1,46 @@
+[1007 14:26:24] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v194-stock.img cycles=99999 ===
+[1007 14:26:24] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v194-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.323s]
+Writing 'kernel'                                   OKAY [  0.140s]
+Finished. Total time: 0.529s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 14:26:25] flashed + rebooted
+[1007 14:31:46] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v194-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.316s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.516s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 14:31:46] flashed + rebooted
+[1007 14:32:05] c155: usb event: 10月 07 14:32:03 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+[1007 14:32:05] c155: garbled product; skip sessions
+[1007 14:36:50] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v194-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.519s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 14:36:53] flashed + rebooted
+[1007 14:37:11] c286: usb event: 10月 07 14:37:09 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_286.bin
+[1007 14:40:32] c286: ring 2049 bytes (attempt 1)
+sent: oem xfer r 348d0000 8000
+[1007 14:42:02] c286: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+[1007 14:44:02] c286: ring xfer attempt 2 failed
+[1007 14:44:07] c286: skip snap (loader up)
+[1007 14:44:07] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v194-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.315s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.518s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 14:44:08] flashed + rebooted

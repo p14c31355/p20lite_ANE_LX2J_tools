@@ -1,0 +1,6 @@
+[1010 05:02:18] loop start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v266-usbspi-probe.img
+[1010 05:02:18] cycle 1: LK -> flash
+Finished. Total time: 0.515s
+Finished. Total time: 0.071s
+[1010 05:03:04] cycle 2: LK -> flash
+Sending 'kernel' (11178 KB)                        Rebooting                                          [1010 05:05:19] cycle 3: LK -> flash

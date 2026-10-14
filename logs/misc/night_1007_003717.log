@@ -1,0 +1,12 @@
+[1007 00:37:17] === night engine v5 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v143-stock.img cycles=99999 mode=grab ===
+[1007 03:51:32] c5592: usb event: 10月 07 03:51:30 placeless-MS-7A72 kernel: usb 1-1: USB disconnect, device number 8
+[1007 03:51:36] c5594: LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v143-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.318s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 03:51:38] c5594: flashed + rebooted
+[1007 03:51:54] c5600: usb event: 10月 07 03:51:54 placeless-MS-7A72 kernel: usb 1-1: SerialNumber: SCV7N18927000473

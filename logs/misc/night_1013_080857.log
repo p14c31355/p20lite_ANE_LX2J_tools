@@ -1,0 +1,49 @@
+[1013 08:08:57] === night engine v24 start img=artifacts/fullerene-ane-v306-quietdetector.img cycles=12 ===
+[1013 08:08:57] c1: usb event: 10月 13 08:08:53 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 31 using xhci_hcd
+== snapshot forensics/snap_080857
+time: 2026-10-13 08:08:57
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_080857.bin: No such file or directory
+cnxn reply: False frames: 0 raw: 24
+[1013 08:09:13] c1: adb attempt 1 failed
+[1013 08:09:13] c1: kernel gone after attempt 1
+sent: oem xfer r 348d0000 8000
+[1013 08:10:13] c1: ring xfer failed
+0 records parsed; ledger updated (552 total)
+[1013 08:10:13] c1: skip snap (loader up)
+[1013 08:10:13] LK window; queued image already resident - rebooting only
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1013 08:10:15] c2: usb event: 10月 13 08:09:10 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 32 using xhci_hcd
+== snapshot forensics/snap_081015
+time: 2026-10-13 08:10:15
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_081015.bin: No such file or directory
+[1013 08:10:16] c2: loader attach; next
+[1013 08:10:39] === night engine v24 done ===

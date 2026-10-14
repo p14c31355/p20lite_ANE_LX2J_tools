@@ -1,0 +1,101 @@
+[1013 21:06:29] === night engine v24 start img=artifacts/fullerene-ane-v328-renderprobe.img cycles=500 ===
+[1013 21:06:29] c1: usb event: 10月 13 20:27:28 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 85 using xhci_hcd
+== snapshot forensics/snap_210629
+time: 2026-10-13 21:06:29
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+cnxn reply: False frames: 0 raw: 0
+[1013 21:06:57] c1: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 0
+[1013 21:07:23] c1: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 0
+[1013 21:07:50] c1: adb attempt 3 failed
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+overflow x 1  got 20
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+[1013 21:08:55] c1: ring xfer failed
+17 records parsed; ledger updated (569 total)
+pull y=1046 rows=45 len=0x2f760
+[1013 21:13:15] c1: snap failed
+[1013 21:14:03] LK window; queued image already resident - rebooting only
+< waiting for SCV7N18927000473>
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1013 21:14:08] c2: usb event: 10月 13 21:14:02 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 86 using xhci_hcd
+== snapshot forensics/snap_211408
+time: 2026-10-13 21:14:08
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_211408.bin: No such file or directory
+[1013 21:14:08] c2: loader attach; next
+[1013 21:14:57] c25: usb event: 10月 13 21:14:56 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 87 using xhci_hcd
+== snapshot forensics/snap_211457
+time: 2026-10-13 21:14:57
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_211457.bin: No such file or directory
+[1013 21:14:58] c25: attach in flight; waiting for product
+[1013 21:15:04] c25: product arrived late: 10月 13 21:15:02 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0 raw: 0
+[1013 21:15:31] c25: adb attempt 1 failed
+cnxn reply: False frames: 0 raw: 0
+[1013 21:15:58] c25: adb attempt 2 failed
+cnxn reply: False frames: 0 raw: 0
+[1013 21:16:24] c25: adb attempt 3 failed
+sent: oem xfer r 348d0000 8000
+OKAY len: 32768
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+[1013 21:17:30] c25: ring xfer failed
+19 records parsed; ledger updated (571 total)
+pull y=1046 rows=45 len=0x2f760
+readerr: [Errno 5] Input/Output Error
+EIO - dancing once
+part failed at y= 1046 got 0
+[1013 21:17:44] c25: snap failed
+[1013 21:19:21] c25: no LK yet; waiting next event
+[1013 21:24:49] c174: stall rescue; sending oem crash
+< waiting for SCV7N18927000473>
+[1013 21:25:19] c174: oem crash unavailable

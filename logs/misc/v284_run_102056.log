@@ -1,0 +1,5 @@
+=== armed 10:20:56
+=== LK 10:20:56 -> v284 safe-arming probe
+fastboot: error: cannot load 'artifacts/fullerene-ane-v284-safearm.img': No such file or directory
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.072s

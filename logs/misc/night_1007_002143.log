@@ -1,0 +1,20 @@
+[1007 00:21:43] === night engine v2 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v143-stock.img cycles=400 ===
+[1007 00:21:44] c1: responder LIVE; grabbing ring
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+write: [Errno 5] Input/Output Error
+sent: oem xfer r 348d0000 e000
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+cfg0: [Errno 110] Operation timed out
+cfg1: [Errno 110] Operation timed out
+write: [Errno 5] Input/Output Error
+readerr: [Errno 5] Input/Output Error

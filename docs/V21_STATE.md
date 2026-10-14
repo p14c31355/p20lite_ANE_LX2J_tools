@@ -149,3 +149,45 @@
 - 対策 = stepmarks8: uart tee を RAM バッファ (TEE_RAM 4KB, 平 store のみ) へ。
   mmu 通過後 (allocator::from_boot_info の h 直後) に tee_flush() で PMSG へ一括転送。
 - blit 有効長 ~500px (0x210000/0x10E0) = 12.5 行が実画面の限界。14 行 x 45 (3x scale) が安全域。
+
+## 04日 11:0x: フレーキーの発見 (stepmarks10/11/12)
+- stepmarks10: count 0x0F、15 マーク全通過 (9->a クリア = tee 無罪が確定)
+- stepmarks11: count 0x0D、"1..k" = fdt walk 直前で死亡
+- stepmarks12: 同一 mmu コードで count 0x02、"1 9" = 9 直後で死亡
+- 結論: MMU 域 (9->e) は確率的。1 回の死で回帰を断定せず、1 回の通過で壁を消したとも言わない。
+  マークは分割のたび再配置する使い捨ての計器
+
+## 04日 11:50-15:00: 配布整備と方針確定
+- toolkit (~/dev/p20lite_ANE_LX2J_tools) push 済 (b1233c7)。azrom 13GB は archive.org
+  (ia download p20lite-ane-lx2j-stock-firmware, 4 ファイル 12.7GB)。p20-root 36->3.7GB、/tmp 43->2.3GB
+- 方針 (ユーザー確定): MMU までは写真で行く / 画面表示は必要情報のみ (MMU/USB) に絞る /
+  ノッチ (インカメラ・スピーカー) 回避のオフセット / SDXC ドライバは余裕後
+  (dwmmc1 @0xFF37F000, compatible "hisilicon,hi6250-dw-mshc", IRQ 139, ciu/biu = CRG 420/421, 4bit, cd-gpio)
+
+## 04日 15:0x: stepmarks13 — mmu 内部 q/r/s + Report + TEXT_Y
+- mmu 内部 3 分割: q = テーブル+ユーザールート構築完了 / r = TTBR/MAIR/TCR+TLB 完了 /
+  s = SCTLR 書き換え済 (init 最終行)。b (9 後コンソール) / c (mmu 直前) も復活
+- マーク整理: allocator/fdt の l/m/n 二重定義解消 (正 = fdt)、g/i/j 引退 = 15 サイト全ユニーク + 'F' 予備 1
+- Report ブロック (h 地点、行毎 tee_flush): R:M= マーク列 / R:U0-U3 (DWC2) / R:W0,W2 (AHBIF) / R:V,F
+- プローブ: TEXT_Y=110 (ノッチ回避)、QEMU ピクセル証明は +0x6B940 シフトで全 PASS
+- 検証: flasks ビルド exit 0 / 15 ユニーク機械確認 / Image 内 report 実在 / 29 tests / QEMU 完走 / プローブ PASS
+- 実機: 15:14 stepmarks13 焼き→起動 (死亡点は RC の b/c/q/r/s 位置で確定)
+
+## 04日 16:4x: stepmarks14 — C=0 で r→s 突破 (確率域からの第一歩)
+- stepmarks13 = count 6 (r→t 間死) / stepmarks14 = [ic iallu 前倒し + ANE C=0 + マーク t] で
+  count 0x0B = "1 9 b c q r t s e a h" = **SCTLR 切替 (t,s) とポスト MMU を全て通過**
+- 新しい死点 = h→f = report 内。直前まで全て実証済み安全処理なので、レポートの USB レジスタ
+  読み (0xFF100040 等) が原因と特定 (LK がクロックゲートしたままの窓を読むとバスストール)
+- probe v4 も同じ読みで死んでいた (プローブ側 USB 読み = 除去済) → 「早期ブートでバス読み禁止」を規約化
+- 副産物: RC 2 行目 (450→13 行化で窓内に収めた)、ZH 行 = 44 42 47 43 | 0 | 0 =
+  sig 正常 / **size=0** — pmsg ゾーンのヘッダが Huawei 側フォールバックブートに消費される
+  (データは残るがヘッダが死ぬ → 読者が先頭窓を描画 = 「ログ凍結」の正体)
+
+## 04日 16:5x: stepmarks15 — FTLX 自前ログ + 安全レポート
+- report: USB/AHBIF 読みを除去 (マーク列 + SCTLR/CNTFRQ の mrs のみ)
+- **FTLX ブロック (0x348D0000, 56KB)**: マークと同じ「コンソールゾーン未使用テール」。
+  ane_step_begin が毎ブートリセット (絶対アドレスのみ)、text_byte が 1B 追記、
+  tee_flush が書込範囲を cache clean → eRecovery に消費されない恒久ログ
+- probe v5: FTLX 優先で本当の末尾を描画 (pmsg はフォールバック) + ZH = [FTLX magic|FTLX size|PMSG size]
+- 検証: ビルド / 29 tests / QEMU 完走 / プローブ QEMU 全 PASS / byte-exact パッケージ
+- 実機チェーン装填済み (ane_arm_15.sh): コンボ → 15 → 窓 → v5 → 撮影

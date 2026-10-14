@@ -1,0 +1,9 @@
+[1010 04:54:08] loop start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v264-usbspi.img
+[1010 04:54:32] cycle 4: LK window -> flash
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.537s
+Finished. Total time: 0.071s
+[1010 04:56:38] cycle 15: LK window -> flash
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.517s
+Finished. Total time: 0.070s

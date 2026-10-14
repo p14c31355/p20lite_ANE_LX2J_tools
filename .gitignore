@@ -4,9 +4,9 @@ firmware/azrom/*.zip
 firmware/azrom/*.rar
 
 # Boot images are large binaries and reproducible from source with
-# tools/builders/mkane_stock_embed.py; keep them local.
-# One exception: the current screen-reader probe is what users need first,
-# so it is allowed through (see the negation below).
+# tools/builders/mkane_stock_embed.py; keep them local (they live in
+# the p20-root working tree). One exception: the current screen-reader
+# probe is what users need first, so it is allowed through.
 artifacts/*.img
 artifacts/*.bin
 !artifacts/fullerene-ane-log-probe-stock.img
@@ -19,7 +19,12 @@ logs/screens/*.jpg
 # the multi-megabyte derived dumps stay local - recover them from the device
 # or from the original backups directory.
 unlock/device-dumps/oeminfo.bin
+unlock/device-dumps/dts_stock.bin
 unlock/lk/lk.asm
+
+# The consolidated lk disassembly from p20-root (12 MB, derived from
+# fastboot_LK.bin which is tracked).
+unlock/lk_asm/
 
 # False-positive: the stock kernel ELF contains random bytes that GitHub's
 # secret scanner flags as a Figma token. Keep it local (it is a derived

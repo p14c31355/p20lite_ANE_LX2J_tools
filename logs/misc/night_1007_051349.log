@@ -1,0 +1,17 @@
+[1007 05:13:49] === night engine v7 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v155-stock.img cycles=99999 ===
+[1007 05:15:14] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v155-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.319s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.021s]
+Finished. Total time: 0.071s
+[1007 05:15:16] flashed + rebooted
+[1007 05:15:34] c15: usb event: 10月 07 05:15:32 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 60 using xhci_hcd
+no device
+[1007 05:15:38] c15: adb log failed
+[1007 05:15:38] c15: crash via fastboot
+< waiting for SCV7N18927000473>
+[1007 05:16:53] c15: crash via adb
+no device

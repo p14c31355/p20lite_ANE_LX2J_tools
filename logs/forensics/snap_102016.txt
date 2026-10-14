@@ -1,0 +1,14 @@
+time: 2026-10-08 10:20:16
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 2
+bNumInterfaces:       0
+manufacturer:        
+product:             Љ
+serial:              Fullerene
+speed:               480
+version:              2.00

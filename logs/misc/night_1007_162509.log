@@ -1,0 +1,56 @@
+[1007 16:25:09] === night engine v12 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v202-stock.img cycles=99999 ===
+[1007 16:25:09] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v202-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.324s]
+Writing 'kernel'                                   OKAY [  0.141s]
+Finished. Total time: 0.530s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 16:25:10] flashed + rebooted
+[1007 16:25:39] c13: usb event: 10月 07 16:25:38 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+== snapshot forensics/snap_162539
+time: 2026-10-07 16:25:39
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        Fullerene
+product:             ANE fastboot
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+read errors: {'[Errno 5] Input/Output Error': 1, '[Errno 19] No such device (it may have been disconnected)': 95}
+cnxn reply: True frames: 1 raw: 2096
+ring bytes: 2049 (piggyback) -> rings_night/adb_13.bin
+[1007 16:28:02] c13: ring 2049 bytes (attempt 1)
+sent: oem xfer r 348d0000 8000
+[1007 16:29:32] c13: ring xfer attempt 1 failed
+sent: oem xfer r 348d0000 8000
+[1007 16:31:32] c13: ring xfer attempt 2 failed
+[1007 16:31:38] c13: skip snap (loader up)
+[1007 16:31:38] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v202-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 16:31:39] flashed + rebooted
+[1007 16:36:46] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v202-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 16:36:48] flashed + rebooted

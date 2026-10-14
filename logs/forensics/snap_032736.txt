@@ -1,0 +1,14 @@
+time: 2026-10-08 03:27:36
+idVendor:            12d1
+idProduct:           107e
+bcdDevice:           0299
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        unknown
+product:             HUAWEI
+serial:              SCV7N18927000473
+speed:               480
+version:              2.00

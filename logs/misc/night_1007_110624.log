@@ -1,0 +1,62 @@
+[1007 11:06:24] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img cycles=99999 ===
+[1007 11:07:01] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.331s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.533s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:07:02] flashed + rebooted
+[1007 11:07:44] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.317s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:07:46] flashed + rebooted
+[1007 11:08:04] c26: usb event: 10月 07 11:08:02 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 19] No such device (it may have been disconnected)
+EIO - dancing and retrying once
+cfg0: [Errno 19] No such device (it may have been disconnected)
+cfg1: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+readerr: [Errno 19] No such device (it may have been disconnected)
+[1007 11:11:30] c26: ring xfer failed
+cnxn reply: False frames: 0 raw: 24
+[1007 11:11:32] c26: adb attempt 1 failed
+[1007 11:11:37] c26: kernel gone after attempt 1
+[1007 11:11:42] c26: skip snap (loader up)
+[1007 11:11:42] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v177-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.327s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.527s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:11:43] flashed + rebooted
+[1007 11:12:05] c34: usb event: 10月 07 11:12:00 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+drainerr: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 19] No such device (it may have been disconnected)
+EIO - dancing and retrying once
+cfg0: [Errno 19] No such device (it may have been disconnected)
+cfg1: [Errno 19] No such device (it may have been disconnected)
+write: [Errno 19] No such device (it may have been disconnected)
+readerr: [Errno 19] No such device (it may have been disconnected)

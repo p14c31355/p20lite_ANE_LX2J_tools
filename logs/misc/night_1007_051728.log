@@ -1,0 +1,27 @@
+[1007 05:17:28] === night engine v7 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v156-stock.img cycles=99999 ===
+[1007 05:21:00] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v156-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.338s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.540s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:21:02] flashed + rebooted
+[1007 05:21:20] c108: usb event: 10月 07 05:21:18 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 64 using xhci_hcd
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 05:21:54] c108: adb attempt 1 failed
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 05:22:31] c108: adb attempt 2 failed
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 05:23:07] c108: adb attempt 3 failed
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 05:23:44] c108: adb attempt 4 failed

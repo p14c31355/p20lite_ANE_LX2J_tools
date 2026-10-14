@@ -1,0 +1,311 @@
+[1007 05:25:17] === night engine v7 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img cycles=99999 ===
+[1007 05:26:01] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.315s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.523s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 05:26:03] flashed + rebooted
+[1007 05:26:30] c13: usb event: 10月 07 05:26:19 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 66 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:26:58] c13: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:27:08] c13: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:27:18] c13: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:27:28] c13: adb attempt 4 failed
+[1007 05:27:36] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.327s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.527s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:27:37] flashed + rebooted
+[1007 05:27:39] c14: usb event: 10月 07 05:26:36 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 67 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:28:15] c14: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:28:25] c14: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:28:35] c14: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:28:45] c14: adb attempt 4 failed
+[1007 05:28:53] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.321s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 05:28:54] flashed + rebooted
+[1007 05:28:56] c15: usb event: 10月 07 05:28:10 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 69 using xhci_hcd
+no device
+[1007 05:29:20] c15: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:29:50] c15: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:30:00] c15: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:30:11] c15: adb attempt 4 failed
+[1007 05:30:19] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.339s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.541s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:30:19] flashed + rebooted
+[1007 05:30:21] c16: usb event: 10月 07 05:29:27 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 74 using xhci_hcd
+no device
+[1007 05:30:46] c16: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:31:15] c16: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:31:25] c16: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:31:36] c16: adb attempt 4 failed
+[1007 05:31:44] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.345s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.548s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:31:44] flashed + rebooted
+[1007 05:31:47] c17: usb event: 10月 07 05:30:52 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 79 using xhci_hcd
+no device
+[1007 05:32:11] c17: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:32:21] c17: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:32:31] c17: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:32:41] c17: adb attempt 4 failed
+[1007 05:32:49] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.326s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.533s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:32:50] flashed + rebooted
+[1007 05:32:52] c18: usb event: 10月 07 05:32:17 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 84 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:33:29] c18: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:33:39] c18: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:33:49] c18: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:33:59] c18: adb attempt 4 failed
+[1007 05:34:07] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.334s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:34:08] flashed + rebooted
+[1007 05:34:10] c19: usb event: 10月 07 05:33:23 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 86 using xhci_hcd
+no device
+[1007 05:34:35] c19: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:35:04] c19: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:35:14] c19: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:35:25] c19: adb attempt 4 failed
+[1007 05:35:33] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.319s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:35:33] flashed + rebooted
+[1007 05:35:36] c20: usb event: 10月 07 05:34:41 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 91 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:36:12] c20: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:36:22] c20: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:36:32] c20: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:36:42] c20: adb attempt 4 failed
+[1007 05:36:50] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.341s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.544s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:36:51] flashed + rebooted
+[1007 05:36:53] c21: usb event: 10月 07 05:36:06 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 93 using xhci_hcd
+no device
+[1007 05:37:18] c21: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:37:47] c21: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:37:57] c21: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:38:08] c21: adb attempt 4 failed
+[1007 05:38:16] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.144s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:38:16] flashed + rebooted
+[1007 05:38:19] c22: usb event: 10月 07 05:37:24 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 96 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:38:55] c22: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:39:05] c22: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:39:15] c22: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:39:26] c22: adb attempt 4 failed
+[1007 05:39:34] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.300s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.501s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 05:39:34] flashed + rebooted
+[1007 05:39:37] c23: usb event: 10月 07 05:38:49 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 98 using xhci_hcd
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:40:13] c23: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 05:40:23] c23: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:40:33] c23: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:40:44] c23: adb attempt 4 failed
+[1007 05:40:52] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:40:52] flashed + rebooted
+[1007 05:40:55] c24: usb event: 10月 07 05:40:07 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 100 using xhci_hcd
+no device
+[1007 05:41:19] c24: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:41:48] c24: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:41:59] c24: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:42:09] c24: adb attempt 4 failed
+[1007 05:42:17] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.328s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.531s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 05:42:18] flashed + rebooted
+[1007 05:42:20] c25: usb event: 10月 07 05:41:25 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 105 using xhci_hcd
+no device
+[1007 05:42:44] c25: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:43:13] c25: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:43:24] c25: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:43:34] c25: adb attempt 4 failed
+[1007 05:43:42] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.310s]
+Writing 'kernel'                                   OKAY [  0.146s]
+Finished. Total time: 0.521s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.072s
+[1007 05:43:43] flashed + rebooted
+[1007 05:43:45] c26: usb event: 10月 07 05:42:50 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 110 using xhci_hcd
+no device
+[1007 05:44:09] c26: adb attempt 1 failed
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 05:44:39] c26: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:44:49] c26: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:44:59] c26: adb attempt 4 failed
+[1007 05:45:07] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.134s]
+Finished. Total time: 0.533s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 05:45:08] flashed + rebooted
+[1007 05:45:10] c27: usb event: 10月 07 05:44:15 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 115 using xhci_hcd
+no device
+[1007 05:45:22] c27: adb attempt 1 failed
+no device
+[1007 05:45:38] c27: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:45:49] c27: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:45:59] c27: adb attempt 4 failed
+[1007 05:46:07] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.311s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.512s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.072s
+[1007 05:46:07] flashed + rebooted
+[1007 05:46:10] c28: usb event: 10月 07 05:45:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 120 using xhci_hcd
+no device
+[1007 05:46:22] c28: adb attempt 1 failed
+write1: [Errno 19] No such device (it may have been disconnected)
+write2: [Errno 19] No such device (it may have been disconnected)
+cnxn reply: False frames: 0
+[1007 05:46:57] c28: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 05:47:07] c28: adb attempt 3 failed
+cnxn reply: False frames: 0
+[1007 05:47:17] c28: adb attempt 4 failed
+[1007 05:47:25] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v157-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.314s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.516s
+Rebooting                                          OKAY [  0.023s]
+Finished. Total time: 0.073s
+[1007 05:47:26] flashed + rebooted
+[1007 05:47:28] c29: usb event: 10月 07 05:46:40 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 122 using xhci_hcd

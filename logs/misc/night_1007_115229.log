@@ -1,0 +1,30 @@
+[1007 11:52:29] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v182-stock.img cycles=99999 ===
+[1007 11:53:19] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v182-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11444224).
+Sending 'kernel' (11176 KB)                        OKAY [  0.320s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.522s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 11:53:21] flashed + rebooted
+[1007 11:53:37] c30: usb event: 10月 07 11:53:37 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+drainerr: [Errno 5] Input/Output Error
+write: [Errno 5] Input/Output Error
+sent: oem xfer r 348d0000 8000
+readerr: [Errno 5] Input/Output Error
+EIO - dancing and retrying once
+write: [Errno 5] Input/Output Error
+readerr: [Errno 5] Input/Output Error
+[1007 11:56:33] c30: ring xfer failed
+cnxn reply: False frames: 0 raw: 0
+[1007 11:56:54] c30: adb attempt 1 failed

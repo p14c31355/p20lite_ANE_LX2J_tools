@@ -1,0 +1,42 @@
+[1007 17:25:09] === night engine v15 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v206-stock.img cycles=99999 ===
+[1007 17:26:05] c27: usb event: 10月 07 17:26:04 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 51 using xhci_hcd
+== snapshot forensics/snap_172605
+time: 2026-10-07 17:26:05
+idVendor:            
+idProduct:           
+bcdDevice:           
+bDeviceClass:        
+bMaxPacketSize0:     
+bNumConfigurations:  
+bConfigurationValue: 
+bNumInterfaces:      
+manufacturer:        
+product:             
+serial:              
+speed:               
+version:             
+descriptors: 0 bytes
+xxd: forensics/snap_172605.bin: No such file or directory
+[1007 17:26:05] c27: loader attach; next
+[1007 17:26:12] c30: usb event: 10月 07 17:26:11 placeless-MS-7A72 kernel: usb 1-1: new high-speed USB device number 53 using xhci_hcd
+== snapshot forensics/snap_172612
+time: 2026-10-07 17:26:12
+idVendor:            18d1
+idProduct:           d00d
+bcdDevice:           0100
+bDeviceClass:        00
+bMaxPacketSize0:     64
+bNumConfigurations:  1
+bConfigurationValue: 1
+bNumInterfaces:       1
+manufacturer:        
+product:             
+serial:              Fullerene
+speed:               480
+version:              2.00
+descriptors: 50 bytes
+00000000: 1201 0002 0000 0040 d118 0dd0 0001 0102  .......@........
+00000010: 0301 0902 2000 0101 0080 3209 0400 0002  .... .....2.....
+00000020: ff42 0300 0705 8102 0002 0007 0501 0200  .B..............
+00000030: 0200                                     ..
+[1007 17:26:12] c30: loader attach; next

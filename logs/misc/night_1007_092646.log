@@ -1,0 +1,106 @@
+[1007 09:26:46] === night engine v10 start img=/home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img cycles=99999 ===
+[1007 09:27:08] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.325s]
+Writing 'kernel'                                   OKAY [  0.142s]
+Finished. Total time: 0.533s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 09:27:10] flashed + rebooted
+[1007 09:28:08] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.331s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.532s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:28:11] flashed + rebooted
+[1007 09:28:29] c43: usb event: 10月 07 09:28:28 placeless-MS-7A72 kernel: usb 1-1: Product: ANE fastboot
+cnxn reply: False frames: 0
+[1007 09:28:50] c43: adb attempt 1 failed
+write1: [Errno 5] Input/Output Error
+write2: [Errno 5] Input/Output Error
+cnxn reply: False frames: 0
+[1007 09:29:24] c43: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 09:29:31] c43: adb attempt 3 failed
+[1007 09:29:36] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.316s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.517s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:29:37] flashed + rebooted
+[1007 09:30:07] c57: usb event: 10月 07 09:30:06 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 09:30:33] c57: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 09:30:40] c57: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 09:30:47] c57: adb attempt 3 failed
+[1007 09:30:52] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.332s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.535s
+Rebooting                                          OKAY [  0.022s]
+Finished. Total time: 0.073s
+[1007 09:30:53] flashed + rebooted
+[1007 09:31:52] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.310s]
+Writing 'kernel'                                   OKAY [  0.139s]
+Finished. Total time: 0.514s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 09:31:53] flashed + rebooted
+[1007 09:32:29] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.313s]
+Writing 'kernel'                                   OKAY [  0.136s]
+Finished. Total time: 0.515s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 09:32:30] flashed + rebooted
+[1007 09:33:06] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.336s]
+Writing 'kernel'                                   OKAY [  0.135s]
+Finished. Total time: 0.536s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:33:08] flashed + rebooted
+[1007 09:33:39] c127: usb event: 10月 07 09:33:37 placeless-MS-7A72 kernel: usb 1-1: Product: Љ
+write1: [Errno 16] Resource busy
+write2: [Errno 16] Resource busy
+cnxn reply: False frames: 0
+[1007 09:34:04] c127: adb attempt 1 failed
+cnxn reply: False frames: 0
+[1007 09:34:11] c127: adb attempt 2 failed
+cnxn reply: False frames: 0
+[1007 09:34:18] c127: adb attempt 3 failed
+[1007 09:34:23] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.301s]
+Writing 'kernel'                                   OKAY [  0.137s]
+Finished. Total time: 0.503s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.070s
+[1007 09:34:24] flashed + rebooted
+[1007 09:35:00] LK window; flashing /home/placeless/dev/p20-root/artifacts/fullerene-ane-v168-stock.img
+< waiting for SCV7N18927000473>
+Warning: skip copying kernel image avb footer (kernel partition size: 0, kernel image size: 11442176).
+Sending 'kernel' (11174 KB)                        OKAY [  0.333s]
+Writing 'kernel'                                   OKAY [  0.138s]
+Finished. Total time: 0.536s
+Rebooting                                          OKAY [  0.020s]
+Finished. Total time: 0.071s
+[1007 09:35:02] flashed + rebooted
