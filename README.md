@@ -1,8 +1,9 @@
 # p20lite_ANE_LX2J_tools
 
 **Huawei P20 Lite (ANE-LX2J, Kirin 659 / hi6250, Japan cust C635)** の
-ブートローダー解除 (BLU) と from-scratch aarch64 カーネル (FullereneOS) 起動のための
-ツールキット。記載の内容はすべて実機での実験により得た測定に基づく。
+ブートローダー解除 (BLU) と、**カスタム ROM・メインライン Linux 系カーネル・
+自作 OS 等の代替 OS 移植**のためのツールキット。解除手順と起動契約は OS 非依存に
+整理してあり、記載の内容はすべて実機での実験により得た測定に基づく。
 端末は**ソフトウェアのみ** (分解なし・テストポイントなし・有償ツールなし) で解除した。
 
 ## このリポジトリでできること
@@ -20,14 +21,15 @@
 | **BLU を実行する** | [`docs/UNLOCK_RUNBOOK.ja.md`](docs/UNLOCK_RUNBOOK.ja.md) (手順・検証・失敗時対処の全部) |
 | BLU の背景と実録 | [`docs/ANE_LX2J_BOOTLOADER_UNLOCK_20261002.ja.md`](docs/ANE_LX2J_BOOTLOADER_UNLOCK_20261002.ja.md) |
 | 実験カーネルを焼く | [`docs/ANE_BOOT_CONTRACT.md`](docs/ANE_BOOT_CONTRACT.md) (ブート契約) + 下記「サイクル」 |
-| Fullerene 移植の現状 | [`docs/ANE_LX2J_PORT.ja.md`](docs/ANE_LX2J_PORT.ja.md) |
+| 代替 OS を移植する | [`docs/ANE_LX2J_PORT.ja.md`](docs/ANE_LX2J_PORT.ja.md) (移植記録: ブート契約の適用例) |
 | 過去の実験記録を引く | [`docs/journal/INDEX.md`](docs/journal/INDEX.md) (台帳の索引) |
 
 ## 解除 (BLU) の骨子
 
 5 つの関門を順に通過する。詳細は RUNBOOK を参照:
 
-1. **ダウングレード** EMUI 9.1 → 8.0 (Windows + HiSuite。dload では越えられない — 実測)
+1. **ダウングレード** EMUI 9.1 → 8.0 (Windows + HiSuite。dload では越えられない — 実測)。
+   インストーラは [Internet Archive にミラー済み](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools)。
 2. **root** CVE-2019-2215 ( SELinux 迂回には定数差分 `avc_cache - fair_sched_class = 0x134c838` が要る。実績ビルドを `unlock/backup/` に同梱)
 3. **FBLOCK クリア** (`hisi-nve w FBLOCK 0`、`unlock/tools/hisi-nve` 同梱)
 4. **OEM unlock トグル** (Wi-Fi 接続で待つと押せるようになる)
@@ -129,14 +131,30 @@ refs/       参照ソース (hisifb ディスプレイスタック, HwProjectMen
 (Android 8.0 / EMUI 8.0: 本機の KDDI ビルド、C719 オープン市場ビルド、ANE-TL00 CN)。
 `firmware/kernel_stock.bin` は抽出・sha256 検証済みのストックカーネル。
 
-同一アーカイブは archive.org にもミラーしてある (git リモートには大きすぎる):
+これらの巨大バイナリは git リモートに置けないため、**Internet Archive にミラーしてある**:
 
-- Item: https://archive.org/details/p20lite-ane-lx2j-stock-firmware
-- 全取得:
-  ```
-  ia download p20lite-ane-lx2j-stock-firmware
-  ```
-  (`ia` CLI は `pip install internetarchive` または `uv tool install internetarchive`)
+| アイテム | 内容 |
+|---|---|
+| [p20lite-ane-lx2j-stock-firmware](https://archive.org/details/p20lite-ane-lx2j-stock-firmware) | ストックファームウェア 5 本 (8.0.0.110 C635 / 8.0.0.127 C719 kddi・オープン市場 / 8.0.0.202 C719 / 8.0.0.151 C01) + 抽出済み `kernel_stock.bin` |
+
+全取得:
+```
+ia download p20lite-ane-lx2j-stock-firmware
+```
+個別取得はアイテムページの Download Options から。
+(`ia` CLI は `pip install internetarchive` または `uv tool install internetarchive`)
+
+BLU のダウングレード (RUNBOOK 関門 A) に必要なのは
+`ANE-LX2J_8.0.0.110(C635)` のパッケージ (カーネル 4.4.23) である。
+
+## HiSuite (ダウングレード用 Windows ツール)
+
+RUNBOOK 関門 A で使う HiSuite インストーラとヘルパーも Internet Archive に
+保存してある (ベンダーのダウンロード URL が消えたときのバックアップ):
+
+| アイテム | 内容 |
+|---|---|
+| [p20lite-ane-lx2j-hisuite-tools](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools) | HiSuite 公式インストーラ (現行版 W00018218 / 10.0.0.510 W00003542) + HiSuite Proxy V3.3.0 (ロールバック用ヘルパー) |
 
 ## Safety
 

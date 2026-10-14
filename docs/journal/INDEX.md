@@ -11,7 +11,7 @@
 | `NIGHT_v331_STATUS.md` | 夜間自走 v331 の投入記録。静穏待ち (会話カウント式) + モバイルホーム + ブート心拍凍結検知の自動復帰レーン | 2026-10-13 |
 | `MORNING_REPORT.md` | 夜間自走の朝報告。「暴走」の正体 = `uart::putc` の無制限 FIFO 待ち、の解決記録 | 2026-10-07 朝 |
 | `NIGHT_2026-10-06.md` | 夜間台帳。窓キャッチャ + flash_cycle + oem log 読取の体制 | 2026-10-06 |
-| `V21_STATE.md` | eRecovery 殺し (v21 クリーン再起動方式) と以降のステップマーク進行 (stepmarks13-15)。**Fullerene 移植の進行記録としては最も読み応えがある** | 2026-10-04 |
+| `V21_STATE.md` | eRecovery 殺し (v21 クリーン再起動方式) と以降のステップマーク進行 (stepmarks13-15)。**代替 OS 移植の進行記録としては最も読み応えがある** | 2026-10-04 |
 | `REPORT_usb_harness_20261002.md` | USB 再列挙ハーネスの現状報告と SD カード案の評価 | 2026-10-02 |
 | `ANE_BRINGUP_20261002.md` | bring-up 測定ログ。PotatoNV/HiSuite のホスト側準備、dload 5% の壁の解析、エクスプロイト競合の規則 | 2026-10-02 未明 |
 | `ANE_UNLOCK_NOTES.md` | BLU 全記録の原本 (1415 行)。3 つの別名バックアップ (ane-lx2j.backup/bak2) を統合済み | 2026-10-01 〜 |
@@ -26,7 +26,7 @@
 
 1. **BLU (解除) を知りたい** → `../ANE_LX2J_BOOTLOADER_UNLOCK_20261002.ja.md`
    (要約) → `ANE_UNLOCK_NOTES.md` (全詳細)
-2. **Fullerene の移植経過** → `../ANE_BOOT_CONTRACT.md` (契約) → `V21_STATE.md`
+2. **代替 OS の移植経過** → `../ANE_BOOT_CONTRACT.md` (契約) → `V21_STATE.md`
    (過程) → `NIGHT_v331_STATUS.md` (最新)
 3. **ある日の実測を引く** → 上表の時期から該当ファイルへ
 

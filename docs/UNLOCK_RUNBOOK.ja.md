@@ -52,7 +52,8 @@
 | 同ソース (定数 0x134c838 済み) | `unlock/cve-source/` |
 | NV 読み書きツール hisi-nve (aarch64 / armv7) | `unlock/tools/hisi-nve` / `hisi-nve.armv7` |
 | 実績 nvme イメージ (before/unlocked 記録) | `unlock/backup/nvme_*.bin` |
-| ダウングレード用 8.0.0.110(C635) パッケージ | `firmware/azrom/` (13 GB, アーカイブ.org ミラーあり) |
+| ダウングレード用 8.0.0.110(C635) パッケージ | `firmware/azrom/` (13 GB)。**[Internet Archive ミラー](https://archive.org/details/p20lite-ane-lx2j-stock-firmware)から取得可** |
+| HiSuite インストーラ (Windows 側) | [Internet Archive ミラー](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools) (公式配布 URL が消えたときのバックアップ) |
 | HiSuite 手順書 (Windows 側) | `docs/WINDOWS_CHECKLIST.txt` |
 | ファームウェアパッケージ解析ツール | `tools/analyze/`, `tools/unlock/build_*.py` |
 
