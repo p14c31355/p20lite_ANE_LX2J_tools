@@ -31,3 +31,5 @@ unlock/lk_asm/
 # artifact, reconstructible with vmlinux-to-elf from firmware/).
 unlock/backup/kernel_8.0.0.110.elf
 unlock/backup/oeminfo.bin
+# Internet Archive upload logs (transient)
+internetarchive.log
