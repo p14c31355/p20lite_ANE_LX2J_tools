@@ -1,5 +1,7 @@
 # p20lite_ANE_LX2J_tools
 
+> English version: [README.en.md](README.en.md)
+
 **Huawei P20 Lite (ANE-LX2J, Kirin 659 / hi6250, Japan cust C635)** の
 ブートローダー解除 (BLU) と、**カスタム ROM・メインライン Linux 系カーネル・
 自作 OS 等の代替 OS 移植**のためのツールキット。解除手順と起動契約は OS 非依存に
