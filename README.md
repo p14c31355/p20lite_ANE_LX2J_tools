@@ -125,17 +125,32 @@ refs/       参照ソース (hisifb ディスプレイスタック, HwProjectMen
 - 読み取りはスマホの接写写真 1 枚。webcam はグリフ間隔を解像できない
   (解像度を上げても不可 — 実測)。
 
-## Firmware
+## Firmware (研究検証用リファレンス)
 
 `firmware/azrom/` に ANE ファミリーのストックファームウェア
 (Android 8.0 / EMUI 8.0: 本機の KDDI ビルド、C719 オープン市場ビルド、ANE-TL00 CN)。
 `firmware/kernel_stock.bin` は抽出・sha256 検証済みのストックカーネル。
 
-これらの巨大バイナリは git リモートに置けないため、**Internet Archive にミラーしてある**:
+これらの巨大バイナリは git リモートに置けないため、**Internet Archive に
+「検証に使ったファーム群」として保存してある**。目的は WAREZ 的な配布ではなく、
+本研究の測定値を第三者が**同じファームウェアバイト列に対して独立に検証できる
+ようにする**こと、および公開ミラーが消えた場合でも研究が再現可能であることの担保である:
 
 | アイテム | 内容 |
 |---|---|
-| [p20lite-ane-lx2j-stock-firmware](https://archive.org/details/p20lite-ane-lx2j-stock-firmware) | ストックファームウェア 5 本 (8.0.0.110 C635 / 8.0.0.127 C719 kddi・オープン市場 / 8.0.0.202 C719 / 8.0.0.151 C01) + 抽出済み `kernel_stock.bin` |
+| [p20lite-ane-lx2j-stock-firmware](https://archive.org/details/p20lite-ane-lx2j-stock-firmware) | 検証に使用した改変なしストックファームウェア 5 本 (8.0.0.110 C635 / 8.0.0.127 C719 kddi・オープン市場 / 8.0.0.202 C719 / 8.0.0.151 C01) + 抽出済み `kernel_stock.bin` |
+
+研究での使いみち:
+- **8.0.0.127(C719)** — カーネルシンボル配置の復元元。SELinux 迂回定数
+  `avc_cache - fair_sched_class = 0x134c838` の導出に使用
+- **8.0.0.110(C635)** — メジャー内ダウングレードターゲット (カーネル 4.4.23)。
+  公開研究 CVE-2019-2215 が適用されるビルドで、RUNBOOK 関門 A/B の根拠
+- 各パッケージ — boot image ヘッダ、recovery の検査、更新検証フローを
+  分析した一次資料 (`docs/ANE_BOOT_CONTRACT.md` §1-4)
+
+改変イメージ・unlock コード・有償ツール類は含まない。解除手法自体は
+公開研究 (CVE-2019-2215, Project Zero) に依拠し、その再現手順を本
+リポジトリの文書が記録している。
 
 全取得:
 ```
@@ -144,17 +159,17 @@ ia download p20lite-ane-lx2j-stock-firmware
 個別取得はアイテムページの Download Options から。
 (`ia` CLI は `pip install internetarchive` または `uv tool install internetarchive`)
 
-BLU のダウングレード (RUNBOOK 関門 A) に必要なのは
-`ANE-LX2J_8.0.0.110(C635)` のパッケージ (カーネル 4.4.23) である。
+## HiSuite (ダウングレード検証に使用した公式インストーラ)
 
-## HiSuite (ダウングレード用 Windows ツール)
-
-RUNBOOK 関門 A で使う HiSuite インストーラとヘルパーも Internet Archive に
-保存してある (ベンダーのダウンロード URL が消えたときのバックアップ):
+RUNBOOK 関門 A のダウングレードは、ベンダー自身の PC ツール HiSuite の
+バージョン切り替え機能によってのみ成立する (dload/SD ではメジャー境界を
+越えられないことを 7 種のパッケージ構築で検証済み — 実測記録は
+`docs/ANE_BOOT_CONTRACT.md`)。検証に使用した公式ビルドを Internet Archive に
+保存してある (ベンダーのダウンロード URL は永続が保証されないため):
 
 | アイテム | 内容 |
 |---|---|
-| [p20lite-ane-lx2j-hisuite-tools](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools) | HiSuite 公式インストーラ (現行版 W00018218 / 10.0.0.510 W00003542) + HiSuite Proxy V3.3.0 (ロールバック用ヘルパー) |
+| [p20lite-ane-lx2j-hisuite-tools](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools) | 検証に使用した HiSuite 公式インストーラ (現行版 W00018218 / 10.0.0.510 W00003542) + HiSuite Proxy V3.3.0 (サードパーティのオープンソースヘルパー、フォールバック評価用) |
 
 ## Safety
 
