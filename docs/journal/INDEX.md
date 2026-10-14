@@ -13,7 +13,7 @@
 | `NIGHT_2026-10-06.md` | 夜間台帳。窓キャッチャ + flash_cycle + oem log 読取の体制 | 2026-10-06 |
 | `V21_STATE.md` | eRecovery 殺し (v21 クリーン再起動方式) と以降のステップマーク進行 (stepmarks13-15)。**代替 OS 移植の進行記録としては最も読み応えがある** | 2026-10-04 |
 | `REPORT_usb_harness_20261002.md` | USB 再列挙ハーネスの現状報告と SD カード案の評価 | 2026-10-02 |
-| `ANE_BRINGUP_20261002.md` | bring-up 測定ログ。PotatoNV/HiSuite のホスト側準備、dload 5% の壁の解析、エクスプロイト競合の規則 | 2026-10-02 未明 |
+| `ANE_BRINGUP_20261002.md` | bring-up 測定ログ。PotatoNV/HiSuite のホスト側準備、dload 5% の壁の分析、エクスプロイト競合の規則 | 2026-10-02 未明 |
 | `ANE_UNLOCK_NOTES.md` | BLU 全記録の原本 (1415 行)。3 つの別名バックアップ (ane-lx2j.backup/bak2) を統合済み | 2026-10-01 〜 |
 | `ANE_NIGHT_20261002.md` | 解除当日夜の自走記録。l1c/l1d プローブ、捕獲器初実戦、フォールバック構造の修正 | 2026-10-02 夜 |
 | `STEP13_EXPECTED.md` | stepmarks13/14/15 のマーク読み表 (count とマーク列の対応) | 2026-10-04 |

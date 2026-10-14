@@ -106,15 +106,15 @@ ANE-LX2J ブートローダーアンロック — Windows セッション手順�
 記録の在処 (Linux 側)
 ────────────────────────────────────────────────────────────────
     スキル: huawei-kirin-device-unlock / references/ane-lx2j.md
-      全測定・全解析・全経緯 (7通りの dload 改造の記録を含む)
+      全測定・全分析・全経緯 (7通りの dload 改造の記録を含む)
 
     /home/placeless/dev/p20-root/
       firmware/original/   原本の dload パッケージ
       firmware/custfix/    最新の改造版 (原本と同一サイズ)
       firmware/eocd/       frankenZIP 版
-      fb_*.sh, build_*.py  解析・ビルド一式
+      fb_*.sh, build_*.py  分析・ビルド一式
 
-    /tmp/recov/            抽出したリカバリ本体と解析結果
+    /tmp/recov/            抽出したリカバリ本体と分析結果
 
 
 ────────────────────────────────────────────────────────────────

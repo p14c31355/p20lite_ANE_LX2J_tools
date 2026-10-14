@@ -44,13 +44,13 @@
 ```
 docs/       契約書・手順書 (BLU は UNLOCK_RUNBOOK.ja.md、起動は ANE_BOOT_CONTRACT.md)
   journal/      実験台帳 (夜間記録・時系列ログ)。INDEX.md が索引
-tools/      端末を駆動・解析するスクリプト (役割別のサブディレクトリ)
+tools/      端末を駆動・分析するスクリプト (役割別のサブディレクトリ)
   flows/      実行するサイクル: ane_logloop.sh, ane_autopilot.sh, ane_window_flash.sh,
               V21_LOOP.sh, ane_catcher.sh, flash_cycle.sh ...
   probes/     画面描画 .S プローブとアセンブラ (ane_log_probe が現行の読み取り器)
   builders/   boot イメージ構築: mkane_stock_embed.py, mkane_bootimg.py
   diag/       端末状態の読み取り (USB 監視, fastboot 生操作, oem log 収集)
-  analyze/    ホスト側解析 (DT, パッケージ, ダンプデコード)
+  analyze/    ホスト側分析 (DT, パッケージ, ダンプデコード)
   unlock/     BLU 時代のスクリプト (段階別に整理済み)
   verify/     ホスト検証器 + QEMU 証明 (焼く前に実行する)
   usbtool/    PCUI/AT USB プローブ (usbtool-*.py)

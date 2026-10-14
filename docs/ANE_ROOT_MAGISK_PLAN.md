@@ -56,7 +56,7 @@
 ## Phase B: root 後の本命作業
 
 1. **pmsg 回収 (本来の目的)**: `su -c "cat /sys/fs/pstore/pmsg-ramoops-0" > usb_runs/pmsg.bin`
-   → tools/ane_pmsg_scan.py で解析 → key-probe のトレース → コンボ自動化 Stage 1
+   → tools/ane_pmsg_scan.py で分析 → key-probe のトレース → コンボ自動化 Stage 1
 2. ハーネス縮退: 捕獲器/回収ループを引退させ、[adb push + su cat] だけの軽量スクリプトに
 3. persist.sys.usb.config の維持は su で簡単に (自己修復)
 4. 副産物: dd による現物パーティション保全 (ramdisk/recovery_ramdisk) が自由にできる

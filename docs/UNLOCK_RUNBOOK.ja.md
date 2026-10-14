@@ -55,7 +55,7 @@
 | ダウングレード用 8.0.0.110(C635) パッケージ | `firmware/azrom/` (13 GB)。**[Internet Archive ミラー](https://archive.org/details/p20lite-ane-lx2j-stock-firmware)から取得可** |
 | HiSuite インストーラ (Windows 側) | [Internet Archive ミラー](https://archive.org/details/p20lite-ane-lx2j-hisuite-tools) (公式配布 URL が消えたときのバックアップ) |
 | HiSuite 手順書 (Windows 側) | `docs/WINDOWS_CHECKLIST.txt` |
-| ファームウェアパッケージ解析ツール | `tools/analyze/`, `tools/unlock/build_*.py` |
+| ファームウェアパッケージ分析ツール | `tools/analyze/`, `tools/unlock/build_*.py` |
 
 hisi-nve を失った場合は upstream から再ビルド可能:
 `git clone https://github.com/R0rt1z2/hisi-nve && cd hisi-nve && sed -i 's|#include <memory.h>|#include <string.h>|' src/crypto/sha256.c && PATH=<NDK>: $PATH ndk-build NDK_PROJECT_PATH=. NDK_APPLICATION_MK=./Application.mk` → `libs/arm64-v8a/hisi-nve`
@@ -125,7 +125,7 @@ printf 'id\ncat /proc/self/attr/current\ngetenforce\ndd if=/dev/block/bootdevice
 - 再試行の前に `adb shell 'ps -A | grep cve'` でゾンビ (`Z`) を確認。あったらリブート。
 - 競合 (race) は 25 分で見極める。勝ち出力は ~16 分以内に来る実績。30 分以上の
   ポーリングは値がない。負けていたらリブートして再試行 (勝率は試行回数が杠杆)。
-- **ビルド規則**: 定数の即値変更のみ勝率を保つ。コード構造変更 (argv 解析追加等) は
+- **ビルド規則**: 定数の即値変更のみ勝率を保つ。コード構造変更 (argv 分析追加等) は
   実測で全敗。再ビルドする場合は `unlock/cve-source/` を使い、最小差分を守ること。
 
 ### 3.4 SELinux 迂回の仕組み (定数差分)
